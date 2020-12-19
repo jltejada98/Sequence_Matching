@@ -1,0 +1,15 @@
+WGKV len=4 num=1
+ 15,14
+GKV len=3 num=2
+ 16,15
+ 16,15
+KHL len=3 num=1
+ 76,47
+ETL len=3 num=1
+ 26,38
+VLT len=3 num=1
+ 67,68
+DLK len=3 num=1
+ 80,60
+TVL len=3 num=1
+ 112,67

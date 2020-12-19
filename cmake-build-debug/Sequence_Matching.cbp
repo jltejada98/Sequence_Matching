@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Sequence_Matching"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Sequence_Matching">
+				<Option output="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Sequence_Matching" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 Sequence_Matching"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Sequence_Matching/fast">
+				<Option output="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Sequence_Matching" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 Sequence_Matching/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.cpp">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchList.cpp">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchList.h">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.cpp">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.h">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.cpp">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/ctpl.h">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/main.cpp">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
