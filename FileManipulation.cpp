@@ -37,9 +37,9 @@ bool Write_Matches(std::shared_ptr<std::unordered_map<std::string,std::shared_pt
         File.open(outFilename); //Open for writing
         for (auto &x: *matchesMap){
             File << x.first << " len=" << x.first.length() <<  " num=" << x.second->getOccurences() << std::endl;
-            auto y = x.second->getMatchVector();
+            auto y = x.second->getMatchMap();
             for (auto &ye: *y){
-                File << " " << ye->getStartIndex1() << "," << ye->getStartIndex2() << std::endl;
+                File << " " << ye.second->getStartIndex1() << "," << ye.second->getStartIndex2() << std::endl;
             }
         }
         File.close();

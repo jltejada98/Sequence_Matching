@@ -1,7 +1,6 @@
 WGKV len=4 num=1
  15,14
-GKV len=3 num=2
- 16,15
+GKV len=3 num=1
  16,15
 KHL len=3 num=1
  76,47

@@ -34,17 +34,19 @@ int main(int argc, const char *argv[]) {
         std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>> matchesMap =
                 Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
         std::cout << "Writing Matches..." << std::endl;
-       if (!Write_Matches(matchesMap, "Matches_Only.txt")){
-           return EXIT_FAILURE;
-       }
-       std::cout << "Determning Submatches..." << std::endl;
-       std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>> matches =
+        if (!Write_Matches(matchesMap, "Matches_Only.txt")){
+            return EXIT_FAILURE;
+        }
+
+        std::cout << "Determning Submatches..." << std::endl;
+        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>> matches =
                 Determine_Submatching(matchesMap, minimumMatchSize);
+
         std::cout << "Writing Submatches..." << std::endl;
-       if (!Write_Matches(matchesMap, "Submatches.txt")){
-           return EXIT_FAILURE;
-       }
-       std::cout << "Done" << std::endl;
+        if (!Write_Matches(matchesMap, "Submatches.txt")){
+            return EXIT_FAILURE;
+        }
+
     }
     else{
         std::cout << "Identical strings" << std::endl;

@@ -17,6 +17,7 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
     std::unordered_map<std::string,std::shared_ptr<MatchList>>::const_iterator found;
     std::shared_ptr<std::string> matchString;
     std::shared_ptr<MatchList> newMatchList;
+    std::pair<std::string,std::shared_ptr<MatchList>> newMatchPair;
 
 
     while (index1 < seq1Size){
@@ -35,7 +36,7 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
                 if (found == matchesMap.end()){ //Match doesn't exist
                     newMatchList = std::make_shared<MatchList>();
                     newMatchList->addMatch(index1, index2);
-                    std::pair<std::string,std::shared_ptr<MatchList>> newMatchPair = std::make_pair(*matchString, newMatchList);
+                    newMatchPair = std::make_pair(*matchString, newMatchList);
                     matchesMap.insert(newMatchPair);
                 }
                 else{ //Match already exists (Assume only one bucket for string?)
@@ -55,6 +56,7 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
         Determine_Submatching(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>&matchesMap,
                               const size_t &minLength){
 
+    // Todo Use openTBB to implement thread pool correctly. -> At certain size this has bugs.
     // ctpl::thrcead_pool threadPool((int)std::thread::hardware_concurrency());
 
     for (auto &x: *matchesMap){
@@ -84,13 +86,17 @@ void Submatches_Thread(int threadID, const std::shared_ptr<std::unordered_map<st
 
         partitions = Determine_Partitions(key,keyLength, minLength,partitionsShiftList);
 
-        for (size_t i = 0; i < partitions->size(); ++i) {
-            found = matchesMap->find(*partitions->at(i));
-            if (found != matchesMap->end()){ //Partition exists in map, add matches of key into found, with appropiate partitionShiftList
+        for (size_t i = 0; i < partitions->size(); ++i) { //Iterate all partitions.
+            found = matchesMap->find(*partitions->at(i)); //Find partition string in matchesMap.
+            if (found != matchesMap->end()){ //Partition exists in map, add (Non existing) matches of key into found , with appropiate partitionShiftList
                 size_t partitionShift = *partitionsShiftList->at(i);
-                auto keyMatchesVector = matchesMap->at(key)->getMatchVector();
-                for (auto &keyMatches: *keyMatchesVector){ //For all matches of keys, add to found
-                    found->second->addSubMatch(keyMatches->getStartIndex1()+partitionShift, keyMatches->getStartIndex2()+partitionShift);
+                auto keyMatchesVector = matchesMap->at(key)->getMatchMap(); //Key Matches
+                for (auto &keyMatches: *keyMatchesVector){ //For all matches of keys, add to found if non existing.
+                    if (!found->second->matchExists(keyMatches.second->getStartIndex1()+partitionShift,
+                                                    keyMatches.second->getStartIndex2()+partitionShift)){ //If match Doesn't exist, add into matchlist
+                        found->second->addSubMatch(keyMatches.second->getStartIndex1()+partitionShift, keyMatches.second->getStartIndex2()+partitionShift);
+                    }
+//                    found->second->addSubMatch(keyMatches->getStartIndex1()+partitionShift, keyMatches->getStartIndex2()+partitionShift); //When using vector
                 }
 
             }
@@ -107,9 +113,14 @@ void Submatches_Thread(int threadID, const std::shared_ptr<std::unordered_map<st
             for(std::sregex_iterator i = foundIterator; i != end; i++){ //For each instance of substring found.
                 std::smatch subtringMatch = *i;
                 foundAtIndex = i->position();
-                auto keyMatchesVector = matchesMap->at(key)->getMatchVector();
+                auto keyMatchesVector = matchesMap->at(key)->getMatchMap();
                 for (auto &keyMatches: *keyMatchesVector){ //Add matches of key into found, with appropaite shift
-                    match.second->addSubMatch(keyMatches->getStartIndex1() + foundAtIndex, keyMatches->getStartIndex2() + foundAtIndex);
+                    if (!match.second->matchExists(keyMatches.second->getStartIndex1() + foundAtIndex,
+                                                   keyMatches.second->getStartIndex2() + foundAtIndex)){
+                        match.second->addSubMatch(keyMatches.second->getStartIndex1()+foundAtIndex, keyMatches.second->getStartIndex2()+foundAtIndex);
+                    }
+
+//                    match.second->addSubMatch(keyMatches->getStartIndex1() + foundAtIndex, keyMatches->getStartIndex2() + foundAtIndex);
                 }
             }
         }

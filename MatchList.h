@@ -7,19 +7,21 @@
 
 #include <vector>
 #include <mutex>
+#include <unordered_map>
 #include "MatchNode.h"
 
-class MatchList {
+class MatchList { //Todo Chage all instances of list/vetor into map.
 private:
     size_t  numOccurences;
     std::mutex mutex;
-    std::vector<std::shared_ptr<MatchNode>> matchVector;
+    std::unordered_map<std::string, std::shared_ptr<MatchNode>> matchMap;
 public:
     MatchList();
     void addMatch(size_t start1, size_t start2);
     void addSubMatch(size_t start1, size_t start2);
     size_t getOccurences() const;
-    std::shared_ptr<std::vector<std::shared_ptr<MatchNode>>> getMatchVector();
+    bool matchExists(size_t start1, size_t start2);
+    std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<MatchNode>>> getMatchMap();
 };
 
 
