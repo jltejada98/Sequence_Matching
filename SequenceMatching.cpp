@@ -56,24 +56,21 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
         Determine_Submatching(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
                               const size_t &minLength){
 
-    // ctpl::thrcead_pool threadPool((int)std::thread::hardware_concurrency());
+    //Todo use proper thread pool library-> openTBB.
 
     for (auto &x: *matchesMap){
         if (x.first.length() > minLength){ //Sequence is partitionable/submatches may be contained in sequence
             // Thread pool to manage execution of threads. Such that each thread in pool is assigned a string to check.
-            // threadPool.push(Submatches_Thread,matchesMap,x.first,minLength);
-           Submatches_Thread(0,matchesMap,x.first,minLength); //Single Thread Version.
+            Submatches_Thread(matchesMap, x.first, minLength); //Single Thread Version.
 
         }
     }
-    //Wait for all threads in pool to complete tasks
-    // threadPool.stop(true);
 
     return matchesMap;
 }
 
-void Submatches_Thread(int threadID, const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>& matchesMap,
-                       const std::string& keyToCheck, const size_t &minLength){
+void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<MatchLocations>>> &matchesMap,
+                  const std::string &keyToCheck, const size_t &minLength) {
     size_t keyLength = keyToCheck.length();
     size_t numPartitions = ((keyLength-minLength)*(keyLength - minLength + 3))/2; //Closed form for number of partitions
     numPartitions = 100;
@@ -105,8 +102,7 @@ void Submatches_Thread(int threadID, const std::shared_ptr<std::unordered_map<st
             }
         }
     }
-    else{
-        //Check all elements in hashtable against the keyToCheck. (Consider that it is slower due to regex)
+    else{ //Check all elements in hashtable against the keyToCheck. (Consider that it is slower due to regex)
         //Todo Determine if regex absolutely necessary -> I think so?
         size_t foundAtIndex;
         std::string matchString;

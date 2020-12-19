@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h
+fstream
+-
+iostream
+-
+unordered_map
+-
+MatchLocations.h
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
+
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
 vector
 -
@@ -37,26 +47,18 @@ MatchNode.h
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.h
 MatchLocations.h
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
-ctpl.h
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/ctpl.h
 
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/ctpl.h
-functional
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/main.cpp
+iostream
 -
-thread
--
-atomic
--
-vector
+unordered_map
 -
 memory
 -
-exception
--
-future
--
-mutex
--
-queue
--
+MatchLocations.h
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
+FileManipulation.h
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h
+SequenceMatching.h
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
 
