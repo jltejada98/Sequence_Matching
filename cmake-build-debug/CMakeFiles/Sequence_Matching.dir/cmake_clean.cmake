@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o"
-  "CMakeFiles/Sequence_Matching.dir/MatchList.cpp.o"
+  "CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o"
   "CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o"
   "CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o"
   "CMakeFiles/Sequence_Matching.dir/main.cpp.o"

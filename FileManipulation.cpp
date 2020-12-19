@@ -30,14 +30,14 @@ std::shared_ptr<std::string> Load_Sequence(const char *filename, size_t &seq_siz
     return std::make_shared<std::string>(sequenceString);
 }
 
-bool Write_Matches(std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>> matchesMap, std::string outFilename){
+bool Write_Matches(std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap, std::string outFilename){
     std::ofstream File;
     File.exceptions(~::std::ios_base::goodbit);
     try{
         File.open(outFilename); //Open for writing
         for (auto &x: *matchesMap){
             File << x.first << " len=" << x.first.length() <<  " num=" << x.second->getOccurences() << std::endl;
-            auto y = x.second->getMatchMap();
+            auto y = x.second->getLocationsMap();
             for (auto &ye: *y){
                 File << " " << ye.second->getStartIndex1() << "," << ye.second->getStartIndex2() << std::endl;
             }

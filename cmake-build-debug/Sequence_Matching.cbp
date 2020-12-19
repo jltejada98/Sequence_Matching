@@ -84,10 +84,10 @@
 		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h">
 			<Option target="Sequence_Matching"/>
 		</Unit>
-		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchList.cpp">
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.cpp">
 			<Option target="Sequence_Matching"/>
 		</Unit>
-		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchList.h">
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h">
 			<Option target="Sequence_Matching"/>
 		</Unit>
 		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.cpp">

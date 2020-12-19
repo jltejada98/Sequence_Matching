@@ -4,7 +4,7 @@
 
 #include "SequenceMatching.h"
 
-std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
+std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
         Determine_Matches(const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
                           const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size, const size_t &minLength){
 
@@ -13,11 +13,11 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
     size_t index1 = 0;
     size_t index2;
     size_t matchLength;
-    std::unordered_map<std::string,std::shared_ptr<MatchList>> matchesMap;
-    std::unordered_map<std::string,std::shared_ptr<MatchList>>::const_iterator found;
+    std::unordered_map<std::string,std::shared_ptr<MatchLocations>> matchesMap; //Stores Sequence,MatchLocations
+    std::unordered_map<std::string,std::shared_ptr<MatchLocations>>::const_iterator found;
     std::shared_ptr<std::string> matchString;
-    std::shared_ptr<MatchList> newMatchList;
-    std::pair<std::string,std::shared_ptr<MatchList>> newMatchPair;
+    std::shared_ptr<MatchLocations> newMatchLocation; //Stores location of Matches
+    std::pair<std::string,std::shared_ptr<MatchLocations>> newMatchPair;
 
 
     while (index1 < seq1Size){
@@ -34,13 +34,13 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
                 matchString = std::make_shared<std::string>(std::string(seq1String->substr(index1,matchLength)));
                 found = matchesMap.find(*matchString);
                 if (found == matchesMap.end()){ //Match doesn't exist
-                    newMatchList = std::make_shared<MatchList>();
-                    newMatchList->addMatch(index1, index2);
-                    newMatchPair = std::make_pair(*matchString, newMatchList);
+                    newMatchLocation = std::make_shared<MatchLocations>();
+                    newMatchLocation->addMatchLocation(index1, index2);
+                    newMatchPair = std::make_pair(*matchString, newMatchLocation);
                     matchesMap.insert(newMatchPair);
                 }
                 else{ //Match already exists (Assume only one bucket for string?)
-                    matchesMap.at(*matchString)->addMatch(index1, index2);
+                    matchesMap.at(*matchString)->addMatchLocation(index1, index2);
                 }
             }
             matchLength > 0 ? index2 += matchLength: ++index2;
@@ -48,19 +48,18 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
         ++index1;
     }
 
-    return std::make_shared<std::unordered_map<std::string,std::shared_ptr<MatchList>>>(matchesMap);
+    return std::make_shared<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>(matchesMap);
 }
 
 
-std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
-        Determine_Submatching(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>&matchesMap,
+std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
+        Determine_Submatching(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
                               const size_t &minLength){
 
-    // Todo Use openTBB to implement thread pool correctly. -> At certain size this has bugs.
     // ctpl::thrcead_pool threadPool((int)std::thread::hardware_concurrency());
 
     for (auto &x: *matchesMap){
-        if (x.first.length() > minLength){ //Sequence is partitionable/submatches may be contained in sequence.
+        if (x.first.length() > minLength){ //Sequence is partitionable/submatches may be contained in sequence
             // Thread pool to manage execution of threads. Such that each thread in pool is assigned a string to check.
             // threadPool.push(Submatches_Thread,matchesMap,x.first,minLength);
            Submatches_Thread(0,matchesMap,x.first,minLength); //Single Thread Version.
@@ -73,58 +72,68 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>
     return matchesMap;
 }
 
-void Submatches_Thread(int threadID, const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>>& matchesMap,
-                       const std::string& key, const size_t &minLength){
-    size_t keyLength = key.length();
+void Submatches_Thread(int threadID, const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>& matchesMap,
+                       const std::string& keyToCheck, const size_t &minLength){
+    size_t keyLength = keyToCheck.length();
     size_t numPartitions = ((keyLength-minLength)*(keyLength - minLength + 3))/2; //Closed form for number of partitions
+    numPartitions = 100;
 
     if (numPartitions <= matchesMap->size()){ //Check all partitions against hashtable to determine if partitition exists.
         std::vector<std::shared_ptr<size_t>> partitionShiftList;
         std::shared_ptr<std::vector<std::shared_ptr<std::string>>> partitions;
-        std::unordered_map<std::string,std::shared_ptr<MatchList>>::const_iterator found;
+        std::unordered_map<std::string,std::shared_ptr<MatchLocations>>::const_iterator found;
         std::shared_ptr<std::vector<std::shared_ptr<size_t>>> partitionsShiftList = std::make_shared<std::vector<std::shared_ptr<size_t>>>(partitionShiftList);
 
-        partitions = Determine_Partitions(key,keyLength, minLength,partitionsShiftList);
+        partitions = Determine_Partitions(keyToCheck, keyLength, minLength, partitionsShiftList);
 
         for (size_t i = 0; i < partitions->size(); ++i) { //Iterate all partitions.
             found = matchesMap->find(*partitions->at(i)); //Find partition string in matchesMap.
-            if (found != matchesMap->end()){ //Partition exists in map, add (Non existing) matches of key into found , with appropiate partitionShiftList
+
+            if (found != matchesMap->end()){ //Partition exists in map
+                // Add non existing match locations of keyToCheck into found, with apropiate partitionShiftList
                 size_t partitionShift = *partitionsShiftList->at(i);
-                auto keyMatchesVector = matchesMap->at(key)->getMatchMap(); //Key Matches
-                for (auto &keyMatches: *keyMatchesVector){ //For all matches of keys, add to found if non existing.
+                auto keyMatchLocations = matchesMap->at(keyToCheck)->getLocationsMap(); //Match locations of Key to check.
+
+                for (auto &keyMatches: *keyMatchLocations){
                     if (!found->second->matchExists(keyMatches.second->getStartIndex1()+partitionShift,
-                                                    keyMatches.second->getStartIndex2()+partitionShift)){ //If match Doesn't exist, add into matchlist
-                        found->second->addSubMatch(keyMatches.second->getStartIndex1()+partitionShift, keyMatches.second->getStartIndex2()+partitionShift);
+                                                    keyMatches.second->getStartIndex2()+partitionShift)){ //If match location doesn't exist, add matchLocation.
+                        found->second->addSubMatchLocation(keyMatches.second->getStartIndex1() + partitionShift,
+                                                           keyMatches.second->getStartIndex2() + partitionShift);
                     }
-//                    found->second->addSubMatch(keyMatches->getStartIndex1()+partitionShift, keyMatches->getStartIndex2()+partitionShift); //When using vector
                 }
 
             }
         }
     }
-    else{ //Check all elements in hashtable against the key. (Consider that it is slower due tot regex)
+    else{
+        //Check all elements in hashtable against the keyToCheck. (Consider that it is slower due to regex)
         //Todo Determine if regex absolutely necessary -> I think so?
-        auto regexKey = std::regex(key);
-        auto end = std::sregex_iterator();
         size_t foundAtIndex;
-        for(auto &match: *matchesMap){
-            //Make function to determine if there are more submatches
-            std::sregex_iterator foundIterator (match.first.begin(), match.first.end(), regexKey); //Determine if works with character without string.
-            for(std::sregex_iterator i = foundIterator; i != end; i++){ //For each instance of substring found.
-                std::smatch subtringMatch = *i;
-                foundAtIndex = i->position();
-                auto keyMatchesVector = matchesMap->at(key)->getMatchMap();
-                for (auto &keyMatches: *keyMatchesVector){ //Add matches of key into found, with appropaite shift
-                    if (!match.second->matchExists(keyMatches.second->getStartIndex1() + foundAtIndex,
-                                                   keyMatches.second->getStartIndex2() + foundAtIndex)){
-                        match.second->addSubMatch(keyMatches.second->getStartIndex1()+foundAtIndex, keyMatches.second->getStartIndex2()+foundAtIndex);
-                    }
+        std::string matchString;
+        std::regex regexKey;
+        std::sregex_iterator foundIterator;
+        auto end = std::sregex_iterator();
 
-//                    match.second->addSubMatch(keyMatches->getStartIndex1() + foundAtIndex, keyMatches->getStartIndex2() + foundAtIndex);
+        for(auto &match: *matchesMap){ //Iterate all keys
+            if (match.first != keyToCheck){
+                regexKey = std::regex(std::string(match.first));
+                foundIterator = std::sregex_iterator(keyToCheck.begin(), keyToCheck.end(), regexKey); //Determine if works with character without string.
+
+                for(std::sregex_iterator i = foundIterator; i != end; i++){ //For each instance of substring found.
+                    std::smatch subtringMatch = *i;
+                    foundAtIndex = i->position();
+                    auto keyMatchLocations = matchesMap->at(keyToCheck)->getLocationsMap();
+
+                    for (auto &keyMatches: *keyMatchLocations){ //Add locations of keyToCheck into found, with appropaite shift
+                        if (!match.second->matchExists(keyMatches.second->getStartIndex1() + foundAtIndex,keyMatches.second->getStartIndex2() + foundAtIndex)){ //Check if location exists
+                            match.second->addSubMatchLocation(keyMatches.second->getStartIndex1() + foundAtIndex,keyMatches.second->getStartIndex2() + foundAtIndex);
+                        }
+                    }
                 }
             }
         }
     }
+
 }
 
 std::shared_ptr<std::vector<std::shared_ptr<std::string>>>

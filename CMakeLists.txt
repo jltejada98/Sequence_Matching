@@ -11,6 +11,6 @@ add_executable(Sequence_Matching
         FileManipulation.h
         SequenceMatching.cpp
         SequenceMatching.h
-        MatchList.cpp
-        MatchList.h
+        MatchLocations.cpp
+        MatchLocations.h
         ctpl.h)

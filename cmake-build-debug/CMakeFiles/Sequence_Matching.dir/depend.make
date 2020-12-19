@@ -3,24 +3,24 @@
 
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../FileManipulation.cpp
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../FileManipulation.h
-CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../MatchList.h
+CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../MatchLocations.h
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../MatchNode.h
 
-CMakeFiles/Sequence_Matching.dir/MatchList.cpp.o: ../MatchList.cpp
-CMakeFiles/Sequence_Matching.dir/MatchList.cpp.o: ../MatchList.h
-CMakeFiles/Sequence_Matching.dir/MatchList.cpp.o: ../MatchNode.h
+CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: ../MatchLocations.cpp
+CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: ../MatchLocations.h
+CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: ../MatchNode.h
 
 CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o: ../MatchNode.cpp
 CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o: ../MatchNode.h
 
-CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../MatchList.h
+CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../MatchLocations.h
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../MatchNode.h
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../SequenceMatching.cpp
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../SequenceMatching.h
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../ctpl.h
 
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../FileManipulation.h
-CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../MatchList.h
+CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../MatchLocations.h
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../MatchNode.h
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../SequenceMatching.h
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../ctpl.h

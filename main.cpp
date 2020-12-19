@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unordered_map>
 #include <memory>
-#include "MatchList.h"
+#include "MatchLocations.h"
 #include "FileManipulation.h"
 #include "SequenceMatching.h"
 
@@ -31,7 +31,7 @@ int main(int argc, const char *argv[]) {
 
     if (*seq1String != *seq2String){
         std::cout << "Determning Matches..." << std::endl;
-        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>> matchesMap =
+        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
                 Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
         std::cout << "Writing Matches..." << std::endl;
         if (!Write_Matches(matchesMap, "Matches_Only.txt")){
@@ -39,7 +39,7 @@ int main(int argc, const char *argv[]) {
         }
 
         std::cout << "Determning Submatches..." << std::endl;
-        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchList>>> matches =
+        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matches =
                 Determine_Submatching(matchesMap, minimumMatchSize);
 
         std::cout << "Writing Submatches..." << std::endl;

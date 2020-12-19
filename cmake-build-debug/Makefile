@@ -170,32 +170,32 @@ FileManipulation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.s
 .PHONY : FileManipulation.cpp.s
 
-MatchList.o: MatchList.cpp.o
+MatchLocations.o: MatchLocations.cpp.o
 
-.PHONY : MatchList.o
+.PHONY : MatchLocations.o
 
 # target to build an object file
-MatchList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchList.cpp.o
-.PHONY : MatchList.cpp.o
+MatchLocations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o
+.PHONY : MatchLocations.cpp.o
 
-MatchList.i: MatchList.cpp.i
+MatchLocations.i: MatchLocations.cpp.i
 
-.PHONY : MatchList.i
+.PHONY : MatchLocations.i
 
 # target to preprocess a source file
-MatchList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchList.cpp.i
-.PHONY : MatchList.cpp.i
+MatchLocations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.i
+.PHONY : MatchLocations.cpp.i
 
-MatchList.s: MatchList.cpp.s
+MatchLocations.s: MatchLocations.cpp.s
 
-.PHONY : MatchList.s
+.PHONY : MatchLocations.s
 
 # target to generate assembly for a file
-MatchList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchList.cpp.s
-.PHONY : MatchList.cpp.s
+MatchLocations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.s
+.PHONY : MatchLocations.cpp.s
 
 MatchNode.o: MatchNode.cpp.o
 
@@ -290,9 +290,9 @@ help:
 	@echo "... FileManipulation.o"
 	@echo "... FileManipulation.i"
 	@echo "... FileManipulation.s"
-	@echo "... MatchList.o"
-	@echo "... MatchList.i"
-	@echo "... MatchList.s"
+	@echo "... MatchLocations.o"
+	@echo "... MatchLocations.i"
+	@echo "... MatchLocations.s"
 	@echo "... MatchNode.o"
 	@echo "... MatchNode.i"
 	@echo "... MatchNode.s"
