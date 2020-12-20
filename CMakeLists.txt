@@ -3,6 +3,11 @@ project(Sequence_Matching)
 
 set(CMAKE_CXX_STANDARD 14)
 
+include_directories(/usr/local/Cellar/tbb/2020_U3_1/include/)
+
+set(CMAKE_CXX_FLAGS "-I/usr/local/Cellar/tbb/2020_U3_1/include/")
+set(CMAKE_EXE_LINKER_FLAGS "-L/usr/local/Cellar/tbb/2020_U3_1/lib -ltbb")
+
 add_executable(Sequence_Matching
         main.cpp
         MatchNode.cpp
@@ -12,5 +17,4 @@ add_executable(Sequence_Matching
         SequenceMatching.cpp
         SequenceMatching.h
         MatchLocations.cpp
-        MatchLocations.h
-        )
+        MatchLocations.h)

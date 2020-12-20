@@ -6,8 +6,8 @@
 #define SEQUENCE_MATCHING_SEQUENCEMATCHING_H
 #include <unordered_map>
 #include <vector>
-#include <thread>
 #include <regex>
+#include <tbb/task_group.h>
 #include "MatchNode.h"
 #include "MatchLocations.h"
 

@@ -230,6 +230,9 @@ Sequence_Matching_BINARY_DIR:STATIC=/Users/joseluistejada/Documents/Other/Develo
 //Value Computed by CMake
 Sequence_Matching_SOURCE_DIR:STATIC=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching
 
+//The directory containing a CMake configuration file for TBB.
+TBB_DIR:PATH=/usr/local/lib/cmake/TBB
+
 
 ########################
 # INTERNAL cache entries

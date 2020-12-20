@@ -57,14 +57,17 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
                               const size_t &minLength){
 
     //Todo use proper thread pool library-> openTBB.
+    tbb::task_group submatchesTaskGroup;
 
     for (auto &x: *matchesMap){
         if (x.first.length() > minLength){ //Sequence is partitionable/submatches may be contained in sequence
             // Thread pool to manage execution of threads. Such that each thread in pool is assigned a string to check.
-            Submatches_Thread(matchesMap, x.first, minLength); //Single Thread Version.
-
+            // Submatching tasks submitted to
+            submatchesTaskGroup.run([&]{Submatches_Thread(matchesMap, x.first, minLength);});
+//            Submatches_Thread(matchesMap, x.first, minLength); //Single Thread Version.
         }
     }
+    submatchesTaskGroup.wait(); //Wait for all tasks to complete.
 
     return matchesMap;
 }
