@@ -27,6 +27,4 @@ std::shared_ptr<std::vector<std::shared_ptr<std::string>>>
 Determine_Partitions(const std::string &key, const size_t &keyLen, const size_t &minLength,
                      std::shared_ptr<std::vector<std::shared_ptr<size_t>>> &partitionsShiftList);
 
-
-
 #endif //SEQUENCE_MATCHING_SEQUENCEMATCHING_H

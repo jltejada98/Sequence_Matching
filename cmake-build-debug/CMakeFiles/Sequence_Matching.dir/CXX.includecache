@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.cpp
+FileManipulation.h
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h
+
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h
 fstream
 -
@@ -13,6 +17,10 @@ iostream
 -
 unordered_map
 -
+MatchLocations.h
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
+
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.cpp
 MatchLocations.h
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
 

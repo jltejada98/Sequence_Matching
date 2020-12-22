@@ -14,7 +14,7 @@ int main(int argc, const char *argv[]) {
     char * seq1Filename = (char *) argv[1];
     char * seq2Filename = (char *) argv[2];
     size_t minimumMatchSize = (std::stoi(argv[3]));
-    //Check for conversion errors
+    //Todo Check for conversion errors
     size_t seq1Size;
     size_t seq2Size;
 
@@ -30,15 +30,18 @@ int main(int argc, const char *argv[]) {
     }
 
     if (*seq1String != *seq2String){
-        std::cout << "Determning Matches..." << std::endl;
+        std::cout << "Determining Matches..." << std::endl;
         std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
                 Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
+
+        //Todo Determine Similarity Metric
+
         std::cout << "Writing Matches..." << std::endl;
         if (!Write_Matches(matchesMap, "Matches_Only.txt")){
             return EXIT_FAILURE;
         }
 
-        std::cout << "Determning Submatches..." << std::endl;
+        std::cout << "Determining Submatches..." << std::endl;
         std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matches =
                 Determine_Submatching(matchesMap, minimumMatchSize);
 
