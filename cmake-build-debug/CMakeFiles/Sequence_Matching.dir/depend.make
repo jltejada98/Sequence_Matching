@@ -4,17 +4,11 @@
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../FileManipulation.cpp
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../FileManipulation.h
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../MatchLocations.h
-CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../MatchNode.h
 
 CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: ../MatchLocations.cpp
 CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: ../MatchLocations.h
-CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: ../MatchNode.h
-
-CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o: ../MatchNode.cpp
-CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o: ../MatchNode.h
 
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../MatchLocations.h
-CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../MatchNode.h
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../SequenceMatching.cpp
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../SequenceMatching.h
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: /usr/local/Cellar/tbb/2020_U3_1/include/tbb/aligned_space.h
@@ -56,7 +50,6 @@ CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: /usr/local/Cellar/tbb/2
 
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../FileManipulation.h
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../MatchLocations.h
-CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../MatchNode.h
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../SequenceMatching.h
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Sequence_Matching.dir/main.cpp.o: /usr/local/Cellar/tbb/2020_U3_1/include/tbb/aligned_space.h

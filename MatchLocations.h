@@ -7,21 +7,23 @@
 
 #include <vector>
 #include <mutex>
-#include <unordered_map>
-#include "MatchNode.h"
+#include <unordered_set>
 
-class MatchLocations { //Todo Chage all instances of list/vetor into map.
+class MatchLocations {
 private:
-    size_t numMatches;
     std::mutex mutex;
-    std::unordered_map<std::string, std::shared_ptr<MatchNode>> matchMap;
+    std::unordered_set<size_t> index1Set;
+    std::unordered_set<size_t> index2Set;
+    //Todo Compare using ordered set to avoid vector to calculate intersection of sets?
 public:
     MatchLocations();
     void addMatchLocation(size_t start1, size_t start2);
-    void addSubMatchLocation(size_t start1, size_t start2);
+    void addSubMatchIndex1(size_t start1);
+    void addSubMatchIndex2(size_t start2);
     size_t getNumberMatches() const;
     bool matchExists(size_t start1, size_t start2);
-    std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<MatchNode>>> getLocationsMap();
+    std::shared_ptr<std::unordered_set<size_t>> getIndex1Set();
+    std::shared_ptr<std::unordered_set<size_t>> getIndex2Set();
 };
 
 

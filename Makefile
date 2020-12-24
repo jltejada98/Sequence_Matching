@@ -1,4 +1,4 @@
-OBJS = FileManipulation.o MatchLocations.o MatchNode.o SequenceMatching.o main.o
+OBJS = FileManipulation.o MatchLocations.o SequenceMatching.o main.o
 CC = g++
 INCLUDE = -I/usr/local/Cellar/tbb/2020_U3_1/include/
 LIBS = -L/usr/local/Cellar/tbb/2020_U3_1/lib -ltbb

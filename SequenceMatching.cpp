@@ -74,7 +74,6 @@ void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std
                   const std::string &keyToCheck, const size_t &minLength) {
     size_t keyLength = keyToCheck.length();
     size_t numPartitions = ((keyLength-minLength)*(keyLength - minLength + 3))/2; //Closed form for number of partitions
-    numPartitions = 100;
 
     if (numPartitions <= matchesMap->size()){ //Check all partitions against hashtable to determine if partitition exists.
         std::vector<std::shared_ptr<size_t>> partitionShiftList;
@@ -90,16 +89,16 @@ void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std
             if (found != matchesMap->end()){ //Partition exists in map
                 // Add non existing match locations of keyToCheck into found, with apropiate partitionShiftList
                 size_t partitionShift = *partitionsShiftList->at(i);
-                auto keyMatchLocations = matchesMap->at(keyToCheck)->getLocationsMap(); //Match locations of Key to check.
+                auto index1Set = matchesMap->at(keyToCheck)->getIndex1Set();
+                auto index2Set = matchesMap->at(keyToCheck)->getIndex2Set();
 
-                for (auto &keyMatches: *keyMatchLocations){
-                    if (!found->second->matchExists(keyMatches.second->getStartIndex1()+partitionShift,
-                                                    keyMatches.second->getStartIndex2()+partitionShift)){ //If match location doesn't exist, add matchLocation.
-                        found->second->addSubMatchLocation(keyMatches.second->getStartIndex1() + partitionShift,
-                                                           keyMatches.second->getStartIndex2() + partitionShift);
-                    }
+                //No need to check if element exists since insertion guarantees unique elements.
+                for(const auto& elem1: *index1Set){
+                    found->second->addSubMatchIndex1(elem1 + partitionShift);
                 }
-
+                for(const auto& elem2: *index2Set){
+                    found->second->addSubMatchIndex2(elem2 + partitionShift);
+                }
             }
         }
     }
@@ -119,12 +118,16 @@ void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std
                 for(std::sregex_iterator i = foundIterator; i != end; i++){ //For each instance of substring found.
                     std::smatch subtringMatch = *i;
                     foundAtIndex = i->position();
-                    auto keyMatchLocations = matchesMap->at(keyToCheck)->getLocationsMap();
 
-                    for (auto &keyMatches: *keyMatchLocations){ //Add locations of keyToCheck into found, with appropaite shift
-                        if (!match.second->matchExists(keyMatches.second->getStartIndex1() + foundAtIndex,keyMatches.second->getStartIndex2() + foundAtIndex)){ //Check if location exists
-                            match.second->addSubMatchLocation(keyMatches.second->getStartIndex1() + foundAtIndex,keyMatches.second->getStartIndex2() + foundAtIndex);
-                        }
+                    auto index1Set = matchesMap->at(keyToCheck)->getIndex1Set();
+                    auto index2Set = matchesMap->at(keyToCheck)->getIndex2Set();
+
+                    //No need to check if element exists since insertion guarantees unique elements.
+                    for(const auto& elem1: *index1Set){
+                        match.second->addSubMatchIndex1(elem1 + foundAtIndex);
+                    }
+                    for(const auto& elem2: *index2Set){
+                        match.second->addSubMatchIndex2(elem2 + foundAtIndex);
                     }
                 }
             }

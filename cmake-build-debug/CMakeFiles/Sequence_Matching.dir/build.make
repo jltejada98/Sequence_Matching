@@ -90,22 +90,9 @@ CMakeFiles/Sequence_Matching.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sequence_Matching.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/main.cpp -o CMakeFiles/Sequence_Matching.dir/main.cpp.s
 
-CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o: CMakeFiles/Sequence_Matching.dir/flags.make
-CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o: ../MatchNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o -c /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.cpp
-
-CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.cpp > CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.i
-
-CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.cpp -o CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.s
-
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: CMakeFiles/Sequence_Matching.dir/flags.make
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o: ../FileManipulation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o -c /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.cpp
 
 CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.i: cmake_force
@@ -118,7 +105,7 @@ CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.s: cmake_force
 
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: CMakeFiles/Sequence_Matching.dir/flags.make
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o: ../SequenceMatching.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o -c /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.cpp
 
 CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.i: cmake_force
@@ -131,7 +118,7 @@ CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.s: cmake_force
 
 CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: CMakeFiles/Sequence_Matching.dir/flags.make
 CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o: ../MatchLocations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o -c /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.cpp
 
 CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.i: cmake_force
@@ -145,7 +132,6 @@ CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.s: cmake_force
 # Object files for target Sequence_Matching
 Sequence_Matching_OBJECTS = \
 "CMakeFiles/Sequence_Matching.dir/main.cpp.o" \
-"CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o" \
 "CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o" \
 "CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o" \
 "CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o"
@@ -154,13 +140,12 @@ Sequence_Matching_OBJECTS = \
 Sequence_Matching_EXTERNAL_OBJECTS =
 
 Sequence_Matching: CMakeFiles/Sequence_Matching.dir/main.cpp.o
-Sequence_Matching: CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o
 Sequence_Matching: CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o
 Sequence_Matching: CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o
 Sequence_Matching: CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o
 Sequence_Matching: CMakeFiles/Sequence_Matching.dir/build.make
 Sequence_Matching: CMakeFiles/Sequence_Matching.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Sequence_Matching"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Sequence_Matching"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sequence_Matching.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

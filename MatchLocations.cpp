@@ -4,38 +4,43 @@
 
 #include "MatchLocations.h"
 
-MatchLocations::MatchLocations(): numMatches(0) {
+MatchLocations::MatchLocations(){
 
 }
 
 //addMatchLocation: Guarateed that a match isn't duplicated since Determine_Matches is sequential->Never repeats index
 
 void MatchLocations::addMatchLocation(size_t start1, size_t start2) {
-    ++numMatches;
-    std::shared_ptr<std::string> newKey = std::make_shared<std::string>(std::to_string(start1) + std::to_string(start2));
-    std::shared_ptr<MatchNode> newMatch = std::make_shared<MatchNode>(MatchNode(start1, start2));
-    std::pair<std::string,std::shared_ptr<MatchNode>> newMatchPair = std::make_pair(*newKey, newMatch);
-    matchMap.insert(newMatchPair);
+    index1Set.insert(start1);
+    index2Set.insert(start2);
 }
 
 //Must check if match already exists before inserting, since submatching is not sequential.
-void MatchLocations::addSubMatchLocation(size_t start1, size_t start2) { //Due to submatching, must check if match already exists.
+void MatchLocations::addSubMatchIndex1(size_t start1) { //Due to submatching, must check if match already exists.
     std::lock_guard<std::mutex> lockGuard(mutex);
-    ++numMatches;
-    std::shared_ptr<std::string> newKey = std::make_shared<std::string>(std::to_string(start1) + std::to_string(start2));
-    std::shared_ptr<MatchNode> newMatch = std::make_shared<MatchNode>(MatchNode(start1, start2));
-    std::pair<std::string,std::shared_ptr<MatchNode>> newMatchPair = std::make_pair(*newKey, newMatch);
-    matchMap.insert(newMatchPair);
+    index1Set.insert(start1);
+}
+
+void MatchLocations::addSubMatchIndex2(size_t start2) {
+    std::lock_guard<std::mutex> lockGuard(mutex);
+    index2Set.insert(start2);
+
 }
 
 size_t MatchLocations::getNumberMatches() const {
-    return numMatches;
+    return index1Set.size()*index2Set.size();
 }
 
-bool MatchLocations::matchExists(size_t start1, size_t start2) {
-    return matchMap.find(std::to_string(start1) + std::to_string(start2)) != matchMap.end();
+bool MatchLocations::matchExists(size_t start1, size_t start2) { //Find exact location in set.
+    return (index1Set.find(start1) != index1Set.end()) && (index2Set.find(start2) != index1Set.end());
 }
 
-std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<MatchNode>>> MatchLocations::getLocationsMap() {
-    return std::make_shared<std::unordered_map<std::string, std::shared_ptr<MatchNode>>>(matchMap);
+std::shared_ptr<std::unordered_set<size_t>> MatchLocations::getIndex1Set() {
+    return std::make_shared<std::unordered_set<size_t>>(index1Set);
 }
+
+std::shared_ptr<std::unordered_set<size_t>> MatchLocations::getIndex2Set() {
+    return std::make_shared<std::unordered_set<size_t>>(index2Set);
+}
+
+

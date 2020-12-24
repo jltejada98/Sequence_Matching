@@ -10,8 +10,6 @@ set(CMAKE_EXE_LINKER_FLAGS "-L/usr/local/Cellar/tbb/2020_U3_1/lib -ltbb")
 
 add_executable(Sequence_Matching
         main.cpp
-        MatchNode.cpp
-        MatchNode.h
         FileManipulation.cpp
         FileManipulation.h
         SequenceMatching.cpp

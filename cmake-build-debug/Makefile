@@ -197,33 +197,6 @@ MatchLocations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.s
 .PHONY : MatchLocations.cpp.s
 
-MatchNode.o: MatchNode.cpp.o
-
-.PHONY : MatchNode.o
-
-# target to build an object file
-MatchNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.o
-.PHONY : MatchNode.cpp.o
-
-MatchNode.i: MatchNode.cpp.i
-
-.PHONY : MatchNode.i
-
-# target to preprocess a source file
-MatchNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.i
-.PHONY : MatchNode.cpp.i
-
-MatchNode.s: MatchNode.cpp.s
-
-.PHONY : MatchNode.s
-
-# target to generate assembly for a file
-MatchNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/MatchNode.cpp.s
-.PHONY : MatchNode.cpp.s
-
 SequenceMatching.o: SequenceMatching.cpp.o
 
 .PHONY : SequenceMatching.o
@@ -293,9 +266,6 @@ help:
 	@echo "... MatchLocations.o"
 	@echo "... MatchLocations.i"
 	@echo "... MatchLocations.s"
-	@echo "... MatchNode.o"
-	@echo "... MatchNode.i"
-	@echo "... MatchNode.s"
 	@echo "... SequenceMatching.o"
 	@echo "... SequenceMatching.i"
 	@echo "... SequenceMatching.s"

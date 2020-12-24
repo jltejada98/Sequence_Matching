@@ -92,12 +92,6 @@
 		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h">
 			<Option target="Sequence_Matching"/>
 		</Unit>
-		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.cpp">
-			<Option target="Sequence_Matching"/>
-		</Unit>
-		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchNode.h">
-			<Option target="Sequence_Matching"/>
-		</Unit>
 		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.cpp">
 			<Option target="Sequence_Matching"/>
 		</Unit>

@@ -8,7 +8,6 @@
 #include <vector>
 #include <regex>
 #include <tbb/task_group.h>
-#include "MatchNode.h"
 #include "MatchLocations.h"
 
 std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
