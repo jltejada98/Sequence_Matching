@@ -43,7 +43,7 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
                     matchesMap.at(*matchString)->addMatchLocation(index1, index2);
                 }
             }
-            matchLength > 0 ? index2 += matchLength: ++index2;
+            ++index2;
         }
         ++index1;
     }
