@@ -34,19 +34,21 @@ int main(int argc, const char *argv[]) {
         std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
                 Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
 
-        //Todo Determine Similarity Metric
 
-        std::cout << "Writing Matches..." << std::endl;
-        if (!Write_Matches(matchesMap, "Matches_Only.txt")){
-            return EXIT_FAILURE;
-        }
+        float seq1Metric,seq2Metric, combinedMetric;
+        Determine_Similarity(matchesMap, minimumMatchSize,seq1Size, seq2Size, seq1Metric, seq2Metric, combinedMetric);
+        std::cout << "Similarity Metrics: " << std::endl;
+        std::cout << "Combined:" << combinedMetric << std::endl;
+        std::cout << "Seq 1:" << seq1Metric << std::endl;
+        std::cout << "Seq 2:" << seq2Metric << std::endl;
+
 
         std::cout << "Determining Submatches..." << std::endl;
         std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matches =
                 Determine_Submatching(matchesMap, minimumMatchSize);
 
-        std::cout << "Writing Submatches..." << std::endl;
-        if (!Write_Matches(matchesMap, "Submatches.txt")){
+        std::cout << "Writing..." << std::endl;
+        if (!Write_Matches(matchesMap, "All_Matches.txt")){
             return EXIT_FAILURE;
         }
 

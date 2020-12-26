@@ -110,10 +110,10 @@ void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std
         std::sregex_iterator foundIterator;
         auto end = std::sregex_iterator();
 
-        for(auto &match: *matchesMap){ //Iterate all keys
-            if (match.first != keyToCheck){
-                regexKey = std::regex(std::string(match.first));
-                foundIterator = std::sregex_iterator(keyToCheck.begin(), keyToCheck.end(), regexKey); //Determine if works with character without string.
+        for(auto &key: *matchesMap){ //Iterate all keys
+            if ((key.first != keyToCheck) && (keyToCheck.length() > key.first.length()) && (keyToCheck.find(key.first) != std::string::npos)){ //Determines if key is contained in keyToCheck
+                regexKey = std::regex(std::string(key.first));
+                foundIterator = std::sregex_iterator(keyToCheck.begin(), keyToCheck.end(), regexKey);
 
                 for(std::sregex_iterator i = foundIterator; i != end; i++){ //For each instance of substring found.
                     std::smatch subtringMatch = *i;
@@ -124,10 +124,10 @@ void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std
 
                     //No need to check if element exists since insertion guarantees unique elements.
                     for(const auto& elem1: *index1Set){
-                        match.second->addSubMatchIndex1(elem1 + foundAtIndex);
+                        key.second->addSubMatchIndex1(elem1 + foundAtIndex);
                     }
                     for(const auto& elem2: *index2Set){
-                        match.second->addSubMatchIndex2(elem2 + foundAtIndex);
+                        key.second->addSubMatchIndex2(elem2 + foundAtIndex);
                     }
                 }
             }
@@ -151,4 +151,74 @@ Determine_Partitions(const std::string &key, const size_t &keyLen, const size_t 
 
     return std::make_shared<std::vector<std::shared_ptr<std::string>>>(partitionsStringList);
 }
+
+void Determine_Similarity(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
+                         const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
+                         float &seq2Metric, float &combinedMetric){
+
+    tbb::task_group similarityTaskGroup;
+    size_t matchesTotalLength_1 = 0;
+    size_t matchesTotalLength_2 = 0;
+    std::mutex matchesLengthMutex;
+
+    for (auto &x: *matchesMap){
+        similarityTaskGroup.run([&]{Similarity_Thread(matchesMap,x.first,minLength,matchesLengthMutex,matchesTotalLength_1, matchesTotalLength_2);});
+
+//        Similarity_Thread(matchesMap,x.first,minLength,matchesLengthMutex,matchesTotalLength_1, matchesTotalLength_2); //Single Threaded Version
+
+    }
+    similarityTaskGroup.wait(); //Wait for all tasks to complete
+    seq1Metric = ((float)matchesTotalLength_1) / ((float)seq1Size);
+    seq2Metric = ((float)matchesTotalLength_2) / ((float)seq2Size);
+    combinedMetric = ((float)matchesTotalLength_1 + (float)matchesTotalLength_2) / ((float)seq1Size + (float)seq2Size);
+
+}
+
+void Similarity_Thread(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
+                       const std::string &keyToCheck, const size_t &minLength, std::mutex &writeLengthMutex,
+                       size_t &matchesTotalLength_1, size_t &matchesTotalLength_2){
+    //Determine if keyToCheck is inside other matches, and subtract the total length covered by it from the total count
+    size_t numSubmatches1 = 0;
+    size_t numSubmatches2 = 0;
+    size_t foundAtIndex;
+    std::regex regexKey = std::regex(keyToCheck);;
+    std::sregex_iterator foundIterator;
+    auto end = std::sregex_iterator();
+    auto keyToCheckSet1 = matchesMap->at(keyToCheck)->getIndex1Set();
+    auto keyToCheckSet2 = matchesMap->at(keyToCheck)->getIndex2Set();
+
+
+    for (auto &key: *matchesMap){
+        //Determine if keyToCheck is contained in key
+        if ((key.first != keyToCheck) && (key.first.length() > keyToCheck.length()) && (key.first.find(keyToCheck) != std::string::npos)) {
+            foundIterator = std::sregex_iterator(key.first.begin(), key.first.end(),regexKey);
+            for (std::sregex_iterator i = foundIterator; i != end; i++) { //For each instance of substring found.
+                std::smatch subtringMatch = *i;
+                foundAtIndex = i->position();
+                numSubmatches1 += Determine_Intersection(key.second->getIndex1Set(),keyToCheckSet1, foundAtIndex);
+                numSubmatches2 += Determine_Intersection(key.second->getIndex2Set(),keyToCheckSet2, foundAtIndex);
+            }
+        }
+    }
+
+    std::lock_guard<std::mutex> lockGuard(writeLengthMutex);
+    matchesTotalLength_1 += keyToCheck.length() * (keyToCheckSet1->size() - numSubmatches1);
+    matchesTotalLength_2 += keyToCheck.length() * (keyToCheckSet2->size() - numSubmatches2);
+
+}
+
+
+size_t Determine_Intersection(const std::shared_ptr<std::unordered_set<size_t>> &keySet,
+                              const std::shared_ptr<std::unordered_set<size_t>> &keyToCheckSet, const size_t &shift){
+
+    size_t num_intersections = 0;
+
+    for (auto &k : *keyToCheckSet){
+        if (keySet->find(k - shift) != keySet->end()){ //Index exists in set.
+            ++num_intersections;
+        }
+    }
+    return num_intersections;
+}
+
 

@@ -31,10 +31,6 @@ size_t MatchLocations::getNumberMatches() const {
     return index1Set.size()*index2Set.size();
 }
 
-bool MatchLocations::matchExists(size_t start1, size_t start2) { //Find exact location in set.
-    return (index1Set.find(start1) != index1Set.end()) && (index2Set.find(start2) != index1Set.end());
-}
-
 std::shared_ptr<std::unordered_set<size_t>> MatchLocations::getIndex1Set() {
     return std::make_shared<std::unordered_set<size_t>>(index1Set);
 }

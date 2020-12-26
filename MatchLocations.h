@@ -21,7 +21,6 @@ public:
     void addSubMatchIndex1(size_t start1);
     void addSubMatchIndex2(size_t start2);
     size_t getNumberMatches() const;
-    bool matchExists(size_t start1, size_t start2);
     std::shared_ptr<std::unordered_set<size_t>> getIndex1Set();
     std::shared_ptr<std::unordered_set<size_t>> getIndex2Set();
 };

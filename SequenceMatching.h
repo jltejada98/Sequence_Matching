@@ -26,4 +26,15 @@ std::shared_ptr<std::vector<std::shared_ptr<std::string>>>
 Determine_Partitions(const std::string &key, const size_t &keyLen, const size_t &minLength,
                      std::shared_ptr<std::vector<std::shared_ptr<size_t>>> &partitionsShiftList);
 
+void Determine_Similarity(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
+                          const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
+                          float &seq2Metric, float &combinedMetric);
+
+void Similarity_Thread(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
+                       const std::string &keyToCheck, const size_t &minLength, std::mutex &writeLengthMutex,
+                       size_t &matchesTotalLength_1, size_t &matchesTotalLength_2);
+
+size_t Determine_Intersection(const std::shared_ptr<std::unordered_set<size_t>> &keySet,
+                              const std::shared_ptr<std::unordered_set<size_t>> &keyToCheckSet, const size_t &shift);
+
 #endif //SEQUENCE_MATCHING_SEQUENCEMATCHING_H
