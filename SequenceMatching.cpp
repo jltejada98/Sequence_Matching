@@ -157,68 +157,40 @@ void Determine_Similarity(const std::shared_ptr<std::unordered_map<std::string,s
                          float &seq2Metric, float &combinedMetric){
 
     tbb::task_group similarityTaskGroup;
-    size_t matchesTotalLength_1 = 0;
-    size_t matchesTotalLength_2 = 0;
-    std::mutex matchesLengthMutex;
 
-    for (auto &x: *matchesMap){
-        similarityTaskGroup.run([&]{Similarity_Thread(matchesMap,x.first,minLength,matchesLengthMutex,matchesTotalLength_1, matchesTotalLength_2);});
+    //Reserve Set space for every index in each of the sequences
+    tbb::concurrent_unordered_set<size_t> seq1Set;
+    tbb::concurrent_unordered_set<size_t> seq2Set;
+    std::shared_ptr<tbb::concurrent_unordered_set<size_t>> seq1SetShared = std::make_shared<tbb::concurrent_unordered_set<size_t>>(seq1Set);
+    std::shared_ptr<tbb::concurrent_unordered_set<size_t>> seq2SetShared = std::make_shared<tbb::concurrent_unordered_set<size_t>>(seq2Set);
 
-//        Similarity_Thread(matchesMap,x.first,minLength,matchesLengthMutex,matchesTotalLength_1, matchesTotalLength_2); //Single Threaded Version
-
+    for (auto &x: *matchesMap){ //For each Key, add all indecies of matching threads to determine overall covereage of matches in sequences.
+        //Thread pool to manage adding match indecies to unordered sets
+        similarityTaskGroup.run([&]{Similarity_Thread(x.first.length(),x.second,seq1SetShared, seq2SetShared);});
+//        Similarity_Thread(x.first.length(),x.second,seq1SetShared, seq2SetShared); //Single Thread Version
     }
+
     similarityTaskGroup.wait(); //Wait for all tasks to complete
-    seq1Metric = ((float)matchesTotalLength_1) / ((float)seq1Size);
-    seq2Metric = ((float)matchesTotalLength_2) / ((float)seq2Size);
-    combinedMetric = ((float)matchesTotalLength_1 + (float)matchesTotalLength_2) / ((float)seq1Size + (float)seq2Size);
+    seq1Metric = ((float)seq1SetShared->size()) / ((float)seq1Size);
+    seq2Metric = ((float)seq2SetShared->size()) / ((float)seq2Size);
+    combinedMetric = ((float)seq1SetShared->size() + (float)seq2SetShared->size()) / ((float)seq1Size + (float)seq2Size);
 
 }
 
-void Similarity_Thread(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
-                       const std::string &keyToCheck, const size_t &minLength, std::mutex &writeLengthMutex,
-                       size_t &matchesTotalLength_1, size_t &matchesTotalLength_2){
-    //Determine if keyToCheck is inside other matches, and subtract the total length covered by it from the total count
-    size_t numSubmatches1 = 0;
-    size_t numSubmatches2 = 0;
-    size_t foundAtIndex;
-    std::regex regexKey = std::regex(keyToCheck);;
-    std::sregex_iterator foundIterator;
-    auto end = std::sregex_iterator();
-    auto keyToCheckSet1 = matchesMap->at(keyToCheck)->getIndex1Set();
-    auto keyToCheckSet2 = matchesMap->at(keyToCheck)->getIndex2Set();
-
-
-    for (auto &key: *matchesMap){
-        //Determine if keyToCheck is contained in key
-        if ((key.first != keyToCheck) && (key.first.length() > keyToCheck.length()) && (key.first.find(keyToCheck) != std::string::npos)) {
-            foundIterator = std::sregex_iterator(key.first.begin(), key.first.end(),regexKey);
-            for (std::sregex_iterator i = foundIterator; i != end; i++) { //For each instance of substring found.
-                std::smatch subtringMatch = *i;
-                foundAtIndex = i->position();
-                numSubmatches1 += Determine_Intersection(key.second->getIndex1Set(),keyToCheckSet1, foundAtIndex);
-                numSubmatches2 += Determine_Intersection(key.second->getIndex2Set(),keyToCheckSet2, foundAtIndex);
-            }
+void Similarity_Thread(const size_t &matchKeyLength, const std::shared_ptr<MatchLocations> &matchLocationsSet,
+                       std::shared_ptr<tbb::concurrent_unordered_set<size_t>> &seq1Set,
+                       std::shared_ptr<tbb::concurrent_unordered_set<size_t>> &seq2Set){
+    auto matchIndexSet1 = matchLocationsSet->getIndex1Set();
+    auto matchIndexSet2 = matchLocationsSet->getIndex2Set();
+    size_t i;
+    for (auto &index1: *matchIndexSet1){
+        for (i = index1; i < (index1+matchKeyLength); ++i) {
+            seq1Set->insert(i);
         }
     }
-
-    std::lock_guard<std::mutex> lockGuard(writeLengthMutex);
-    matchesTotalLength_1 += keyToCheck.length() * (keyToCheckSet1->size() - numSubmatches1);
-    matchesTotalLength_2 += keyToCheck.length() * (keyToCheckSet2->size() - numSubmatches2);
-
-}
-
-
-size_t Determine_Intersection(const std::shared_ptr<std::unordered_set<size_t>> &keySet,
-                              const std::shared_ptr<std::unordered_set<size_t>> &keyToCheckSet, const size_t &shift){
-
-    size_t num_intersections = 0;
-
-    for (auto &k : *keyToCheckSet){
-        if (keySet->find(k - shift) != keySet->end()){ //Index exists in set.
-            ++num_intersections;
+    for (auto &index2: *matchIndexSet2){
+        for (i = index2; i < (index2+matchKeyLength); ++i) {
+            seq2Set->insert(i);
         }
     }
-    return num_intersections;
 }
-
-

@@ -7,7 +7,9 @@
 #include <unordered_map>
 #include <vector>
 #include <regex>
+#include "unordered_set"
 #include <tbb/task_group.h>
+#include <tbb/concurrent_unordered_set.h>
 #include "MatchLocations.h"
 
 std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
@@ -30,11 +32,8 @@ void Determine_Similarity(const std::shared_ptr<std::unordered_map<std::string,s
                           const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
                           float &seq2Metric, float &combinedMetric);
 
-void Similarity_Thread(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
-                       const std::string &keyToCheck, const size_t &minLength, std::mutex &writeLengthMutex,
-                       size_t &matchesTotalLength_1, size_t &matchesTotalLength_2);
-
-size_t Determine_Intersection(const std::shared_ptr<std::unordered_set<size_t>> &keySet,
-                              const std::shared_ptr<std::unordered_set<size_t>> &keyToCheckSet, const size_t &shift);
+void Similarity_Thread(const size_t &matchKeyLength, const std::shared_ptr<MatchLocations> &matchLocationsSet,
+                       std::shared_ptr<tbb::concurrent_unordered_set<size_t>> &seq1Set,
+                       std::shared_ptr<tbb::concurrent_unordered_set<size_t>> &seq2Set);
 
 #endif //SEQUENCE_MATCHING_SEQUENCEMATCHING_H
