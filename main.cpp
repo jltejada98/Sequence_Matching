@@ -30,25 +30,26 @@ int main(int argc, const char *argv[]) {
     }
 
     if (*seq1String != *seq2String){
-//        std::cout << "Determining Matches..." << std::endl;
-//        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
-//                Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
+//       std::cout << "Determining Matches..." << std::endl;
+//       std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
+//               Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
 //
-//        std::cout << "Writing..." << std::endl;
-//        if (!Write_Matches(matchesMap, "Matches.txt")){
-//            return EXIT_FAILURE;
-//        }
+//       std::cout << "Writing..." << std::endl;
+//       if (!Write_Matches(matchesMap, "Matches.txt")){
+//           return EXIT_FAILURE;
+//       }
 
-        //Declare Hash Map in main?
-        std::cout << "Determining Matches in Parallel..." << std::endl;
-        tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>> matchesParallelMap; //Stores Sequence,MatchLocations
-        std::shared_ptr<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>> matchesMapShared = std::make_shared<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>>(matchesParallelMap);
-        Determine_Matches_Parallel(matchesMapShared,seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
+        std::cout << "Determining Matches tbb..." << std::endl;
 
-        std::cout << "Writing Parallel Matches..." << std::endl;
-        if (!Write_Parallel_Matches(matchesMapShared, "Parallel_Matches.txt")){
-            return EXIT_FAILURE;
-        }
+        //Todo initialize concurrent hash map with 1000 buckets.
+        std::shared_ptr<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>> matchestbbMap =
+                Determine_Matches_Concurrent(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
+
+
+       std::cout << "Writing tbb Matches..." << std::endl;
+       if (!Write_tbb_Matches(matchestbbMap, "tbb_Matches_SingleThread.txt")){
+           return EXIT_FAILURE;
+       }
 
 
 //        float seq1Metric,seq2Metric, combinedMetric;

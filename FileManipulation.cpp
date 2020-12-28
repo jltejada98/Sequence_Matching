@@ -30,7 +30,7 @@ std::shared_ptr<std::string> Load_Sequence(const char *filename, size_t &seq_siz
     return std::make_shared<std::string>(sequenceString);
 }
 
-bool Write_Matches(std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap, std::string outFilename){
+bool Write_Matches(std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<MatchLocations>>> matchesMap, std::string outFilename){
     std::ofstream File;
     File.exceptions(~::std::ios_base::goodbit);
     try{
@@ -63,7 +63,8 @@ bool Write_Matches(std::shared_ptr<std::unordered_map<std::string,std::shared_pt
 }
 
 
-bool Write_Parallel_Matches(std::shared_ptr<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap, std::string outFilename){
+bool Write_tbb_Matches(
+        std::shared_ptr<tbb::concurrent_hash_map<std::string, std::shared_ptr<MatchLocations>>> matchesMap, std::string outFilename){
     std::ofstream File;
     File.exceptions(~::std::ios_base::goodbit);
     try{

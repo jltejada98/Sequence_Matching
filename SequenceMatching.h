@@ -10,6 +10,7 @@
 #include <thread>
 #include <tbb/task_group.h>
 #include <tbb/concurrent_hash_map.h>
+#include <shared_mutex>
 #include <tbb/concurrent_unordered_set.h>
 #include "MatchLocations.h"
 
@@ -17,16 +18,17 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
 Determine_Matches(const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
                   const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size, const size_t &minLength);
 
-void Determine_Matches_Parallel(std::shared_ptr<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>> matchesMapShared,
-                                const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
-                                const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size,
-                                const size_t &minLength);
+std::shared_ptr<tbb::concurrent_hash_map<std::string, std::shared_ptr<MatchLocations>>> Determine_Matches_Concurrent(
+        const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
+        const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size,
+        const size_t &minLength);
 
 void Determine_Matches_Thread(
-        std::shared_ptr<tbb::concurrent_hash_map<std::string, std::shared_ptr<MatchLocations>>> &matchesMap,
+        tbb::concurrent_hash_map<std::string, std::shared_ptr<MatchLocations>> &matchesMap,
         const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
         const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size, const size_t &minLength,
         const size_t &threadStart, const size_t &threadEnd);
+
 
 std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
 Determine_Submatching(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>& matchesMap,

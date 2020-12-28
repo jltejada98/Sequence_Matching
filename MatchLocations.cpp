@@ -8,20 +8,23 @@ MatchLocations::MatchLocations(){
 
 }
 
-//addMatchLocation: Guarateed that a match isn't duplicated since Determine_Matches is sequential->Never repeats index
-
-void MatchLocations::addMatchLocation(size_t start1, size_t start2) {
+void MatchLocations::addMatchLocation(size_t &start1, size_t &start2) {
     index1Set.insert(start1);
     index2Set.insert(start2);
 }
 
-//Must check if match already exists before inserting, since submatching is not sequential.
-void MatchLocations::addSubMatchIndex1(size_t start1) { //Due to submatching, must check if match already exists.
+void MatchLocations::addMatchLocationThreadSafe(size_t &start1, size_t &start2) {
+    std::lock_guard<std::mutex> lockGuard(mutex);
+    index1Set.insert(start1);
+    index2Set.insert(start2);
+}
+
+void MatchLocations::addSubMatchIndex1(unsigned long start1) {
     std::lock_guard<std::mutex> lockGuard(mutex);
     index1Set.insert(start1);
 }
 
-void MatchLocations::addSubMatchIndex2(size_t start2) {
+void MatchLocations::addSubMatchIndex2(unsigned long start2) {
     std::lock_guard<std::mutex> lockGuard(mutex);
     index2Set.insert(start2);
 
@@ -38,5 +41,7 @@ std::shared_ptr<std::unordered_set<size_t>> MatchLocations::getIndex1Set() {
 std::shared_ptr<std::unordered_set<size_t>> MatchLocations::getIndex2Set() {
     return std::make_shared<std::unordered_set<size_t>>(index2Set);
 }
+
+
 
 
