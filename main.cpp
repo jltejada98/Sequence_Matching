@@ -30,27 +30,43 @@ int main(int argc, const char *argv[]) {
     }
 
     if (*seq1String != *seq2String){
-        std::cout << "Determining Matches..." << std::endl;
-        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
-                Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
+//        std::cout << "Determining Matches..." << std::endl;
+//        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
+//                Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
+//
+//        std::cout << "Writing..." << std::endl;
+//        if (!Write_Matches(matchesMap, "Matches.txt")){
+//            return EXIT_FAILURE;
+//        }
 
+        //Declare Hash Map in main?
+        std::cout << "Determining Matches in Parallel..." << std::endl;
+        tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>> matchesParallelMap; //Stores Sequence,MatchLocations
+        std::shared_ptr<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>> matchesMapShared = std::make_shared<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>>(matchesParallelMap);
+        Determine_Matches_Parallel(matchesMapShared,seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
 
-        float seq1Metric,seq2Metric, combinedMetric;
-        Determine_Similarity(matchesMap, minimumMatchSize,seq1Size, seq2Size, seq1Metric, seq2Metric, combinedMetric);
-        std::cout << "Similarity Metrics: " << std::endl;
-        std::cout << "Combined:" << combinedMetric << std::endl;
-        std::cout << "Seq 1:" << seq1Metric << std::endl;
-        std::cout << "Seq 2:" << seq2Metric << std::endl;
-
-
-        std::cout << "Determining Submatches..." << std::endl;
-        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matches =
-                Determine_Submatching(matchesMap, minimumMatchSize);
-
-        std::cout << "Writing..." << std::endl;
-        if (!Write_Matches(matchesMap, "All_Matches.txt")){
+        std::cout << "Writing Parallel Matches..." << std::endl;
+        if (!Write_Parallel_Matches(matchesMapShared, "Parallel_Matches.txt")){
             return EXIT_FAILURE;
         }
+
+
+//        float seq1Metric,seq2Metric, combinedMetric;
+//        Determine_Similarity(matchesMap, minimumMatchSize,seq1Size, seq2Size, seq1Metric, seq2Metric, combinedMetric);
+//        std::cout << "Similarity Metrics: " << std::endl;
+//        std::cout << "Combined:" << combinedMetric << std::endl;
+//        std::cout << "Seq 1:" << seq1Metric << std::endl;
+//        std::cout << "Seq 2:" << seq2Metric << std::endl;
+//
+//
+//        std::cout << "Determining Submatches..." << std::endl;
+//        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matches =
+//                Determine_Submatching(matchesMap, minimumMatchSize);
+//
+//        std::cout << "Writing..." << std::endl;
+//        if (!Write_Matches(matchesMap, "All_Matches.txt")){
+//            return EXIT_FAILURE;
+//        }
 
     }
     else{

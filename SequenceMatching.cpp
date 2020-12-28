@@ -3,11 +3,11 @@
 //
 
 #include "SequenceMatching.h"
+#include "iostream"
 
 std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
         Determine_Matches(const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
                           const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size, const size_t &minLength){
-
     size_t curr1;
     size_t curr2;
     size_t index1 = 0;
@@ -52,6 +52,85 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
 }
 
 
+void Determine_Matches_Parallel(std::shared_ptr<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>> matchesMapShared,
+                                const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
+                                const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size,
+                                const size_t &minLength){
+    size_t numSplits = std::thread::hardware_concurrency();
+    size_t splitSize = seq1Size / numSplits; //Todo Always split larger sequence. (For now assume it is sequence 1)
+    size_t splitRemainder = seq1Size % numSplits; //Determine remainder, and add to first task.
+    size_t startIndex = 0;
+    size_t endIndex;
+    tbb::task_group matchesTaskGroup;
+    //Todo Check if using a regular unordered map with lock is faster than concurrent map (Probably will be).
+
+    //Create first task group
+    endIndex = startIndex+splitSize + splitRemainder;
+    Determine_Matches_Thread(matchesMapShared, seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex);
+
+    for (size_t i = 1; i < numSplits; ++i) {
+        startIndex = endIndex;
+        endIndex = startIndex+splitSize;
+        matchesTaskGroup.run([&]{Determine_Matches_Thread(matchesMapShared, seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex);});
+//        Determine_Matches_Thread(matchesMapShared, seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex);
+    }
+
+    matchesTaskGroup.wait();
+
+}
+
+
+void Determine_Matches_Thread(
+        std::shared_ptr<tbb::concurrent_hash_map<std::string, std::shared_ptr<MatchLocations>>> &matchesMap,
+        const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
+        const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size, const size_t &minLength,
+        const size_t &threadStart, const size_t &threadEnd) {
+
+    size_t curr1;
+    size_t curr2;
+    size_t index1 = threadStart;
+    size_t index2;
+    size_t matchLength;
+    std::shared_ptr<std::string> matchString;
+    std::shared_ptr<MatchLocations> newMatchLocation; //Stores location of Matches
+    std::pair<std::string,std::shared_ptr<MatchLocations>> newMatchPair;
+    tbb::concurrent_hash_map<std::string, std::shared_ptr<MatchLocations>>::const_accessor readAccessor;
+    tbb::concurrent_hash_map<std::string, std::shared_ptr<MatchLocations>>::accessor writeAccessor;
+
+
+    while (index1 < threadEnd){
+        index2 = 0;
+        while (index2 < seq2Size){
+            curr1 = index1;
+            curr2 = index2;
+            while ((curr2 < seq2Size) && (curr1 < seq1Size) && (seq1String->at(curr1) == seq2String->at(curr2))){
+                ++curr1;
+                ++curr2;
+            }
+            matchLength = curr2 - index2;
+            if (matchLength >= minLength){
+                matchString = std::make_shared<std::string>(std::string(seq1String->substr(index1,matchLength)));
+                if (!matchesMap->find(readAccessor, *matchString)){ //Match doesn't exist (Find:Returns true if item is found, false otherwise)
+                    readAccessor.release(); //Release Read Accessor (From Find)
+                    newMatchLocation = std::make_shared<MatchLocations>();
+                    newMatchLocation->addMatchLocation(index1, index2);
+                    newMatchPair = std::make_pair(*matchString, newMatchLocation);
+                    matchesMap->insert(newMatchPair); //Pair insertion doesn't require acessor.
+                }
+                else{ //Match already exists (Assume only one bucket for string?)
+                    readAccessor.release(); //Release Read Accessor (From Find)
+                    matchesMap->insert(writeAccessor, *matchString); //Insert serves as means to write to matchStringEntry.
+                    writeAccessor->second->addMatchLocation(index1, index2);
+                    writeAccessor.release();
+                }
+            }
+            ++index2;
+        }
+        ++index1;
+    }
+}
+
+
 std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
         Determine_Submatching(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
                               const size_t &minLength){
@@ -69,6 +148,7 @@ std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
 
     return matchesMap;
 }
+
 
 void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<MatchLocations>>> &matchesMap,
                   const std::string &keyToCheck, const size_t &minLength) {
@@ -136,6 +216,7 @@ void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std
 
 }
 
+
 std::shared_ptr<std::vector<std::shared_ptr<std::string>>>
 Determine_Partitions(const std::string &key, const size_t &keyLen, const size_t &minLength,
                      std::shared_ptr<std::vector<std::shared_ptr<size_t>>> &partitionsShiftList) {
@@ -151,6 +232,7 @@ Determine_Partitions(const std::string &key, const size_t &keyLen, const size_t 
 
     return std::make_shared<std::vector<std::shared_ptr<std::string>>>(partitionsStringList);
 }
+
 
 void Determine_Similarity(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
                          const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
@@ -176,6 +258,7 @@ void Determine_Similarity(const std::shared_ptr<std::unordered_map<std::string,s
     combinedMetric = ((float)seq1SetShared->size() + (float)seq2SetShared->size()) / ((float)seq1Size + (float)seq2Size);
 
 }
+
 
 void Similarity_Thread(const size_t &matchKeyLength, const std::shared_ptr<MatchLocations> &matchLocationsSet,
                        std::shared_ptr<tbb::concurrent_unordered_set<size_t>> &seq1Set,

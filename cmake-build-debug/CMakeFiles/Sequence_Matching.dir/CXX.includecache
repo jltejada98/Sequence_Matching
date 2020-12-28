@@ -17,6 +17,8 @@ unordered_set
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.cpp
 SequenceMatching.h
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
+iostream
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/iostream
 
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
 unordered_map
@@ -25,9 +27,11 @@ vector
 -
 regex
 -
-unordered_set
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/unordered_set
+thread
+-
 tbb/task_group.h
+-
+tbb/concurrent_hash_map.h
 -
 tbb/concurrent_unordered_set.h
 -
@@ -55,6 +59,46 @@ cstddef
 -
 tbb_machine.h
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_machine.h
+internal/_warning_suppress_disable_notice.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_warning_suppress_disable_notice.h
+
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/concurrent_hash_map.h
+internal/_warning_suppress_enable_notice.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_warning_suppress_enable_notice.h
+tbb_stddef.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_stddef.h
+iterator
+-
+utility
+-
+cstring
+-
+tbb_allocator.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_allocator.h
+spin_rw_mutex.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/spin_rw_mutex.h
+atomic.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/atomic.h
+tbb_exception.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_exception.h
+tbb_profiling.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_profiling.h
+aligned_space.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/aligned_space.h
+internal/_tbb_hash_compare_impl.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_tbb_hash_compare_impl.h
+internal/_template_helpers.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_template_helpers.h
+internal/_allocator_traits.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_allocator_traits.h
+initializer_list
+-
+typeinfo
+-
+stdio.h
+-
+tuple
+-
 internal/_warning_suppress_disable_notice.h
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_warning_suppress_disable_notice.h
 
@@ -114,6 +158,8 @@ _node_handle_impl.h
 tbb/tbb_config.h
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/tbb/tbb_config.h
 
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_mutex_padding.h
+
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_node_handle_impl.h
 _allocator_traits.h
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_allocator_traits.h
@@ -147,6 +193,16 @@ memory
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_warning_suppress_enable_notice.h
 ../tbb_config.h
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_config.h
+
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_x86_rtm_rw_mutex_impl.h
+../tbb_stddef.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_stddef.h
+../tbb_machine.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_machine.h
+../tbb_profiling.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_profiling.h
+../spin_rw_mutex.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/spin_rw_mutex.h
 
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/machine/gcc_arm.h
 sys/param.h
@@ -271,6 +327,18 @@ msvc_ia32_common.h
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/machine/msvc_ia32_common.h
 intrin.h
 -
+
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/spin_rw_mutex.h
+tbb_stddef.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_stddef.h
+tbb_machine.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_machine.h
+tbb_profiling.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/tbb_profiling.h
+internal/_mutex_padding.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_mutex_padding.h
+internal/_x86_rtm_rw_mutex_impl.h
+/usr/local/Cellar/tbb/2020_U3_1/include/tbb/internal/_x86_rtm_rw_mutex_impl.h
 
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/task.h
 internal/_deprecated_header_message_guard.h

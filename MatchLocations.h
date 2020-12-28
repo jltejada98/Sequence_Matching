@@ -14,7 +14,6 @@ private:
     std::mutex mutex;
     std::unordered_set<size_t> index1Set;
     std::unordered_set<size_t> index2Set;
-    //Todo Compare using ordered set to avoid vector to calculate intersection of sets?
 public:
     MatchLocations();
     void addMatchLocation(size_t start1, size_t start2);
