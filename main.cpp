@@ -29,27 +29,31 @@ int main(int argc, const char *argv[]) {
     }
 
     if (*seq1String != *seq2String){
-        std::cout << "Determining Matches Concurrently..." << std::endl;
+        std::cout << "Determining Matches..." << std::endl;
+        std::shared_ptr<tbb::concurrent_unordered_map<std::string, MatchLocations>> matchesMapPtr =
+                Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
 
-        Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
-
-
-//        float seq1Metric,seq2Metric, combinedMetric;
-//        Determine_Similarity(matchesMap, minimumMatchSize,seq1Size, seq2Size, seq1Metric, seq2Metric, combinedMetric);
-//        std::cout << "Similarity Metrics: " << std::endl;
-//        std::cout << "Combined:" << combinedMetric << std::endl;
-//        std::cout << "Seq 1:" << seq1Metric << std::endl;
-//        std::cout << "Seq 2:" << seq2Metric << std::endl;
-//
-//
-//        std::cout << "Determining Submatches..." << std::endl;
-//        std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matches =
-//                Determine_Submatching(matchesMap, minimumMatchSize);
-//
-//        std::cout << "Writing..." << std::endl;
-//        if (!Write_Matches(matchesMap, "All_Matches.txt")){
+//        std::cout << "Writing Matches..." << std::endl;
+//        if (!Write_Matches(*matchesMapPtr, "Matches.txt")){
 //            return EXIT_FAILURE;
 //        }
+
+        std::cout << "Determining Metrics..." << std::endl;
+        float seq1Metric,seq2Metric, combinedMetric;
+        Determine_Similarity(*matchesMapPtr, minimumMatchSize,seq1Size, seq2Size, seq1Metric, seq2Metric, combinedMetric);
+        std::cout << "Similarity Metrics: " << std::endl;
+        std::cout << "Combined:" << combinedMetric << std::endl;
+        std::cout << "Seq 1:" << seq1Metric << std::endl;
+        std::cout << "Seq 2:" << seq2Metric << std::endl;
+
+
+        std::cout << "Determining Submatches..." << std::endl;
+        Determine_Submatching(*matchesMapPtr, minimumMatchSize);
+
+        std::cout << "Writing Matches..." << std::endl;
+        if (!Write_Matches(*matchesMapPtr, "All_Matches.txt")){
+            return EXIT_FAILURE;
+        }
 
     }
     else{

@@ -3,39 +3,39 @@
 //
 
 #include "SequenceMatching.h"
-#include "FileManipulation.h"
-#include "iostream"
 
-void Determine_Matches(const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
-                       const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size,
-                       const size_t &minLength){
-    size_t numSplits = std::thread::hardware_concurrency(); //Consider more splits ? by some multiplier
+std::shared_ptr<tbb::concurrent_unordered_map<std::string, MatchLocations>>
+Determine_Matches(const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
+                  const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size,
+                  const size_t &minLength){
+    size_t numSplits = std::thread::hardware_concurrency();
     size_t splitSize = seq1Size / numSplits; //Todo Always split larger sequence. (For now assume it is sequence 1)
     size_t splitRemainder = seq1Size % numSplits; //Determine remainder, and add to first task.
     size_t startIndex = 0;
     size_t endIndex = startIndex+splitSize + splitRemainder;
-   std::thread threadArray[numSplits];
-    tbb::concurrent_unordered_map<std::string, MatchLocations> matchesMap; //Todo Determine if multimapping allowed by default
+    std::thread threadArray[numSplits];
+    tbb::concurrent_unordered_map<std::string, MatchLocations> matchesMap;
     auto matchesMapRef = std::ref(matchesMap);
 
-   threadArray[0] = std::thread(Determine_Matches_Thread,matchesMapRef, seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex);
+    // Create First thread
+    threadArray[0] = std::thread(Determine_Matches_Thread,matchesMapRef, seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex);
         // Determine_Matches_Thread(std::ref(matchesMap), seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex); //Single Thread Version
 
-    //Create subsequent task groups
+    //Create subsequent threads
     for (size_t i = 1; i < numSplits; ++i) {
         startIndex = endIndex;
         endIndex = startIndex+splitSize;
-       threadArray[i] = std::thread(Determine_Matches_Thread,matchesMapRef, seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex);
+        threadArray[i] = std::thread(Determine_Matches_Thread,matchesMapRef, seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex);
         // Determine_Matches_Thread(std::ref(matchesMap), seq1String, seq1Size, seq2String, seq2Size, minLength, startIndex, endIndex); //Single Thread Version
     }
 
-   for (int i=0; i<numSplits; i++){ //Join all threads
-       threadArray[i].join();
-   }
+    //Wait for all threads to complete
+    //Todo Consider adding std::this_thread::yield(); Either in for loop or outside
+    for (size_t i=0; i<numSplits; i++){
+        threadArray[i].join();
+    }
 
-    Write_Matches(matchesMapRef, "Matches_Multi_Thread.txt");
-
-
+    return std::make_shared<tbb::concurrent_unordered_map<std::string, MatchLocations>>(matchesMap);
 }
 
 
@@ -52,11 +52,13 @@ void Determine_Matches_Thread(tbb::concurrent_unordered_map<std::string, MatchLo
     std::shared_ptr<MatchLocations> newMatchLocation;
     std::pair<std::string, MatchLocations> newMatchPair;
 
-    while (index1 < threadEnd){
+    while (index1 < threadEnd){ //Iterate first sequence until end of split
         index2 = 0;
-        while (index2 < seq2Size){
+        while (index2 < seq2Size){ //Iterate entirety of second sequence
             curr1 = index1;
             curr2 = index2;
+            //If a match starts in split and extends beyond it (So long as not end of sequence) Still add match in for
+            // this split (Since it started in it)
             while ((curr2 < seq2Size) && (curr1 < seq1Size) && (seq1String->at(curr1) == seq2String->at(curr2))){
                 ++curr1;
                 ++curr2;
@@ -80,149 +82,141 @@ void Determine_Matches_Thread(tbb::concurrent_unordered_map<std::string, MatchLo
     }
 }
 
-//
-//std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>
-//        Determine_Submatching(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>>&matchesMap,
-//                              const size_t &minLength){
-//
-//    tbb::task_group submatchesTaskGroup;
-//
-//    for (auto &x: *matchesMap){
-//        if (x.first.length() > minLength){ //Sequence is partitionable/submatches may be contained in sequence
-//            // Thread pool to manage execution of threads. Such that each thread in pool is assigned a set of strings to check.
-//            submatchesTaskGroup.run([&]{Submatches_Thread(matchesMap, x.first, minLength);});
+
+void Determine_Similarity(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
+                         const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
+                         float &seq2Metric, float &combinedMetric){
+    //Reserve Set space for every index in each of the sequences
+    tbb::concurrent_unordered_set<size_t> seq1Set;
+    tbb::concurrent_unordered_set<size_t> seq2Set;
+    auto seq1SetRef = std::ref(seq1Set);
+    auto seq2SetRef = std::ref(seq2Set);
+
+    tbb::task_group similarityTaskGroup;
+
+    for (auto &x: matchesMap){ //For each Key, add all indecies of matching threads to determine overall covereage of matches in sequences.
+        //Thread pool to manage adding match indecies to unordered sets
+        similarityTaskGroup.run([&]{Similarity_Thread(x.first.length(),x.second,seq1SetRef, seq2SetRef);});
+//        Similarity_Thread(x.first.length(),x.second,seq1SetRef, seq2SetRef); //Single Thread Version
+    }
+
+    similarityTaskGroup.wait(); //Wait for all tasks to complete
+
+    seq1Metric = ((float)seq1Set.size()) / ((float)seq1Size);
+    seq2Metric = ((float)seq2Set.size()) / ((float)seq2Size);
+    combinedMetric = ((float)seq1Set.size() + (float)seq2Set.size()) / ((float)seq1Size + (float)seq2Size);
+
+}
+
+void Similarity_Thread(const size_t &matchKeyLength, MatchLocations &matchLocationsSet,
+                       tbb::concurrent_unordered_set<size_t> &seq1Set,
+                       tbb::concurrent_unordered_set<size_t> &seq2Set){
+    auto matchIndexSet1 = matchLocationsSet.getIndex1Set();
+    auto matchIndexSet2 = matchLocationsSet.getIndex2Set();
+    size_t i;
+    for (auto &index1: matchIndexSet1){
+        for (i = index1; i < (index1+matchKeyLength); ++i) {
+            seq1Set.insert(i);
+        }
+    }
+    for (auto &index2: matchIndexSet2){
+        for (i = index2; i < (index2+matchKeyLength); ++i) {
+            seq2Set.insert(i);
+        }
+    }
+}
+
+
+void Determine_Submatching(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
+                           const size_t &minLength){
+
+    tbb::task_group submatchesTaskGroup;
+
+    for (auto &x: matchesMap){
+        if (x.first.length() > minLength){ //Sequence is partitionable/submatches may be contained in sequence
+            // Thread pool to manage execution of threads. Such that each thread in pool is assigned a set of strings to check.
+            submatchesTaskGroup.run([&]{Submatches_Thread(matchesMap, x.first, minLength);});
 //            Submatches_Thread(matchesMap, x.first, minLength); //Single Thread Version.
-//        }
-//    }
-//    submatchesTaskGroup.wait(); //Wait for all tasks to complete.
-//
-//    return matchesMap;
-//}
-//
-//
-//void Submatches_Thread(const std::shared_ptr<std::unordered_map<std::string, std::shared_ptr<MatchLocations>>> &matchesMap,
-//                  const std::string &keyToCheck, const size_t &minLength) {
-//    size_t keyLength = keyToCheck.length();
-//    size_t numPartitions = ((keyLength-minLength)*(keyLength - minLength + 3))/2; //Closed form for number of partitions
-//
-//    if (numPartitions <= matchesMap->size()){ //Check all partitions against hashtable to determine if partitition exists.
-//        std::vector<std::shared_ptr<size_t>> partitionShiftList;
-//        std::shared_ptr<std::vector<std::shared_ptr<std::string>>> partitions;
-//        std::unordered_map<std::string,std::shared_ptr<MatchLocations>>::const_iterator found;
-//        std::shared_ptr<std::vector<std::shared_ptr<size_t>>> partitionsShiftList = std::make_shared<std::vector<std::shared_ptr<size_t>>>(partitionShiftList);
-//
-//        partitions = Determine_Partitions(keyToCheck, keyLength, minLength, partitionsShiftList);
-//
-//        for (size_t i = 0; i < partitions->size(); ++i) { //Iterate all partitions.
-//            found = matchesMap->find(*partitions->at(i)); //Find partition string in matchesMap.
-//
-//            if (found != matchesMap->end()){ //Partition exists in map
-//                // Add non existing match locations of keyToCheck into found, with apropiate partitionShiftList
-//                size_t partitionShift = *partitionsShiftList->at(i);
-//                auto index1Set = matchesMap->at(keyToCheck)->getIndex1Set();
-//                auto index2Set = matchesMap->at(keyToCheck)->getIndex2Set();
-//
-//                //No need to check if element exists since insertion guarantees unique elements.
-//                for(const auto& elem1: *index1Set){
-//                    found->second->addSubMatchIndex1(elem1 + partitionShift);
-//                }
-//                for(const auto& elem2: *index2Set){
-//                    found->second->addSubMatchIndex2(elem2 + partitionShift);
-//                }
-//            }
-//        }
-//    }
-//    else{ //Check all elements in hashtable against the keyToCheck. (Consider that it is slower due to regex)
-//        //Todo Determine if regex absolutely necessary -> I think so?
-//        size_t foundAtIndex;
-//        std::string matchString;
-//        std::regex regexKey;
-//        std::sregex_iterator foundIterator;
-//        auto end = std::sregex_iterator();
-//
-//        for(auto &key: *matchesMap){ //Iterate all keys
-//            if ((key.first != keyToCheck) && (keyToCheck.length() > key.first.length()) && (keyToCheck.find(key.first) != std::string::npos)){ //Determines if key is contained in keyToCheck
-//                regexKey = std::regex(std::string(key.first));
-//                foundIterator = std::sregex_iterator(keyToCheck.begin(), keyToCheck.end(), regexKey);
-//
-//                for(std::sregex_iterator i = foundIterator; i != end; i++){ //For each instance of substring found.
-//                    std::smatch subtringMatch = *i;
-//                    foundAtIndex = i->position();
-//
-//                    auto index1Set = matchesMap->at(keyToCheck)->getIndex1Set();
-//                    auto index2Set = matchesMap->at(keyToCheck)->getIndex2Set();
-//
-//                    //No need to check if element exists since insertion guarantees unique elements.
-//                    for(const auto& elem1: *index1Set){
-//                        key.second->addSubMatchIndex1(elem1 + foundAtIndex);
-//                    }
-//                    for(const auto& elem2: *index2Set){
-//                        key.second->addSubMatchIndex2(elem2 + foundAtIndex);
-//                    }
-//                }
-//            }
-//        }
-//    }
-//
-//}
-//
-//
-//std::shared_ptr<std::vector<std::shared_ptr<std::string>>>
-//Determine_Partitions(const std::string &key, const size_t &keyLen, const size_t &minLength,
-//                     std::shared_ptr<std::vector<std::shared_ptr<size_t>>> &partitionsShiftList) {
-//
-//    std::vector<std::shared_ptr<std::string>> partitionsStringList;
-//
-//    for(size_t p = keyLen-1; p >= minLength; --p){
-//        for (size_t i = 0; (i+p) <= keyLen ; ++i){
-//            partitionsShiftList->push_back(std::make_shared<size_t>(i));
-//            partitionsStringList.push_back(std::make_shared<std::string>(std::string(key.substr(i, p))));
-//        }
-//    }
-//
-//    return std::make_shared<std::vector<std::shared_ptr<std::string>>>(partitionsStringList);
-//}
-//
-//
-//void Determine_Similarity(const std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> &matchesMap,
-//                         const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
-//                         float &seq2Metric, float &combinedMetric){
-//    //Reserve Set space for every index in each of the sequences
-//    tbb::concurrent_unordered_set<size_t> seq1Set;
-//    tbb::concurrent_unordered_set<size_t> seq2Set;
-//    std::shared_ptr<tbb::concurrent_unordered_set<size_t>> seq1SetShared = std::make_shared<tbb::concurrent_unordered_set<size_t>>(seq1Set);
-//    std::shared_ptr<tbb::concurrent_unordered_set<size_t>> seq2SetShared = std::make_shared<tbb::concurrent_unordered_set<size_t>>(seq2Set);
-//
-//    tbb::task_group similarityTaskGroup;
-//
-//    for (auto &x: *matchesMap){ //For each Key, add all indecies of matching threads to determine overall covereage of matches in sequences.
-//        //Thread pool to manage adding match indecies to unordered sets
-//        similarityTaskGroup.run([&]{Similarity_Thread(x.first.length(),x.second,seq1SetShared, seq2SetShared);});
-////        Similarity_Thread(x.first.length(),x.second,seq1SetShared, seq2SetShared); //Single Thread Version
-//    }
-//
-//    similarityTaskGroup.wait(); //Wait for all tasks to complete
-//
-//    seq1Metric = ((float)seq1SetShared->size()) / ((float)seq1Size);
-//    seq2Metric = ((float)seq2SetShared->size()) / ((float)seq2Size);
-//    combinedMetric = ((float)seq1SetShared->size() + (float)seq2SetShared->size()) / ((float)seq1Size + (float)seq2Size);
-//
-//}
-//
-//void Similarity_Thread(const size_t &matchKeyLength, const std::shared_ptr<MatchLocations> &matchLocationsSet,
-//                       std::shared_ptr<tbb::concurrent_unordered_set<size_t>> &seq1Set,
-//                       std::shared_ptr<tbb::concurrent_unordered_set<size_t>> &seq2Set){
-//    auto matchIndexSet1 = matchLocationsSet->getIndex1Set();
-//    auto matchIndexSet2 = matchLocationsSet->getIndex2Set();
-//    size_t i;
-//    for (auto &index1: *matchIndexSet1){
-//        for (i = index1; i < (index1+matchKeyLength); ++i) {
-//            seq1Set->insert(i);
-//        }
-//    }
-//    for (auto &index2: *matchIndexSet2){
-//        for (i = index2; i < (index2+matchKeyLength); ++i) {
-//            seq2Set->insert(i);
-//        }
-//    }
-//}
+        }
+    }
+    submatchesTaskGroup.wait(); //Wait for all tasks to complete.
+
+}
+
+void Submatches_Thread(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
+                       const std::string &keyToCheck, const size_t &minLength) {
+    size_t keyLength = keyToCheck.length();
+    size_t numPartitions = ((keyLength-minLength)*(keyLength - minLength + 3))/2; //Closed form for number of partitions
+
+    if (numPartitions <= matchesMap.size()){ //Check all partitions against hashtable to determine if partitition exists.
+        std::vector<std::shared_ptr<size_t>> partitionShiftList;
+        std::shared_ptr<std::vector<std::shared_ptr<std::string>>> partitions;
+        std::shared_ptr<std::vector<std::shared_ptr<size_t>>> partitionsShiftList = std::make_shared<std::vector<std::shared_ptr<size_t>>>(partitionShiftList);
+        partitions = Determine_Partitions(keyToCheck, keyLength, minLength, partitionsShiftList);
+
+        for (size_t i = 0; i < partitions->size(); ++i) { //Iterate all partitions.
+            if (matchesMap.count(*partitions->at(i))){ //Partition exists in map (Returns 1 if found, 0 if not found.)
+                // Add non existing match locations of keyToCheck into found, with apropiate partitionShiftList
+                size_t partitionShift = *partitionsShiftList->at(i);
+                auto index1Set = matchesMap.at(keyToCheck).getIndex1Set();
+                auto index2Set = matchesMap.at(keyToCheck).getIndex2Set();
+
+                //No need to check if element exists since insertion guarantees unique elements.
+                for(const auto& elem1: index1Set){
+                    matchesMap.at(*partitions->at(i)).addSubMatchIndex1(elem1 + partitionShift);
+                }
+                for(const auto& elem2: index2Set){
+                    matchesMap.at(*partitions->at(i)).addSubMatchIndex2(elem2 + partitionShift);
+                }
+            }
+        }
+    }
+    else{ //Check all elements in hashtable against the keyToCheck. (Consider that it is slower due to regex)
+        //Todo Determine if regex absolutely necessary -> I think so?
+        size_t foundAtIndex;
+        std::string matchString;
+        std::regex regexKey;
+        std::sregex_iterator foundIterator;
+        auto end = std::sregex_iterator();
+
+        for(auto &key: matchesMap){ //Iterate all keys
+            if ((key.first != keyToCheck) && (keyToCheck.length() > key.first.length()) && (keyToCheck.find(key.first) != std::string::npos)){ //Determines if key is contained in keyToCheck
+                regexKey = std::regex(std::string(key.first));
+                foundIterator = std::sregex_iterator(keyToCheck.begin(), keyToCheck.end(), regexKey);
+
+                for(std::sregex_iterator i = foundIterator; i != end; i++){ //For each instance of substring found.
+                    std::smatch subtringMatch = *i;
+                    foundAtIndex = i->position();
+
+                    auto index1Set = matchesMap.at(keyToCheck).getIndex1Set();
+                    auto index2Set = matchesMap.at(keyToCheck).getIndex2Set();
+
+                    //No need to check if element exists since insertion guarantees unique elements.
+                    for(const auto& elem1: index1Set){
+                        key.second.addSubMatchIndex1(elem1 + foundAtIndex);
+                    }
+                    for(const auto& elem2: index2Set){
+                        key.second.addSubMatchIndex2(elem2 + foundAtIndex);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+std::shared_ptr<std::vector<std::shared_ptr<std::string>>>
+Determine_Partitions(const std::string &key, const size_t &keyLen, const size_t &minLength,
+                     std::shared_ptr<std::vector<std::shared_ptr<size_t>>> &partitionsShiftList){
+
+    std::vector<std::shared_ptr<std::string>> partitionsStringList;
+
+    for(size_t p = keyLen-1; p >= minLength; --p){
+        for (size_t i = 0; (i+p) <= keyLen ; ++i){
+            partitionsShiftList->push_back(std::make_shared<size_t>(i));
+            partitionsStringList.push_back(std::make_shared<std::string>(std::string(key.substr(i, p))));
+        }
+    }
+
+    return std::make_shared<std::vector<std::shared_ptr<std::string>>>(partitionsStringList);
+}

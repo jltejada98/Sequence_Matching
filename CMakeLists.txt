@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 project(Sequence_Matching)
 
-set(CMAKE_CXX_STANDARD 17) #Changed from 11 to 17 (Shared Mutex)
+set(CMAKE_CXX_STANDARD 11)
 
 include_directories(/usr/local/Cellar/tbb/2020_U3_1/include/)
 

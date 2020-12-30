@@ -77,10 +77,13 @@ AVNE len=4 num pairs=16
  Seq 2:
  1766
  17445
-VTWY len=4 num pairs=4
+VTWY len=4 num pairs=10
  Seq 1:
  32526
+ 9790
  973
+ 32647
+ 33675
  Seq 2:
  17036
  16758
@@ -113,9 +116,10 @@ VEVE len=4 num pairs=2
  4107
  Seq 2:
  15403
-VWM len=3 num pairs=1
+VWM len=3 num pairs=2
  Seq 1:
  17884
+ 2386
  Seq 2:
  17702
 TILA len=4 num pairs=1
@@ -335,9 +339,10 @@ DKK len=3 num pairs=16
  11404
  12693
  6297
-IPTI len=4 num pairs=1
+IPTI len=4 num pairs=2
  Seq 1:
  23498
+ 30486
  Seq 2:
  17325
 EEVR len=4 num pairs=29
@@ -497,9 +502,11 @@ VQWL len=4 num pairs=4
  Seq 2:
  7440
  16853
-KPSP len=4 num pairs=3
+KPSP len=4 num pairs=5
  Seq 1:
  5792
+ 27300
+ 18038
  7389
  18713
  Seq 2:
@@ -634,12 +641,13 @@ KPGT len=4 num pairs=1
  18770
  Seq 2:
  9269
-DYQ len=3 num pairs=4
+DYQ len=3 num pairs=5
  Seq 1:
  28752
  17316
  30236
  28061
+ 979
  Seq 2:
  14724
 QNEAG len=5 num pairs=1
@@ -731,9 +739,10 @@ LVVEE len=5 num pairs=2
  Seq 2:
  4480
  5795
-IHY len=3 num pairs=1
+IHY len=3 num pairs=2
  Seq 1:
  33346
+ 1893
  Seq 2:
  1534
 PLL len=3 num pairs=15
@@ -801,10 +810,11 @@ QPY len=3 num pairs=1
  10017
  Seq 2:
  11875
-CAV len=3 num pairs=2
+CAV len=3 num pairs=3
  Seq 1:
  3258
  27350
+ 28067
  Seq 2:
  2044
 EPSV len=4 num pairs=1
@@ -881,9 +891,10 @@ RRH len=3 num pairs=2
  Seq 2:
  1276
  876
-DPT len=3 num pairs=15
+DPT len=3 num pairs=20
  Seq 1:
  16980
+ 1730
  15206
  21307
  Seq 2:
@@ -911,16 +922,18 @@ VQLS len=4 num pairs=3
  9289
  Seq 2:
  17207
-EKVL len=4 num pairs=1
+EKVL len=4 num pairs=2
  Seq 1:
  10573
+ 10601
  Seq 2:
  11743
-SKKK len=4 num pairs=3
+SKKK len=4 num pairs=4
  Seq 1:
  18289
  Seq 2:
  14786
+ 12750
  18133
  13479
 EIQE len=4 num pairs=30
@@ -1049,9 +1062,10 @@ ETLQ len=4 num pairs=1
  30862
  Seq 2:
  12449
-QVRA len=4 num pairs=1
+QVRA len=4 num pairs=2
  Seq 1:
  31927
+ 15183
  Seq 2:
  1087
 HVV len=3 num pairs=4
@@ -1067,15 +1081,17 @@ ENVI len=4 num pairs=1
  15643
  Seq 2:
  13355
-IGES len=4 num pairs=1
+IGES len=4 num pairs=2
  Seq 1:
  16301
  Seq 2:
+ 17737
  7455
-IPED len=4 num pairs=1
+IPED len=4 num pairs=2
  Seq 1:
  16787
  Seq 2:
+ 13094
  13807
 LIEGSD len=6 num pairs=1
  Seq 1:
@@ -1092,10 +1108,12 @@ IKSA len=4 num pairs=1
  12824
  Seq 2:
  9100
-VDVT len=4 num pairs=2
+VDVT len=4 num pairs=4
  Seq 1:
  6076
+ 30570
  26231
+ 15119
  Seq 2:
  3269
 VRL len=3 num pairs=6
@@ -1182,18 +1200,20 @@ YFVE len=4 num pairs=2
  5695
  Seq 2:
  16323
-YRK len=3 num pairs=1
+YRK len=3 num pairs=2
  Seq 1:
  18966
  Seq 2:
  870
+ 7165
 TRKI len=4 num pairs=1
  Seq 1:
  33478
  Seq 2:
  4361
-NLEC len=4 num pairs=1
+NLEC len=4 num pairs=2
  Seq 1:
+ 18390
  12217
  Seq 2:
  3117
@@ -1215,8 +1235,9 @@ PTPT len=4 num pairs=4
  Seq 2:
  4630
  12711
-KSD len=3 num pairs=7
+KSD len=3 num pairs=8
  Seq 1:
+ 16512
  33752
  27050
  18654
@@ -1314,10 +1335,12 @@ AENV len=4 num pairs=2
  Seq 2:
  6914
  17259
-VVGK len=4 num pairs=2
+VVGK len=4 num pairs=4
  Seq 1:
+ 2100
  11978
  8430
+ 20998
  Seq 2:
  7089
 EDQ len=3 num pairs=60
@@ -1363,10 +1386,11 @@ EEYI len=4 num pairs=2
  10709
  Seq 2:
  13676
-TNVT len=4 num pairs=3
+TNVT len=4 num pairs=4
  Seq 1:
  8716
  27746
+ 27605
  18937
  Seq 2:
  432
@@ -1418,9 +1442,10 @@ ADE len=3 num pairs=14
  9173
  6495
  16011
-IYT len=3 num pairs=6
+IYT len=3 num pairs=8
  Seq 1:
  1360
+ 7736
  15382
  14390
  Seq 2:
@@ -1468,10 +1493,11 @@ EEAA len=4 num pairs=3
  16152
  15906
  15794
-PKKL len=4 num pairs=6
+PKKL len=4 num pairs=9
  Seq 1:
  11892
  10990
+ 10755
  Seq 2:
  12433
  14827
@@ -1503,12 +1529,28 @@ NLR len=3 num pairs=16
  12183
  16979
  3411
-SDG len=3 num pairs=4
+SDG len=3 num pairs=20
  Seq 1:
+ 31776
+ 23688
  28696
+ 23292
  2668
  58
+ 22210
+ 24770
+ 22606
+ 26934
  31509
+ 32073
+ 26247
+ 18655
+ 30191
+ 29103
+ 20043
+ 19195
+ 20835
+ 18755
  Seq 2:
  18005
 YSV len=3 num pairs=48
@@ -1528,10 +1570,11 @@ YSV len=3 num pairs=48
  17165
  16347
  12739
-TFTV len=4 num pairs=3
+TFTV len=4 num pairs=4
  Seq 1:
  29528
  23082
+ 29366
  5029
  Seq 2:
  17296
@@ -1662,10 +1705,11 @@ ASNP len=4 num pairs=2
  7175
  Seq 2:
  16897
-VKVK len=4 num pairs=2
+VKVK len=4 num pairs=3
  Seq 1:
  32208
  2202
+ 30470
  Seq 2:
  15225
 YPQP len=4 num pairs=1
@@ -1756,20 +1800,22 @@ TTTT len=4 num pairs=4
  24291
  Seq 2:
  6792
-LRRD len=4 num pairs=1
+LRRD len=4 num pairs=2
  Seq 1:
  18500
  Seq 2:
  5117
+ 4281
 GGIQ len=4 num pairs=1
  Seq 1:
  16038
  Seq 2:
  4491
-FAK len=3 num pairs=4
+FAK len=3 num pairs=5
  Seq 1:
  6596
  22468
+ 28462
  18295
  18031
  Seq 2:
@@ -1862,8 +1908,9 @@ ILKF len=4 num pairs=1
  5378
  Seq 2:
  14928
-TNR len=3 num pairs=4
+TNR len=3 num pairs=6
  Seq 1:
+ 3926
  16134
  30835
  Seq 2:
@@ -1931,7 +1978,7 @@ PISV len=4 num pairs=10
  9011
  Seq 2:
  14617
-ENS len=3 num pairs=36
+ENS len=3 num pairs=38
  Seq 1:
  25024
  7080
@@ -1945,6 +1992,7 @@ ENS len=3 num pairs=36
  28058
  8962
  23942
+ 5853
  16797
  27365
  20297
@@ -2066,9 +2114,10 @@ FTR len=3 num pairs=8
  Seq 2:
  1292
  3214
-RLN len=3 num pairs=7
+RLN len=3 num pairs=8
  Seq 1:
  17136
+ 4074
  30110
  13685
  27863
@@ -2311,10 +2360,11 @@ PAE len=3 num pairs=77
  15941
  14875
  8219
-GRPI len=4 num pairs=1
+GRPI len=4 num pairs=2
  Seq 1:
  15138
  Seq 2:
+ 1996
  1463
 LLP len=3 num pairs=16
  Seq 1:
@@ -2354,16 +2404,23 @@ IPQ len=3 num pairs=32
  13177
  5479
  15011
-GSEI len=4 num pairs=9
+GSEI len=4 num pairs=16
  Seq 1:
+ 16452
  15756
+ 18956
  24874
  18474
  29106
+ 21526
+ 22710
  24773
  22609
  26937
+ 20343
+ 16151
  17671
+ 21031
  23691
  Seq 2:
  17887
@@ -2480,9 +2537,14 @@ VDLV len=4 num pairs=1
  19580
  Seq 2:
  14118
-DSGD len=4 num pairs=1
+DSGD len=4 num pairs=6
  Seq 1:
+ 20288
  6416
+ 9338
+ 8298
+ 8674
+ 7357
  Seq 2:
  16889
 VPV len=3 num pairs=259
@@ -2532,11 +2594,12 @@ VPV len=3 num pairs=259
  7973
  5831
  5331
-RFL len=3 num pairs=1
+RFL len=3 num pairs=2
  Seq 1:
  12377
  Seq 2:
  1024
+ 1424
 AAD len=3 num pairs=28
  Seq 1:
  3034
@@ -2561,11 +2624,12 @@ DGGH len=4 num pairs=1
  21226
  Seq 2:
  320
-IEIE len=4 num pairs=1
+IEIE len=4 num pairs=2
  Seq 1:
  26754
  Seq 2:
  15217
+ 5881
 QYL len=3 num pairs=4
  Seq 1:
  18304
@@ -2834,9 +2898,10 @@ PSER len=4 num pairs=1
  14382
  Seq 2:
  16864
-YTLE len=4 num pairs=2
+YTLE len=4 num pairs=3
  Seq 1:
  10656
+ 15762
  30735
  Seq 2:
  17691
@@ -3050,14 +3115,21 @@ TQI len=3 num pairs=16
  3266
  3814
  3957
-FEVE len=4 num pairs=1
+FEVE len=4 num pairs=2
  Seq 1:
  2551
  Seq 2:
  4412
-VKWF len=4 num pairs=1
+ 17115
+VKWF len=4 num pairs=7
  Seq 1:
  2824
+ 12618
+ 13330
+ 12974
+ 12885
+ 13241
+ 7791
  Seq 2:
  17126
 YRKP len=4 num pairs=1
@@ -3217,11 +3289,14 @@ ITM len=3 num pairs=3
  14514
  4965
  487
-PEVK len=4 num pairs=6
+PEVK len=4 num pairs=12
  Seq 1:
+ 22816
  19676
+ 23898
  16637
  11101
+ 26063
  Seq 2:
  6768
  6665
@@ -3487,12 +3562,13 @@ VLEK len=4 num pairs=3
  25327
  Seq 2:
  461
-PAKV len=4 num pairs=15
+PAKV len=4 num pairs=16
  Seq 1:
  11392
  11672
  10092
  11698
+ 11218
  10901
  10737
  11241
@@ -3721,9 +3797,10 @@ TKVA len=4 num pairs=1
  30717
  Seq 2:
  6042
-GVEL len=4 num pairs=1
+GVEL len=4 num pairs=2
  Seq 1:
  34000
+ 33337
  Seq 2:
  2527
 TYED len=4 num pairs=1
@@ -3731,13 +3808,14 @@ TYED len=4 num pairs=1
  32544
  Seq 2:
  12818
-IQL len=3 num pairs=3
+IQL len=3 num pairs=4
  Seq 1:
  7308
  Seq 2:
  1268
  5445
  17141
+ 1787
 KIV len=3 num pairs=91
  Seq 1:
  10512
@@ -3849,9 +3927,10 @@ EGV len=3 num pairs=60
  2425
  12215
  6559
-VVAKN len=5 num pairs=1
+VVAKN len=5 num pairs=2
  Seq 1:
  23654
+ 27983
  Seq 2:
  16573
 KPSPP len=5 num pairs=2
@@ -4367,8 +4446,9 @@ GKH len=3 num pairs=1
  2655
  Seq 2:
  3769
-KIIK len=4 num pairs=1
+KIIK len=4 num pairs=2
  Seq 1:
+ 2795
  27955
  Seq 2:
  7066
@@ -4416,8 +4496,9 @@ GDS len=3 num pairs=18
  Seq 2:
  917
  12379
-YPQ len=3 num pairs=1
+YPQ len=3 num pairs=2
  Seq 1:
+ 1866
  3895
  Seq 2:
  17590
@@ -4517,9 +4598,11 @@ EIP len=3 num pairs=240
  15919
  6075
  14579
-YTCV len=4 num pairs=2
+YTCV len=4 num pairs=4
  Seq 1:
+ 6796
  12114
+ 7737
  6889
  Seq 2:
  17539
@@ -4588,10 +4671,11 @@ KDKT len=4 num pairs=2
  15767
  Seq 2:
  11781
-TVTV len=4 num pairs=60
+TVTV len=4 num pairs=90
  Seq 1:
  6640
  4656
+ 12209
  Seq 2:
  10416
  10984
@@ -4712,10 +4796,11 @@ AYL len=3 num pairs=2
  3587
  Seq 2:
  9144
-EEKS len=4 num pairs=2
+EEKS len=4 num pairs=3
  Seq 1:
  33468
  33154
+ 33473
  Seq 2:
  14684
 QKIK len=4 num pairs=2
@@ -4736,9 +4821,10 @@ PKG len=3 num pairs=18
  2996
  4326
  3505
-YPED len=4 num pairs=2
+YPED len=4 num pairs=4
  Seq 1:
  3406
+ 166
  Seq 2:
  3466
  4019
@@ -4851,25 +4937,30 @@ HIE len=3 num pairs=3
  27239
  Seq 2:
  6197
-PRKE len=4 num pairs=2
+PRKE len=4 num pairs=3
  Seq 1:
  10812
+ 10341
  11387
  Seq 2:
  6097
-KCD len=3 num pairs=2
+KCD len=3 num pairs=4
  Seq 1:
+ 23802
  5942
+ 19957
  16179
  Seq 2:
  17695
-VYS len=3 num pairs=5
+VYS len=3 num pairs=7
  Seq 1:
+ 9828
  34114
  4546
  17518
  8581
  1209
+ 2441
  Seq 2:
  6707
 PVN len=3 num pairs=52
@@ -5116,9 +5207,11 @@ VHN len=3 num pairs=2
  8093
  Seq 2:
  6875
-EWYK len=4 num pairs=1
+EWYK len=4 num pairs=3
  Seq 1:
+ 6662
  2109
+ 27831
  Seq 2:
  785
 NGE len=3 num pairs=6
@@ -5281,10 +5374,11 @@ VQEV len=4 num pairs=2
  Seq 2:
  9290
  15887
-EWLR len=4 num pairs=2
+EWLR len=4 num pairs=3
  Seq 1:
  24584
  2650
+ 4099
  Seq 2:
  1724
 ITRK len=4 num pairs=2
@@ -5339,12 +5433,15 @@ EGQS len=4 num pairs=2
  Seq 2:
  3276
  1837
-EEII len=4 num pairs=2
+EEII len=4 num pairs=5
  Seq 1:
  13426
  Seq 2:
  5736
+ 6100
+ 16108
  5895
+ 13867
 LPSK len=4 num pairs=1
  Seq 1:
  21241
@@ -5388,17 +5485,25 @@ GKYE len=4 num pairs=1
  21268
  Seq 2:
  6807
-EMD len=3 num pairs=1
+EMD len=3 num pairs=3
  Seq 1:
  4188
  Seq 2:
  11856
-EPLE len=4 num pairs=8
+ 13476
+ 12330
+EPLE len=4 num pairs=20
  Seq 1:
+ 27976
+ 25812
  7012
  6826
  7950
+ 26893
  4389
+ 22565
+ 24729
+ 23647
  Seq 2:
  18064
  8372
@@ -5536,11 +5641,12 @@ SPKH len=4 num pairs=1
  12087
  Seq 2:
  13136
-FRT len=3 num pairs=4
+FRT len=3 num pairs=5
  Seq 1:
  29839
  Seq 2:
  1872
+ 1206
  3645
  3449
  3311
@@ -6035,9 +6141,10 @@ SDHS len=4 num pairs=1
  6919
  Seq 2:
  12022
-DFVT len=4 num pairs=2
+DFVT len=4 num pairs=3
  Seq 1:
  22100
+ 7812
  14465
  Seq 2:
  12298
@@ -6087,11 +6194,29 @@ KKT len=3 num pairs=352
  15523
  5667
  7299
-GGSK len=4 num pairs=3
+GGSK len=4 num pairs=21
  Seq 1:
+ 23392
+ 28808
+ 24084
+ 25556
  29892
+ 17866
  30986
+ 29794
+ 18066
  17374
+ 21918
+ 15533
+ 14737
+ 22905
+ 26249
+ 27721
+ 20143
+ 32075
+ 14043
+ 17171
+ 23987
  Seq 2:
  17785
 VEPK len=4 num pairs=2
@@ -6205,9 +6330,11 @@ DYY len=3 num pairs=3
  32775
  Seq 2:
  4262
-PPH len=3 num pairs=1
+PPH len=3 num pairs=3
  Seq 1:
+ 33058
  13297
+ 3619
  Seq 2:
  2220
 EPTPI len=5 num pairs=1
@@ -6695,8 +6822,9 @@ RVEE len=4 num pairs=1
  11334
  Seq 2:
  12506
-EEPKK len=5 num pairs=2
+EEPKK len=5 num pairs=3
  Seq 1:
+ 10536
  11767
  10767
  Seq 2:
@@ -6722,8 +6850,9 @@ DHD len=3 num pairs=2
  Seq 2:
  3196
  14798
-HDT len=3 num pairs=1
+HDT len=3 num pairs=2
  Seq 1:
+ 24404
  2819
  Seq 2:
  5266
@@ -6798,10 +6927,11 @@ FQS len=3 num pairs=2
  5993
  Seq 2:
  6902
-KVVG len=4 num pairs=3
+KVVG len=4 num pairs=4
  Seq 1:
  28980
  1478
+ 20997
  29895
  Seq 2:
  7088
@@ -7263,8 +7393,9 @@ EKVKKP len=6 num pairs=1
  11896
  Seq 2:
  15076
-APA len=3 num pairs=5
+APA len=3 num pairs=6
  Seq 1:
+ 11632
  8792
  9368
  7989
@@ -7531,9 +7662,10 @@ GESI len=4 num pairs=1
  7305
  Seq 2:
  4169
-WYLN len=4 num pairs=1
+WYLN len=4 num pairs=2
  Seq 1:
  2477
+ 1873
  Seq 2:
  652
 PEQ len=3 num pairs=11
@@ -7559,12 +7691,19 @@ EQEI len=4 num pairs=6
  14808
  13461
  15191
-YKV len=3 num pairs=4
+YKV len=3 num pairs=11
  Seq 1:
  22640
+ 18100
+ 21852
+ 17306
  31626
  2690
+ 29826
+ 27262
+ 14277
  1127
+ 25787
  Seq 2:
  17634
 FKVS len=4 num pairs=1
@@ -7601,16 +7740,18 @@ PDL len=3 num pairs=36
  3022
  4437
  3159
-GAR len=3 num pairs=2
+GAR len=3 num pairs=3
  Seq 1:
+ 5849
  6855
  29403
  Seq 2:
  16907
-VNLT len=4 num pairs=3
+VNLT len=4 num pairs=4
  Seq 1:
  32064
  31712
+ 14222
  26129
  Seq 2:
  9273
@@ -7901,19 +8042,22 @@ PEED len=4 num pairs=1
  22723
  Seq 2:
  6206
-IKF len=3 num pairs=4
+IKF len=3 num pairs=5
  Seq 1:
  22092
  17150
  30033
  21009
+ 18383
  Seq 2:
  4540
-VIAR len=4 num pairs=3
+VIAR len=4 num pairs=5
  Seq 1:
  26312
  14410
  9831
+ 23439
+ 25603
  Seq 2:
  4162
 VVAE len=4 num pairs=2
@@ -8358,11 +8502,24 @@ SAN len=3 num pairs=12
  490
  12374
  4477
-NKY len=3 num pairs=6
+NKY len=3 num pairs=32
  Seq 1:
+ 30144
+ 20392
+ 21080
+ 1780
  8556
+ 27970
+ 25806
  14286
+ 17221
+ 23641
+ 32695
+ 16503
+ 26887
+ 22559
  20683
+ 24723
  Seq 2:
  3208
  3341
@@ -8417,13 +8574,18 @@ MEL len=3 num pairs=2
  4153
  Seq 2:
  11882
-IEEI len=4 num pairs=3
+IEEI len=4 num pairs=8
  Seq 1:
  9552
  Seq 2:
  16304
+ 15930
  5706
+ 15933
  1149
+ 15817
+ 5703
+ 7371
 ING len=3 num pairs=20
  Seq 1:
  3816
@@ -8585,8 +8747,9 @@ HKG len=3 num pairs=1
  19077
  Seq 2:
  4374
-NSA len=3 num pairs=9
+NSA len=3 num pairs=10
  Seq 1:
+ 31664
  4820
  9132
  25314
@@ -8625,11 +8788,12 @@ TVATG len=5 num pairs=1
  333
  Seq 2:
  4506
-KIKI len=4 num pairs=2
+KIKI len=4 num pairs=3
  Seq 1:
  2531
  Seq 2:
  15648
+ 16289
  12703
 GDVA len=4 num pairs=1
  Seq 1:
@@ -8758,16 +8922,23 @@ AKLTV len=5 num pairs=8
  Seq 2:
  17176
  4787
-YIL len=3 num pairs=8
+YIL len=3 num pairs=15
  Seq 1:
+ 29112
  23540
  28268
  20690
  24622
+ 25862
+ 21037
+ 31189
+ 21433
+ 19257
  25705
  22855
  27531
  25019
+ 17971
  Seq 2:
  17405
 DKS len=3 num pairs=15
@@ -8793,10 +8964,11 @@ TGG len=3 num pairs=14
  Seq 2:
  6752
  2845
-VKED len=4 num pairs=2
+VKED len=4 num pairs=3
  Seq 1:
  19120
  Seq 2:
+ 13733
  15381
  5653
 TQA len=3 num pairs=8
@@ -9150,8 +9322,9 @@ NVEET len=5 num pairs=1
  25285
  Seq 2:
  14304
-VLEC len=4 num pairs=2
+VLEC len=4 num pairs=3
  Seq 1:
+ 2462
  13229
  7685
  Seq 2:
@@ -9186,11 +9359,12 @@ PLT len=3 num pairs=64
  11582
  11646
  8649
-VTWYKDG len=7 num pairs=1
+VTWYKDG len=7 num pairs=2
  Seq 1:
  33675
  Seq 2:
  17036
+ 16758
 EAP len=3 num pairs=576
  Seq 1:
  11008
@@ -9320,9 +9494,11 @@ KER len=3 num pairs=85
  4207
  7923
  16099
-SVIL len=4 num pairs=1
+SVIL len=4 num pairs=3
  Seq 1:
+ 28404
  1541
+ 28599
  Seq 2:
  11451
 QPA len=3 num pairs=12
@@ -9362,9 +9538,11 @@ RASL len=4 num pairs=1
  1345
  Seq 2:
  3349
-GLS len=3 num pairs=13
+GLS len=3 num pairs=16
  Seq 1:
  2432
+ 23744
+ 21856
  25200
  2360
  27380
@@ -9374,6 +9552,7 @@ GLS len=3 num pairs=13
  31438
  18710
  21717
+ 31337
  32127
  28843
  8619
@@ -9441,12 +9620,13 @@ KDG len=3 num pairs=405
  3142
  505
  927
-PTL len=3 num pairs=5
+PTL len=3 num pairs=6
  Seq 1:
  17744
  17072
  32750
  942
+ 1393
  30121
  Seq 2:
  13598
@@ -9555,9 +9735,10 @@ PTITA len=5 num pairs=1
  31757
  Seq 2:
  4702
-TYEL len=4 num pairs=1
+TYEL len=4 num pairs=2
  Seq 1:
  26390
+ 33699
  Seq 2:
  9193
 IQD len=3 num pairs=21
@@ -9808,10 +9989,11 @@ TLEI len=4 num pairs=4
  Seq 2:
  7244
  5507
-MVK len=3 num pairs=2
+MVK len=3 num pairs=3
  Seq 1:
  30060
  2149
+ 24457
  Seq 2:
  7302
 KEVT len=4 num pairs=20
@@ -9853,9 +10035,10 @@ ISYS len=4 num pairs=1
  8467
  Seq 2:
  302
-LIA len=3 num pairs=2
+LIA len=3 num pairs=3
  Seq 1:
  26566
+ 161
  4859
  Seq 2:
  1488
@@ -10122,7 +10305,7 @@ ELED len=4 num pairs=1
  6226
  Seq 2:
  866
-DAA len=3 num pairs=6
+DAA len=3 num pairs=7
  Seq 1:
  3304
  8388
@@ -10130,6 +10313,7 @@ DAA len=3 num pairs=6
  29994
  22350
  3033
+ 23911
  Seq 2:
  16052
 EEAY len=4 num pairs=1
@@ -10236,9 +10420,10 @@ PEA len=3 num pairs=187
  17307
  15763
  15875
-YKF len=3 num pairs=7
+YKF len=3 num pairs=8
  Seq 1:
  3548
+ 13794
  29250
  17417
  16191
@@ -10290,9 +10475,10 @@ AKN len=3 num pairs=120
  6609
  1383
  16575
-VFP len=3 num pairs=2
+VFP len=3 num pairs=4
  Seq 1:
  32012
+ 33410
  Seq 2:
  7005
  16563
@@ -10653,9 +10839,10 @@ ENK len=3 num pairs=128
  1138
  4678
  14187
-FYK len=3 num pairs=2
+FYK len=3 num pairs=3
  Seq 1:
  22672
+ 17416
  28083
  Seq 2:
  12204
@@ -10889,11 +11076,12 @@ IPI len=3 num pairs=18
  12913
  11665
  15659
-WTKP len=4 num pairs=6
+WTKP len=4 num pairs=7
  Seq 1:
  30288
  30186
  14930
+ 18750
  24077
  28409
  24467
@@ -11049,14 +11237,20 @@ AQAA len=4 num pairs=1
  33109
  Seq 2:
  9169
-QYT len=3 num pairs=6
+QYT len=3 num pairs=12
  Seq 1:
  6136
  5012
+ 13012
+ 9148
+ 7266
  15986
  29074
  28838
+ 6325
  30023
+ 8207
+ 9739
  Seq 2:
  17075
 VTEEV len=5 num pairs=1
@@ -11098,9 +11292,12 @@ SDPVTI len=6 num pairs=2
  20207
  Seq 2:
  17745
-NKI len=3 num pairs=3
+NKI len=3 num pairs=6
  Seq 1:
+ 18608
+ 19300
  6682
+ 20594
  28543
  26563
  Seq 2:
@@ -11282,8 +11479,9 @@ VVEE len=4 num pairs=40
  12533
  4481
  15871
-VND len=3 num pairs=18
+VND len=3 num pairs=21
  Seq 1:
+ 3680
  32570
  1497
  26537
@@ -11378,15 +11576,17 @@ LAE len=3 num pairs=52
  13272
  13158
  327
-KYR len=3 num pairs=7
+KYR len=3 num pairs=9
  Seq 1:
  6208
  31900
  4988
+ 2218
  4802
  16702
  14878
  27809
+ 6395
  Seq 2:
  7233
 HSS len=3 num pairs=2
@@ -11495,10 +11695,11 @@ AET len=3 num pairs=30
  11407
  12219
  347
-KPIV len=4 num pairs=2
+KPIV len=4 num pairs=3
  Seq 1:
  30948
  15834
+ 31882
  Seq 2:
  13348
 DGK len=3 num pairs=1080
@@ -11628,11 +11829,12 @@ KKVV len=4 num pairs=8
  5918
  14789
  11847
-HVEK len=4 num pairs=1
+HVEK len=4 num pairs=2
  Seq 1:
  28718
  Seq 2:
  17818
+ 6154
 SEV len=3 num pairs=64
  Seq 1:
  28712
@@ -11760,9 +11962,10 @@ VKTE len=4 num pairs=1
  19113
  Seq 2:
  12240
-FRVV len=4 num pairs=1
+FRVV len=4 num pairs=2
  Seq 1:
  19429
+ 24127
  Seq 2:
  17729
 SKP len=3 num pairs=348
@@ -11920,12 +12123,13 @@ ETE len=3 num pairs=144
  4999
  4271
  6011
-PPD len=3 num pairs=8
+PPD len=3 num pairs=9
  Seq 1:
  22580
  15828
  9860
  14436
+ 12026
  4034
  21893
  15505
@@ -11937,8 +12141,9 @@ GEDV len=4 num pairs=1
  28212
  Seq 2:
  3344
-TQIT len=4 num pairs=1
+TQIT len=4 num pairs=2
  Seq 1:
+ 21352
  31308
  Seq 2:
  3814
@@ -12105,8 +12310,9 @@ AKKE len=4 num pairs=2
  10034
  Seq 2:
  6305
-VTSA len=4 num pairs=1
+VTSA len=4 num pairs=2
  Seq 1:
+ 17888
  4127
  Seq 2:
  1774
@@ -12323,8 +12529,9 @@ YTI len=3 num pairs=119
  7966
  17526
  11763
-AILD len=4 num pairs=1
+AILD len=4 num pairs=2
  Seq 1:
+ 31639
  4719
  Seq 2:
  17023
@@ -12364,10 +12571,11 @@ EDEGVY len=6 num pairs=1
  31524
  Seq 2:
  2423
-EGLV len=4 num pairs=1
+EGLV len=4 num pairs=2
  Seq 1:
  18444
  Seq 2:
+ 8332
  8009
 QGN len=3 num pairs=3
  Seq 1:
@@ -12376,9 +12584,10 @@ QGN len=3 num pairs=3
  28821
  Seq 2:
  11825
-EVVE len=4 num pairs=1
+EVVE len=4 num pairs=2
  Seq 1:
  11294
+ 11606
  Seq 2:
  15870
 AFK len=3 num pairs=5
@@ -12505,7 +12714,7 @@ FES len=3 num pairs=12
  6938
  13326
  11527
-ERS len=3 num pairs=8
+ERS len=3 num pairs=9
  Seq 1:
  16176
  14384
@@ -12513,6 +12722,7 @@ ERS len=3 num pairs=8
  33258
  23550
  2118
+ 26553
  6215
  33251
  Seq 2:
@@ -12547,10 +12757,11 @@ FKIT len=4 num pairs=2
  7430
  Seq 2:
  14512
-TSST len=4 num pairs=2
+TSST len=4 num pairs=3
  Seq 1:
  15939
  Seq 2:
+ 16582
  4777
  17263
 GSD len=3 num pairs=75
@@ -12753,15 +12964,17 @@ PYY len=3 num pairs=2
  29443
  Seq 2:
  8457
-SPPS len=4 num pairs=9
+SPPS len=4 num pairs=11
  Seq 1:
  28864
  18024
+ 18628
  33052
  15914
  23749
  20101
  20201
+ 15209
  22367
  27011
  Seq 2:
@@ -12807,9 +13020,10 @@ NLV len=3 num pairs=15
  1834
  8089
  4479
-FGI len=3 num pairs=7
+FGI len=3 num pairs=8
  Seq 1:
  27576
+ 32188
  31234
  31730
  19998
@@ -12881,10 +13095,11 @@ YPE len=3 num pairs=12
  3466
  399
  4019
-GVYT len=4 num pairs=8
+GVYT len=4 num pairs=12
  Seq 1:
  12478
  28953
+ 31527
  Seq 2:
  1360
  1494
@@ -12918,9 +13133,12 @@ EASS len=4 num pairs=1
  33432
  Seq 2:
  933
-GESE len=4 num pairs=1
+GESE len=4 num pairs=4
  Seq 1:
  31832
+ 16714
+ 16302
+ 14990
  Seq 2:
  17738
 KPTG len=4 num pairs=1
@@ -12990,10 +13208,11 @@ EEKST len=5 num pairs=1
  33473
  Seq 2:
  14684
-VFL len=3 num pairs=2
+VFL len=3 num pairs=3
  Seq 1:
  13856
  23780
+ 27007
  Seq 2:
  4890
 DVN len=3 num pairs=10
@@ -13012,8 +13231,9 @@ EKEQV len=5 num pairs=2
  Seq 2:
  5983
  463
-LLII len=4 num pairs=1
+LLII len=4 num pairs=2
  Seq 1:
+ 13742
  21757
  Seq 2:
  4553
@@ -13053,8 +13273,9 @@ SRE len=3 num pairs=9
  13235
  Seq 2:
  16610
-TETQ len=4 num pairs=2
+TETQ len=4 num pairs=3
  Seq 1:
+ 2544
  2718
  27749
  Seq 2:
@@ -13081,9 +13302,10 @@ GPLK len=4 num pairs=1
  25733
  Seq 2:
  1027
-PLEY len=4 num pairs=1
+PLEY len=4 num pairs=2
  Seq 1:
  31160
+ 27801
  Seq 2:
  13751
 GESEP len=5 num pairs=3
@@ -13231,10 +13453,11 @@ ITLA len=4 num pairs=1
  24862
  Seq 2:
  17194
-KTKP len=4 num pairs=1
+KTKP len=4 num pairs=2
  Seq 1:
  15769
  Seq 2:
+ 14704
  15374
 PKS len=3 num pairs=108
  Seq 1:
@@ -13286,8 +13509,9 @@ TNV len=3 num pairs=81
  8743
  14303
  16639
-LTSS len=4 num pairs=1
+LTSS len=4 num pairs=2
  Seq 1:
+ 14224
  6670
  Seq 2:
  8234
@@ -13343,10 +13567,11 @@ ELTE len=4 num pairs=9
  13084
  13165
  5473
-IDI len=3 num pairs=5
+IDI len=3 num pairs=6
  Seq 1:
  16738
  23773
+ 6881
  4167
  9503
  9603
@@ -13449,10 +13674,11 @@ VYG len=3 num pairs=6
  Seq 2:
  3874
  2153
-KPKL len=4 num pairs=2
+KPKL len=4 num pairs=3
  Seq 1:
  11800
  Seq 2:
+ 6312
  8776
  5721
 QTVEEG len=6 num pairs=2
@@ -13482,9 +13708,11 @@ GIDVL len=5 num pairs=1
  2559
  Seq 2:
  8870
-GGSEITG len=7 num pairs=1
+GGSEITG len=7 num pairs=3
  Seq 1:
  16150
+ 22709
+ 21525
  Seq 2:
  17886
 EEGS len=4 num pairs=1
@@ -13553,9 +13781,10 @@ RPVP len=4 num pairs=8
  Seq 2:
  5454
  15139
-AWN len=3 num pairs=1
+AWN len=3 num pairs=2
  Seq 1:
  25748
+ 22701
  Seq 2:
  3206
 KKTL len=4 num pairs=3
@@ -13687,7 +13916,7 @@ DIE len=3 num pairs=24
  13414
  16189
  17687
-TEQ len=3 num pairs=8
+TEQ len=3 num pairs=9
  Seq 1:
  29469
  Seq 2:
@@ -13698,20 +13927,24 @@ TEQ len=3 num pairs=8
  12242
  6437
  8241
+ 5929
  8763
-WFKN len=4 num pairs=12
+WFKN len=4 num pairs=15
  Seq 1:
  12532
  34093
  4697
  12887
+ 13243
  Seq 2:
  17128
  2657
  1459
-SEIS len=4 num pairs=1
+SEIS len=4 num pairs=3
  Seq 1:
  26938
+ 15298
+ 31837
  Seq 2:
  7347
 ITSVT len=5 num pairs=1
@@ -13719,10 +13952,14 @@ ITSVT len=5 num pairs=1
  26917
  Seq 2:
  3816
-TWK len=3 num pairs=3
+TWK len=3 num pairs=7
  Seq 1:
+ 6944
+ 22024
+ 8826
  29606
  15525
+ 18177
  18255
  Seq 2:
  17504
@@ -13803,10 +14040,11 @@ LING len=4 num pairs=2
  Seq 2:
  4125
  405
-VKM len=3 num pairs=2
+VKM len=3 num pairs=3
  Seq 1:
  23174
  21489
+ 14367
  Seq 2:
  13948
 QAP len=3 num pairs=27
@@ -13994,8 +14232,10 @@ PEYD len=4 num pairs=4
  19345
  Seq 2:
  12487
-GLVE len=4 num pairs=4
+GLVE len=4 num pairs=6
  Seq 1:
+ 25592
+ 23428
  28746
  30526
  29830
@@ -14107,9 +14347,10 @@ INK len=3 num pairs=20
  Seq 2:
  12494
  12797
-YSVD len=4 num pairs=1
+YSVD len=4 num pairs=2
  Seq 1:
  6316
+ 2442
  Seq 2:
  12739
 YEL len=3 num pairs=10
@@ -14214,12 +14455,13 @@ KEGE len=4 num pairs=2
  Seq 2:
  7078
  2101
-EAEE len=4 num pairs=4
+EAEE len=4 num pairs=5
  Seq 1:
  11352
  Seq 2:
  14924
  15390
+ 11990
  6934
  15643
 FVEE len=4 num pairs=2
@@ -14347,10 +14589,11 @@ RVH len=3 num pairs=9
  633
  841
  3723
-LECR len=4 num pairs=3
+LECR len=4 num pairs=4
  Seq 1:
  7686
  Seq 2:
+ 2108
  1309
  1177
  16643
@@ -14429,9 +14672,10 @@ DSG len=3 num pairs=704
  3469
  685
  16889
-GQYTC len=5 num pairs=5
+GQYTC len=5 num pairs=6
  Seq 1:
  6324
+ 9738
  8206
  7265
  9147
@@ -14667,15 +14911,17 @@ LPH len=3 num pairs=1
  248
  Seq 2:
  3305
-VRAE len=4 num pairs=9
+VRAE len=4 num pairs=11
  Seq 1:
  19296
  15184
  19992
+ 9732
  15580
  18604
  870
  28657
+ 14169
  16911
  15803
  Seq 2:
@@ -14766,11 +15012,13 @@ QKKE len=4 num pairs=1
  11235
  Seq 2:
  12758
-RKQ len=3 num pairs=3
+RKQ len=3 num pairs=5
  Seq 1:
  7421
  Seq 2:
  5976
+ 16222
+ 4221
  3949
  13251
 VELS len=4 num pairs=4
@@ -14977,10 +15225,11 @@ IEL len=3 num pairs=77
  6198
  16877
  6441
-GTG len=3 num pairs=4
+GTG len=3 num pairs=5
  Seq 1:
  30176
  4782
+ 14097
  19303
  3499
  Seq 2:
@@ -14991,9 +15240,11 @@ CKIE len=4 num pairs=2
  Seq 2:
  17078
  1445
-AAPP len=4 num pairs=1
+AAPP len=4 num pairs=3
  Seq 1:
+ 11522
  11614
+ 10265
  Seq 2:
  4323
 TIKV len=4 num pairs=4
@@ -15055,8 +15306,9 @@ EEEY len=4 num pairs=8
  Seq 2:
  1814
  16181
-IKVL len=4 num pairs=1
+IKVL len=4 num pairs=2
  Seq 1:
+ 3066
  8261
  Seq 2:
  17009
@@ -15303,9 +15555,10 @@ TTHL len=4 num pairs=2
  8785
  Seq 2:
  2624
-GKTH len=4 num pairs=1
+GKTH len=4 num pairs=2
  Seq 1:
  12906
+ 12551
  Seq 2:
  16968
 QFK len=3 num pairs=4
@@ -15383,23 +15636,33 @@ TPEA len=4 num pairs=2
  Seq 2:
  6372
  17306
-FRVSA len=5 num pairs=8
+FRVSA len=5 num pairs=16
  Seq 1:
  14088
  29252
  29050
+ 31226
+ 18010
  31722
+ 21570
+ 21074
  21470
  28166
  29446
  23045
+ 24817
+ 23735
+ 20879
+ 23339
  Seq 2:
  17931
-WLKD len=4 num pairs=3
+WLKD len=4 num pairs=5
  Seq 1:
+ 6100
  7510
  5445
  6007
+ 28523
  Seq 2:
  925
 SVY len=3 num pairs=4
@@ -15438,9 +15701,11 @@ SKTT len=4 num pairs=1
  29192
  Seq 2:
  2879
-TLEE len=4 num pairs=1
+TLEE len=4 num pairs=3
  Seq 1:
  1265
+ 10657
+ 12143
  Seq 2:
  5514
 ESV len=3 num pairs=77
@@ -15556,10 +15821,11 @@ QKR len=3 num pairs=12
  14088
  6484
  5862
-LPQE len=4 num pairs=2
+LPQE len=4 num pairs=3
  Seq 1:
  30089
  11027
+ 17491
  Seq 2:
  6121
 IIEA len=4 num pairs=2
@@ -15767,9 +16033,10 @@ AAEA len=4 num pairs=1
  404
  Seq 2:
  882
-IVDK len=4 num pairs=1
+IVDK len=4 num pairs=2
  Seq 1:
  20350
+ 30429
  Seq 2:
  12517
 TTD len=3 num pairs=54
@@ -15955,7 +16222,7 @@ SDS len=3 num pairs=38
  Seq 2:
  14603
  8931
-FGY len=3 num pairs=9
+FGY len=3 num pairs=10
  Seq 1:
  1756
  Seq 2:
@@ -15967,6 +16234,7 @@ FGY len=3 num pairs=9
  1078
  1478
  805
+ 2807
  2143
 GKL len=3 num pairs=11
  Seq 1:
@@ -15991,12 +16259,14 @@ QHE len=3 num pairs=4
  8892
  1926
  1659
-TCRA len=4 num pairs=10
+TCRA len=4 num pairs=14
  Seq 1:
  5110
  1775
  Seq 2:
  1630
+ 3102
+ 3749
  1497
  6911
  1763
@@ -16018,9 +16288,10 @@ SSGS len=4 num pairs=4
  20299
  Seq 2:
  6822
-KDEV len=4 num pairs=1
+KDEV len=4 num pairs=2
  Seq 1:
  12958
+ 24543
  Seq 2:
  14096
 GTPK len=4 num pairs=6
@@ -16051,15 +16322,18 @@ GTYIC len=5 num pairs=1
  5762
  Seq 2:
  2159
-TDGG len=4 num pairs=1
+TDGG len=4 num pairs=2
  Seq 1:
  25700
+ 14041
  Seq 2:
  17783
-KEIK len=4 num pairs=2
+KEIK len=4 num pairs=4
  Seq 1:
  9852
  12045
+ 12981
+ 2569
  Seq 2:
  6530
 EHA len=3 num pairs=2
@@ -16181,17 +16455,19 @@ DWK len=3 num pairs=3
  27055
  Seq 2:
  7564
-VGI len=3 num pairs=5
+VGI len=3 num pairs=6
  Seq 1:
  5288
  19509
  27285
+ 19569
  25511
  23347
  Seq 2:
  518
-PVSE len=4 num pairs=2
+PVSE len=4 num pairs=3
  Seq 1:
+ 29905
  30807
  33211
  Seq 2:
@@ -16230,11 +16506,14 @@ LQE len=3 num pairs=45
  5262
  5893
  12303
-GSEIT len=5 num pairs=4
+GSEIT len=5 num pairs=7
  Seq 1:
  16452
  18956
+ 21526
+ 22710
  20343
+ 16151
  21031
  Seq 2:
  17887
@@ -16489,9 +16768,10 @@ EEFV len=4 num pairs=2
  Seq 2:
  5303
  16191
-HIA len=3 num pairs=3
+HIA len=3 num pairs=4
  Seq 1:
  9660
+ 15226
  19034
  3778
  Seq 2:
@@ -16517,18 +16797,21 @@ VYW len=3 num pairs=1
  1112
  Seq 2:
  4527
-DEQ len=3 num pairs=9
+DEQ len=3 num pairs=12
  Seq 1:
  2481
  Seq 2:
  5120
  8452
+ 12260
+ 6834
  7061
  3669
  17329
  13047
  5543
  743
+ 7103
  15151
 IQDL len=4 num pairs=1
  Seq 1:
@@ -16589,8 +16872,9 @@ SFI len=3 num pairs=9
  7527
  Seq 2:
  5201
-GGP len=3 num pairs=3
+GGP len=3 num pairs=4
  Seq 1:
+ 27896
  27794
  3615
  31039
@@ -16632,10 +16916,12 @@ YVC len=3 num pairs=24
  4026
  3882
  3202
-KDGL len=4 num pairs=2
+KDGL len=4 num pairs=4
  Seq 1:
+ 28525
  14327
  21311
+ 24191
  Seq 2:
  788
 HEE len=3 num pairs=24
@@ -16670,9 +16956,10 @@ PAQ len=3 num pairs=12
  16460
  250
  4717
-ISEK len=4 num pairs=1
+ISEK len=4 num pairs=2
  Seq 1:
  29424
+ 11371
  Seq 2:
  7421
 SQVT len=4 num pairs=6
@@ -16843,8 +17130,9 @@ VIPK len=4 num pairs=1
  11126
  Seq 2:
  17317
-HTLT len=4 num pairs=1
+HTLT len=4 num pairs=2
  Seq 1:
+ 13176
  31514
  Seq 2:
  16777
@@ -16863,11 +17151,14 @@ SSVV len=4 num pairs=2
  31739
  Seq 2:
  11919
-AAP len=3 num pairs=7
+AAP len=3 num pairs=10
  Seq 1:
  1672
  13924
  4380
+ 11522
+ 11614
+ 10265
  1079
  15655
  1383
@@ -16970,8 +17261,9 @@ GPK len=3 num pairs=10
  13394
  12807
  13019
-CEAK len=4 num pairs=1
+CEAK len=4 num pairs=2
  Seq 1:
+ 3310
  31689
  Seq 2:
  6607
@@ -16995,8 +17287,9 @@ CRVTG len=5 num pairs=1
  1861
  Seq 2:
  392
-EWYKD len=5 num pairs=1
+EWYKD len=5 num pairs=2
  Seq 1:
+ 6662
  27831
  Seq 2:
  785
@@ -17005,9 +17298,10 @@ TLSC len=4 num pairs=1
  23619
  Seq 2:
  17490
-PHL len=3 num pairs=1
+PHL len=3 num pairs=2
  Seq 1:
  18592
+ 7252
  Seq 2:
  603
 LTPL len=4 num pairs=2
@@ -17109,11 +17403,12 @@ LAM len=3 num pairs=1
  33029
  Seq 2:
  8859
-TITE len=4 num pairs=1
+TITE len=4 num pairs=2
  Seq 1:
  5506
  Seq 2:
  11764
+ 15915
 LYE len=3 num pairs=4
  Seq 1:
  32173
@@ -17373,10 +17668,11 @@ NES len=3 num pairs=12
  17640
  422
  1393
-FLV len=3 num pairs=3
+FLV len=3 num pairs=4
  Seq 1:
  16280
  19588
+ 6258
  25059
  Seq 2:
  15879
@@ -17761,10 +18057,11 @@ WHK len=3 num pairs=4
  23107
  Seq 2:
  17597
-IIH len=3 num pairs=4
+IIH len=3 num pairs=6
  Seq 1:
  3668
  24402
+ 32769
  Seq 2:
  1921
  14729
@@ -18314,22 +18611,25 @@ SVA len=3 num pairs=15
  6403
  Seq 2:
  8170
-EIKK len=4 num pairs=6
+EIKK len=4 num pairs=9
  Seq 1:
  13338
  15650
+ 11115
  Seq 2:
  13008
  16037
  13129
-LTD len=3 num pairs=9
+LTD len=3 num pairs=11
  Seq 1:
+ 14040
  13306
  25882
  26074
  8658
  5285
  2625
+ 22249
  5929
  22635
  25147
@@ -18384,8 +18684,9 @@ QEKK len=4 num pairs=3
  13058
  12853
  13179
-GRY len=3 num pairs=8
+GRY len=3 num pairs=10
  Seq 1:
+ 13432
  26100
  6042
  29642
@@ -18393,6 +18694,7 @@ GRY len=3 num pairs=8
  17766
  377
  13991
+ 27471
  75
  Seq 2:
  4564
@@ -18621,10 +18923,12 @@ DSAV len=4 num pairs=1
  3999
  Seq 2:
  4459
-ELEP len=4 num pairs=2
+ELEP len=4 num pairs=4
  Seq 1:
  10828
+ 7010
  4575
+ 1675
  Seq 2:
  6288
 VTN len=3 num pairs=72
@@ -18983,9 +19287,10 @@ REG len=3 num pairs=21
  4737
  16739
  16707
-PAEL len=4 num pairs=1
+PAEL len=4 num pairs=2
  Seq 1:
  6552
+ 19514
  Seq 2:
  8219
 RLNL len=4 num pairs=1
@@ -19053,10 +19358,11 @@ DEEL len=4 num pairs=2
  33018
  Seq 2:
  6496
-KLVI len=4 num pairs=4
+KLVI len=4 num pairs=5
  Seq 1:
  19540
  13266
+ 27647
  21999
  1139
  Seq 2:
@@ -19082,9 +19388,10 @@ EVG len=3 num pairs=72
  11980
  17938
  17837
-EGES len=4 num pairs=2
+EGES len=4 num pairs=4
  Seq 1:
  33500
+ 955
  Seq 2:
  16740
  8410
@@ -19292,11 +19599,12 @@ IILD len=4 num pairs=1
  30753
  Seq 2:
  8605
-KPKD len=4 num pairs=2
+KPKD len=4 num pairs=3
  Seq 1:
  2799
  Seq 2:
  15040
+ 15221
  15087
 DEI len=3 num pairs=49
  Seq 1:
@@ -19482,24 +19790,28 @@ EKLR len=4 num pairs=1
  13564
  Seq 2:
  6539
-GRPE len=4 num pairs=3
+GRPE len=4 num pairs=5
  Seq 1:
  18860
+ 25533
  29869
+ 23369
  26059
  Seq 2:
  2741
-TDL len=3 num pairs=11
+TDL len=3 num pairs=13
  Seq 1:
  19168
  24800
  14468
  22636
+ 29242
  794
  3370
  21262
  27151
  27851
+ 13307
  7163
  25883
  Seq 2:
@@ -19519,7 +19831,7 @@ DIM len=3 num pairs=1
  9504
  Seq 2:
  1617
-TEY len=3 num pairs=20
+TEY len=3 num pairs=26
  Seq 1:
  27066
  29538
@@ -19527,10 +19839,13 @@ TEY len=3 num pairs=20
  25998
  19774
  24317
+ 28421
  10449
  31425
  25399
+ 28151
  20075
+ 20107
  Seq 2:
  17437
  8651
@@ -19688,11 +20003,12 @@ KAVD len=4 num pairs=4
  Seq 2:
  5604
  8062
-PVEEV len=5 num pairs=3
+PVEEV len=5 num pairs=4
  Seq 1:
  11911
  Seq 2:
  5832
+ 15774
  6223
  5827
 IEII len=4 num pairs=2
@@ -19921,8 +20237,9 @@ DGS len=3 num pairs=6
  Seq 2:
  1672
  3015
-TKKL len=4 num pairs=6
+TKKL len=4 num pairs=9
  Seq 1:
+ 5604
  6166
  3017
  Seq 2:
@@ -20047,8 +20364,9 @@ TQE len=3 num pairs=24
  5268
  12092
  12143
-EIPEE len=5 num pairs=1
+EIPEE len=5 num pairs=2
  Seq 1:
+ 11176
  11302
  Seq 2:
  6075
@@ -20277,10 +20595,11 @@ TLT len=3 num pairs=116
  16778
  8377
  9063
-NVEE len=4 num pairs=1
+NVEE len=4 num pairs=2
  Seq 1:
  25285
  Seq 2:
+ 14304
  16403
 PVFD len=4 num pairs=2
  Seq 1:
@@ -20386,12 +20705,14 @@ EAT len=3 num pairs=104
  6063
  8035
  15779
-HPD len=3 num pairs=2
+HPD len=3 num pairs=4
  Seq 1:
  22603
  Seq 2:
  2192
+ 2725
  5641
+ 2459
 IED len=3 num pairs=140
  Seq 1:
  29028
@@ -20579,10 +20900,11 @@ DDL len=3 num pairs=40
  13917
  12399
  14171
-EEEQ len=4 num pairs=2
+EEEQ len=4 num pairs=3
  Seq 1:
  19765
  Seq 2:
+ 14736
  14248
  16353
 EVVEEPE len=7 num pairs=1
@@ -20712,9 +21034,11 @@ ALQ len=3 num pairs=16
  8433
  11775
  8187
-YLI len=3 num pairs=4
+YLI len=3 num pairs=8
  Seq 1:
+ 20052
  4210
+ 30993
  7891
  Seq 2:
  13398
@@ -20746,11 +21070,12 @@ LKPS len=4 num pairs=1
  4252
  Seq 2:
  14866
-EDVQV len=5 num pairs=1
+EDVQV len=5 num pairs=2
  Seq 1:
  28213
  Seq 2:
  12990
+ 7429
 KHG len=3 num pairs=20
  Seq 1:
  14000
@@ -20829,10 +21154,11 @@ EFG len=3 num pairs=28
  13550
  2945
  17971
-PAPE len=4 num pairs=3
+PAPE len=4 num pairs=4
  Seq 1:
  21730
  22814
+ 10221
  11943
  Seq 2:
  5956
@@ -20911,9 +21237,27 @@ PVVT len=4 num pairs=3
  16131
  Seq 2:
  15708
-DGGSK len=5 num pairs=2
+DGGSK len=5 num pairs=20
  Seq 1:
+ 14736
+ 26248
+ 27720
+ 22904
+ 15532
+ 14042
+ 32074
+ 23986
+ 17170
+ 20142
  17373
+ 21917
+ 18065
+ 29793
+ 17865
+ 28807
+ 23391
+ 24083
+ 25555
  29891
  Seq 2:
  17784
@@ -21185,12 +21529,14 @@ AKND len=4 num pairs=3
  5486
  Seq 2:
  1383
-ILY len=3 num pairs=2
+ILY len=3 num pairs=4
  Seq 1:
  32551
  Seq 2:
  3324
  2018
+ 2150
+ 3871
 ATNK len=4 num pairs=8
  Seq 1:
  1778
@@ -21314,11 +21660,12 @@ NPR len=3 num pairs=2
  22687
  Seq 2:
  16526
-ADY len=3 num pairs=3
+ADY len=3 num pairs=4
  Seq 1:
  15996
  3546
  1174
+ 3035
  Seq 2:
  7964
 PYA len=3 num pairs=1
@@ -21726,9 +22073,10 @@ DVV len=3 num pairs=40
  17480
  1254
  12827
-PTAE len=4 num pairs=1
+PTAE len=4 num pairs=2
  Seq 1:
  15517
+ 33327
  Seq 2:
  13636
 IAPP len=4 num pairs=2
@@ -21798,10 +22146,11 @@ LKETN len=5 num pairs=1
  8614
  Seq 2:
  4276
-TSKT len=4 num pairs=2
+TSKT len=4 num pairs=3
  Seq 1:
  2694
  33725
+ 29191
  Seq 2:
  2878
 PLEA len=4 num pairs=8
@@ -21813,13 +22162,14 @@ PLEA len=4 num pairs=8
  8950
  17985
  931
-KISE len=4 num pairs=3
+KISE len=4 num pairs=4
  Seq 1:
  33746
  Seq 2:
  13980
  7420
  12705
+ 15423
 NVL len=3 num pairs=36
  Seq 1:
  34076
@@ -22270,12 +22620,13 @@ TLLAE len=5 num pairs=1
  3886
  Seq 2:
  325
-NSVG len=4 num pairs=4
+NSVG len=4 num pairs=5
  Seq 1:
  8022
  7647
  5115
  179
+ 8963
  Seq 2:
  4166
 VHTN len=4 num pairs=1
@@ -22323,8 +22674,9 @@ KWL len=3 num pairs=2
  6099
  Seq 2:
  7098
-EISS len=4 num pairs=1
+EISS len=4 num pairs=2
  Seq 1:
+ 33545
  8647
  Seq 2:
  11917
@@ -22377,12 +22729,14 @@ SEIK len=4 num pairs=1
  18475
  Seq 2:
  15134
-HFEC len=4 num pairs=2
+HFEC len=4 num pairs=4
  Seq 1:
  1720
  Seq 2:
+ 3556
  3148
  1442
+ 1575
 EETT len=4 num pairs=2
  Seq 1:
  584
@@ -22395,9 +22749,10 @@ KLEV len=4 num pairs=2
  30566
  Seq 2:
  7084
-EYL len=3 num pairs=10
+EYL len=3 num pairs=12
  Seq 1:
  24124
+ 7890
  14482
  10846
  15798
@@ -22539,8 +22894,9 @@ RVIE len=4 num pairs=2
  Seq 2:
  15729
  14105
-QYP len=3 num pairs=3
+QYP len=3 num pairs=4
  Seq 1:
+ 20512
  23261
  25425
  24343
@@ -22590,12 +22946,13 @@ LKAVP len=5 num pairs=1
  12036
  Seq 2:
  17975
-LKAV len=4 num pairs=3
+LKAV len=4 num pairs=4
  Seq 1:
  12036
  Seq 2:
  7818
  8061
+ 17975
  4971
 APPQ len=4 num pairs=1
  Seq 1:
@@ -22677,17 +23034,20 @@ GQV len=3 num pairs=8
  Seq 2:
  4781
  17509
-GYP len=3 num pairs=4
+GYP len=3 num pairs=5
  Seq 1:
  14346
  31557
+ 1865
  967
  1315
  Seq 2:
  17589
-TKY len=3 num pairs=2
+TKY len=3 num pairs=4
  Seq 1:
  29732
+ 33538
+ 18098
  19317
  Seq 2:
  15084
@@ -22801,10 +23161,11 @@ AER len=3 num pairs=10
  Seq 2:
  1954
  514
-SYL len=3 num pairs=3
+SYL len=3 num pairs=4
  Seq 1:
  4672
  9128
+ 30842
  3906
  Seq 2:
  3192
@@ -23006,12 +23367,13 @@ ISD len=3 num pairs=20
  Seq 2:
  2320
  13547
-WFK len=3 num pairs=75
+WFK len=3 num pairs=90
  Seq 1:
  5072
  12976
  12264
  5352
+ 12532
  6196
  17076
  7604
@@ -23024,14 +23386,18 @@ WFK len=3 num pairs=75
  28918
  4790
  28038
+ 34093
  5165
  3653
  7793
  6289
  8545
+ 4697
+ 12887
  13959
  5727
  4415
+ 13243
  8451
  Seq 2:
  17128
@@ -23042,10 +23408,11 @@ TSNS len=4 num pairs=1
  15841
  Seq 2:
  9276
-KVG len=3 num pairs=12
+KVG len=3 num pairs=13
  Seq 1:
  27088
  19568
+ 1200
  15484
  9402
  7258
@@ -23090,12 +23457,48 @@ TEPK len=4 num pairs=2
  21221
  Seq 2:
  15506
-YIV len=3 num pairs=4
+YIV len=3 num pairs=40
  Seq 1:
+ 22912
+ 27728
+ 26448
  22516
+ 14548
+ 15044
+ 21828
  24284
+ 26844
+ 30892
+ 16972
+ 23994
+ 23202
+ 30498
+ 21234
+ 32082
+ 23598
+ 25366
+ 23798
+ 29702
  20349
+ 22317
+ 17381
+ 18565
+ 30101
+ 26645
+ 19953
+ 24481
  13729
+ 23009
+ 16665
+ 18073
+ 22615
+ 27927
+ 23399
+ 26159
+ 19659
+ 24779
+ 24091
+ 25563
  Seq 2:
  17792
 DKI len=3 num pairs=4
@@ -23267,11 +23670,13 @@ VEPA len=4 num pairs=4
  Seq 2:
  2776
  343
-SKPV len=4 num pairs=3
+SKPV len=4 num pairs=5
  Seq 1:
  33776
  28114
  19310
+ 29201
+ 18027
  Seq 2:
  1155
 VQI len=3 num pairs=30
@@ -23536,9 +23941,10 @@ IRVS len=4 num pairs=2
  5817
  Seq 2:
  15577
-PLN len=3 num pairs=4
+PLN len=3 num pairs=5
  Seq 1:
  14120
+ 29002
  16309
  22291
  31251
@@ -23653,12 +24059,14 @@ IKEE len=4 num pairs=2
  Seq 2:
  14246
  15759
-DPV len=3 num pairs=6
+DPV len=3 num pairs=8
  Seq 1:
+ 20208
  31982
  20398
  27005
  24841
+ 28471
  14999
  29067
  Seq 2:
@@ -23760,8 +24168,10 @@ KID len=3 num pairs=49
  12697
  12423
  8475
-DAGT len=4 num pairs=3
+DAGT len=4 num pairs=9
  Seq 1:
+ 6696
+ 12204
  5865
  Seq 2:
  958
@@ -24002,8 +24412,9 @@ VPYY len=4 num pairs=1
  29442
  Seq 2:
  8456
-QKD len=3 num pairs=1
+QKD len=3 num pairs=2
  Seq 1:
+ 4511
  13615
  Seq 2:
  504
@@ -24099,25 +24510,28 @@ VKGD len=4 num pairs=29
  11387
  9683
  10819
-DEGEY len=5 num pairs=2
+DEGEY len=5 num pairs=4
  Seq 1:
+ 3568
  13725
  Seq 2:
  17344
  154
-FSS len=3 num pairs=7
+FSS len=3 num pairs=8
  Seq 1:
  18490
  24162
  34190
  3454
+ 34174
  6445
  34193
  29559
  Seq 2:
  21
-KVTG len=4 num pairs=13
+KVTG len=4 num pairs=14
  Seq 1:
+ 5248
  25736
  28052
  31876
@@ -24138,8 +24552,9 @@ HTN len=3 num pairs=1
  30318
  Seq 2:
  9108
-LYTC len=4 num pairs=1
+LYTC len=4 num pairs=2
  Seq 1:
+ 9245
  33847
  Seq 2:
  3609
@@ -24232,9 +24647,11 @@ LDSE len=4 num pairs=3
  3747
  Seq 2:
  13651
-NPL len=3 num pairs=6
+NPL len=3 num pairs=12
  Seq 1:
+ 8118
  18950
+ 7177
  3991
  Seq 2:
  2434
@@ -24573,11 +24990,12 @@ RDGG len=4 num pairs=3
  18361
  Seq 2:
  319
-YKDGK len=5 num pairs=3
+YKDGK len=5 num pairs=4
  Seq 1:
  6664
  1324
  33678
+ 9017
  Seq 2:
  16761
 GMT len=3 num pairs=4
@@ -24731,10 +25149,11 @@ TGTE len=4 num pairs=2
  24315
  Seq 2:
  3647
-TSTA len=4 num pairs=4
+TSTA len=4 num pairs=5
  Seq 1:
  27538
  12126
+ 3045
  89
  185
  Seq 2:
@@ -24769,9 +25188,10 @@ SNPK len=4 num pairs=1
  25933
  Seq 2:
  279
-KTPI len=4 num pairs=5
+KTPI len=4 num pairs=6
  Seq 1:
  18680
+ 25482
  23318
  9489
  21153
@@ -25569,13 +25989,17 @@ EVPE len=4 num pairs=8
  Seq 2:
  5835
  15251
-KYD len=3 num pairs=5
+KYD len=3 num pairs=9
  Seq 1:
  13344
+ 21224
+ 23192
  20684
  13522
  19318
+ 27521
  14113
+ 17667
  Seq 2:
  6761
 IGP len=3 num pairs=18
@@ -25630,9 +26054,13 @@ KAL len=3 num pairs=20
  Seq 2:
  3578
  367
-VTWK len=4 num pairs=1
+VTWK len=4 num pairs=5
  Seq 1:
+ 18176
  29605
+ 8825
+ 22023
+ 6943
  Seq 2:
  17503
 NRV len=3 num pairs=6
@@ -25648,8 +26076,9 @@ TSCR len=4 num pairs=1
  19975
  Seq 2:
  17552
-NSK len=3 num pairs=2
+NSK len=3 num pairs=3
  Seq 1:
+ 3592
  15684
  7426
  Seq 2:
@@ -25710,10 +26139,11 @@ FIQ len=3 num pairs=6
  6842
  13686
  5251
-ESEA len=4 num pairs=2
+ESEA len=4 num pairs=3
  Seq 1:
  1284
  Seq 2:
+ 11528
  9085
  15543
 AQF len=3 num pairs=1
@@ -25938,11 +26368,12 @@ RDD len=3 num pairs=24
  412
  7101
  14341
-KKN len=3 num pairs=2
+KKN len=3 num pairs=3
  Seq 1:
  8828
  Seq 2:
  12472
+ 17506
  11943
 AEVEE len=5 num pairs=1
  Seq 1:
@@ -25996,11 +26427,12 @@ PQG len=3 num pairs=6
  12274
  3246
  2857
-ASEE len=4 num pairs=1
+ASEE len=4 num pairs=2
  Seq 1:
  33957
  Seq 2:
  7108
+ 12067
 ETS len=3 num pairs=207
  Seq 1:
  31296
@@ -26090,13 +26522,14 @@ KTVSD len=5 num pairs=1
  3921
  Seq 2:
  3179
-LKQ len=3 num pairs=6
+LKQ len=3 num pairs=7
  Seq 1:
  22032
  24196
  23114
  25278
  14657
+ 32431
  9539
  Seq 2:
  15024
@@ -26118,13 +26551,16 @@ KPQ len=3 num pairs=50
  5493
  8385
  5583
-PEDS len=4 num pairs=3
+PEDS len=4 num pairs=6
  Seq 1:
  167
  Seq 2:
+ 4020
  14164
  11588
+ 1756
  7911
+ 3467
 QERH len=4 num pairs=1
  Seq 1:
  3190
@@ -26142,12 +26578,16 @@ APVPE len=5 num pairs=1
  11111
  Seq 2:
  15866
-PVEE len=4 num pairs=2
+PVEE len=4 num pairs=6
  Seq 1:
  11911
  Seq 2:
+ 5832
  6072
+ 15774
  15397
+ 6223
+ 5827
 GTA len=3 num pairs=102
  Seq 1:
  18772
@@ -26190,10 +26630,11 @@ LGE len=3 num pairs=42
  7201
  2169
  759
-RLTP len=4 num pairs=1
+RLTP len=4 num pairs=2
  Seq 1:
  1724
  Seq 2:
+ 3285
  7897
 QPK len=3 num pairs=24
  Seq 1:
@@ -26527,9 +26968,10 @@ TATTK len=5 num pairs=1
  21842
  Seq 2:
  7593
-FTKKL len=5 num pairs=1
+FTKKL len=5 num pairs=2
  Seq 1:
  6165
+ 5603
  Seq 2:
  16919
 EGTNV len=5 num pairs=1
@@ -26870,10 +27312,11 @@ KVTW len=4 num pairs=6
  Seq 2:
  17502
  16757
-ILPK len=4 num pairs=1
+ILPK len=4 num pairs=2
  Seq 1:
  11151
  Seq 2:
+ 13290
  9158
 KDQT len=4 num pairs=1
  Seq 1:
@@ -27064,9 +27507,10 @@ PEK len=3 num pairs=360
  15695
  14003
  15075
-YKL len=3 num pairs=3
+YKL len=3 num pairs=4
  Seq 1:
  33824
+ 2586
  2514
  15998
  Seq 2:
@@ -27109,11 +27553,12 @@ EPKEE len=5 num pairs=1
  11868
  Seq 2:
  15319
-AKD len=3 num pairs=19
+AKD len=3 num pairs=23
  Seq 1:
  12256
  18032
  19416
+ 20868
  13284
  28188
  8172
@@ -27123,13 +27568,16 @@ AKD len=3 num pairs=19
  24542
  1229
  24757
+ 24149
  9113
  18825
  13911
  15103
  16655
+ 25231
  13195
  17931
+ 23067
  Seq 2:
  5047
 PDV len=3 num pairs=28
@@ -27416,11 +27864,12 @@ TSTQ len=4 num pairs=1
  365
  Seq 2:
  12141
-KAEE len=4 num pairs=2
+KAEE len=4 num pairs=3
  Seq 1:
  9959
  Seq 2:
  5441
+ 7969
  15159
 FVEKP len=5 num pairs=1
  Seq 1:
@@ -27522,10 +27971,11 @@ RTTH len=4 num pairs=2
  Seq 2:
  2138
  2537
-TVDD len=4 num pairs=1
+TVDD len=4 num pairs=2
  Seq 1:
  24064
  Seq 2:
+ 12684
  15474
 EEGE len=4 num pairs=3
  Seq 1:
@@ -27598,12 +28048,36 @@ DVGEYS len=6 num pairs=1
  8012
  Seq 2:
  17161
-NAA len=3 num pairs=12
+NAA len=3 num pairs=84
  Seq 1:
+ 16608
+ 15584
+ 8308
  18644
  18204
+ 29946
+ 27674
+ 15906
+ 25906
  19478
+ 28070
+ 16006
+ 23741
+ 17021
+ 24525
+ 17325
+ 30245
+ 29157
+ 29845
+ 18513
  26689
+ 22361
+ 24823
+ 25607
+ 18119
+ 26987
+ 23443
+ 22659
  Seq 2:
  4572
  2566
@@ -27729,14 +28203,22 @@ NFR len=3 num pairs=9
  21671
  Seq 2:
  3644
-NGG len=3 num pairs=2
+NGG len=3 num pairs=9
  Seq 1:
+ 18954
+ 16450
  28610
  15954
+ 27622
+ 15237
+ 24375
+ 16247
+ 16551
  Seq 2:
  17885
-QAF len=3 num pairs=1
+QAF len=3 num pairs=2
  Seq 1:
+ 9534
  33735
  Seq 2:
  7033
@@ -27804,10 +28286,11 @@ SEFV len=4 num pairs=2
  12055
  Seq 2:
  1412
-LDVT len=4 num pairs=3
+LDVT len=4 num pairs=4
  Seq 1:
  18836
  18540
+ 31265
  33387
  Seq 2:
  6028
@@ -27958,9 +28441,10 @@ EPKAPE len=6 num pairs=1
  33767
  Seq 2:
  15825
-MEV len=3 num pairs=3
+MEV len=3 num pairs=4
  Seq 1:
  17052
+ 14572
  23283
  2211
  Seq 2:
@@ -28038,7 +28522,7 @@ PEPIV len=5 num pairs=1
  29463
  Seq 2:
  16024
-EKYE len=4 num pairs=6
+EKYE len=4 num pairs=7
  Seq 1:
  32539
  Seq 2:
@@ -28047,6 +28531,7 @@ EKYE len=4 num pairs=6
  14398
  13937
  14817
+ 6579
  12419
 VVEK len=4 num pairs=6
  Seq 1:
@@ -28680,10 +29165,11 @@ SCRL len=4 num pairs=1
  16853
  Seq 2:
  17553
-DTGTY len=5 num pairs=2
+DTGTY len=5 num pairs=3
  Seq 1:
  14683
  Seq 2:
+ 2157
  3097
  2025
 KVSD len=4 num pairs=3
@@ -28698,7 +29184,7 @@ FLP len=3 num pairs=1
  27008
  Seq 2:
  4891
-VPKK len=4 num pairs=21
+VPKK len=4 num pairs=22
  Seq 1:
  11664
  11704
@@ -28710,6 +29196,7 @@ VPKK len=4 num pairs=21
  11014
  11398
  10893
+ 10989
  10245
  11141
  10933
@@ -28879,7 +29366,7 @@ SSF len=3 num pairs=18
  Seq 2:
  11892
  6869
-ITW len=3 num pairs=15
+ITW len=3 num pairs=16
  Seq 1:
  14648
  30404
@@ -28892,6 +29379,7 @@ ITW len=3 num pairs=15
  5350
  6005
  15637
+ 31985
  8169
  5257
  20651
@@ -28910,9 +29398,10 @@ KLM len=3 num pairs=1
  2849
  Seq 2:
  3170
-NADI len=4 num pairs=1
+NADI len=4 num pairs=2
  Seq 1:
  26736
+ 3510
  Seq 2:
  8355
 RHP len=3 num pairs=2
@@ -29232,9 +29721,11 @@ QPS len=3 num pairs=12
  14271
  4331
  14083
-EPPK len=4 num pairs=2
+EPPK len=4 num pairs=4
  Seq 1:
+ 7288
  27518
+ 6347
  15131
  Seq 2:
  3260
@@ -29289,10 +29780,11 @@ TSI len=3 num pairs=40
  8225
  1785
  203
-FKS len=3 num pairs=2
+FKS len=3 num pairs=3
  Seq 1:
  22244
  32821
+ 33737
  Seq 2:
  2801
 EDLK len=4 num pairs=8
@@ -29332,12 +29824,13 @@ SKKA len=4 num pairs=1
  27246
  Seq 2:
  12893
-YTG len=3 num pairs=6
+YTG len=3 num pairs=7
  Seq 1:
  30024
  7876
  22308
  25357
+ 12953
  6935
  24275
  Seq 2:
@@ -29526,11 +30019,12 @@ KVVE len=4 num pairs=3
  15540
  3801
  15447
-EGEYT len=5 num pairs=1
+EGEYT len=5 num pairs=2
  Seq 1:
  3569
  Seq 2:
  17345
+ 155
 TVP len=3 num pairs=51
  Seq 1:
  14512
@@ -29708,12 +30202,14 @@ QKL len=3 num pairs=60
  14385
  17719
  12867
-PKEP len=4 num pairs=2
+PKEP len=4 num pairs=4
  Seq 1:
  11789
  Seq 2:
  6300
+ 16042
  14365
+ 15493
 PKTLE len=5 num pairs=1
  Seq 1:
  31954
@@ -29735,8 +30231,9 @@ TIDS len=4 num pairs=1
  31203
  Seq 2:
  4803
-LIS len=3 num pairs=3
+LIS len=3 num pairs=4
  Seq 1:
+ 7892
  12546
  33929
  4211
@@ -29919,9 +30416,10 @@ PVDDGG len=6 num pairs=2
  25851
  Seq 2:
  17680
-KLKV len=4 num pairs=2
+KLKV len=4 num pairs=3
  Seq 1:
  20308
+ 2700
  22539
  Seq 2:
  3431
@@ -29952,11 +30450,12 @@ KIIQ len=4 num pairs=1
  24087
  Seq 2:
  16291
-ETVI len=4 num pairs=1
+ETVI len=4 num pairs=2
  Seq 1:
  16362
  Seq 2:
  11800
+ 13366
 VAQ len=3 num pairs=21
  Seq 1:
  1530
@@ -30060,10 +30559,11 @@ VKWFKNG len=7 num pairs=1
  13241
  Seq 2:
  17126
-VVKE len=4 num pairs=2
+VVKE len=4 num pairs=3
  Seq 1:
  11286
  10625
+ 19119
  Seq 2:
  5652
 IPITV len=5 num pairs=1
@@ -30219,9 +30719,10 @@ REA len=3 num pairs=14
  19811
  Seq 2:
  225
-SEEI len=4 num pairs=1
+SEEI len=4 num pairs=2
  Seq 1:
  33905
+ 539
  Seq 2:
  12381
 IIKDA len=5 num pairs=1
@@ -30613,10 +31114,11 @@ EADV len=4 num pairs=3
  17782
  Seq 2:
  12825
-ETTS len=4 num pairs=1
+ETTS len=4 num pairs=2
  Seq 1:
  26454
  Seq 2:
+ 17616
  13629
 WYKDG len=5 num pairs=24
  Seq 1:
@@ -30667,9 +31169,10 @@ KYEIT len=5 num pairs=1
  32540
  Seq 2:
  6580
-CLE len=3 num pairs=2
+CLE len=3 num pairs=3
  Seq 1:
  29821
+ 4813
  1467
  Seq 2:
  526
@@ -30813,11 +31316,12 @@ DLR len=3 num pairs=13
  13659
  Seq 2:
  900
-VDTT len=4 num pairs=5
+VDTT len=4 num pairs=6
  Seq 1:
  19432
  30277
  24855
+ 27159
  1967
  15059
  Seq 2:
@@ -30906,12 +31410,13 @@ EEIS len=4 num pairs=3
  1150
  5689
  16263
-KQD len=3 num pairs=6
+KQD len=3 num pairs=7
  Seq 1:
  416
  8244
  14658
  34321
+ 18569
  4247
  6131
  Seq 2:
@@ -31045,9 +31550,10 @@ EEF len=3 num pairs=60
  16191
  207
  15311
-LAEN len=4 num pairs=4
+LAEN len=4 num pairs=5
  Seq 1:
  22952
+ 14884
  28366
  20213
  4923
@@ -31130,8 +31636,9 @@ ITKT len=4 num pairs=4
  Seq 2:
  13464
  7410
-FVEK len=4 num pairs=2
+FVEK len=4 num pairs=3
  Seq 1:
+ 5696
  1557
  5227
  Seq 2:
@@ -31194,9 +31701,11 @@ GET len=3 num pairs=60
  13847
  8083
  7891
-LSVK len=4 num pairs=1
+LSVK len=4 num pairs=3
  Seq 1:
+ 7284
  23527
+ 5499
  Seq 2:
  8415
 ADLG len=4 num pairs=2
@@ -31446,10 +31955,11 @@ GEYVC len=5 num pairs=9
  3200
  3880
  4024
-NEE len=3 num pairs=4
+NEE len=3 num pairs=5
  Seq 1:
  13601
  Seq 2:
+ 12064
  7732
  8122
  14442
@@ -31494,10 +32004,11 @@ RDL len=3 num pairs=32
  6450
  7461
  757
-KKF len=3 num pairs=1
+KKF len=3 num pairs=2
  Seq 1:
  7428
  Seq 2:
+ 12000
  17752
 LPF len=3 num pairs=2
  Seq 1:
@@ -31678,7 +32189,7 @@ NLQE len=4 num pairs=2
  26187
  Seq 2:
  4311
-TLR len=3 num pairs=12
+TLR len=3 num pairs=13
  Seq 1:
  26050
  32718
@@ -31687,6 +32198,7 @@ TLR len=3 num pairs=12
  13621
  18161
  33303
+ 9639
  5407
  16047
  13179
@@ -31836,9 +32348,10 @@ CAL len=3 num pairs=2
  8663
  Seq 2:
  2810
-YDTG len=4 num pairs=1
+YDTG len=4 num pairs=2
  Seq 1:
  1904
+ 21766
  Seq 2:
  4155
 MSIE len=4 num pairs=1
@@ -31986,10 +32499,11 @@ LSA len=3 num pairs=30
  11418
  6745
  8735
-GDPTM len=5 num pairs=2
+GDPTM len=5 num pairs=3
  Seq 1:
  1729
  Seq 2:
+ 644
  1185
  3703
 KHA len=3 num pairs=1
@@ -32122,10 +32636,12 @@ VRV len=3 num pairs=684
  9587
  10723
  1699
-NGVE len=4 num pairs=3
+NGVE len=4 num pairs=5
  Seq 1:
+ 33336
  2916
  32015
+ 33999
  3003
  Seq 2:
  2526
@@ -32699,13 +33215,21 @@ PTAEV len=5 num pairs=1
  33327
  Seq 2:
  13636
-YKD len=3 num pairs=18
+YKD len=3 num pairs=42
  Seq 1:
+ 6664
+ 1324
+ 8076
  8266
+ 33678
  6477
+ 4977
  27833
+ 9017
  25639
  8359
+ 2207
+ 3179
  23475
  Seq 2:
  16761
@@ -33042,10 +33566,11 @@ EVQ len=3 num pairs=252
  14427
  16931
  13891
-PKM len=3 num pairs=1
+PKM len=3 num pairs=2
  Seq 1:
  20007
  Seq 2:
+ 11913
  8067
 TNH len=3 num pairs=1
  Seq 1:
@@ -33249,9 +33774,13 @@ RLT len=3 num pairs=33
  284
  3285
  7897
-RVSA len=4 num pairs=10
+RVSA len=4 num pairs=19
  Seq 1:
+ 20880
+ 23736
  17716
+ 23340
+ 24818
  23046
  29253
  16001
@@ -33261,6 +33790,11 @@ RVSA len=4 num pairs=10
  21471
  31723
  29051
+ 31227
+ 18011
+ 14291
+ 21075
+ 21571
  Seq 2:
  17932
 PIER len=4 num pairs=1
@@ -33372,11 +33906,13 @@ DQS len=3 num pairs=4
  Seq 2:
  3057
  5127
-NAI len=3 num pairs=8
+NAI len=3 num pairs=12
  Seq 1:
+ 15290
  12398
  7677
  21325
+ 15087
  1371
  Seq 2:
  492
@@ -33516,12 +34052,13 @@ PKPI len=4 num pairs=2
  31881
  Seq 2:
  1166
-VHD len=3 num pairs=2
+VHD len=3 num pairs=4
  Seq 1:
  16784
  22081
  Seq 2:
  2248
+ 14052
 DHIS len=4 num pairs=1
  Seq 1:
  15364
@@ -33798,12 +34335,13 @@ EPEN len=4 num pairs=1
  19029
  Seq 2:
  14185
-ATTS len=4 num pairs=2
+ATTS len=4 num pairs=3
  Seq 1:
  3319
  Seq 2:
  2836
  9239
+ 3759
 AEV len=3 num pairs=112
  Seq 1:
  5340
@@ -33874,11 +34412,12 @@ QNA len=3 num pairs=2
  17599
  Seq 2:
  5045
-GEH len=3 num pairs=1
+GEH len=3 num pairs=2
  Seq 1:
  23848
  Seq 2:
  6852
+ 2103
 EELV len=4 num pairs=6
  Seq 1:
  32244
@@ -34078,22 +34617,30 @@ PPPV len=4 num pairs=2
  11960
  Seq 2:
  2889
-NEY len=3 num pairs=15
+NEY len=3 num pairs=23
  Seq 1:
  27960
  25796
  19692
+ 29452
  19290
+ 26202
  21466
  30826
+ 4458
  18994
+ 19702
  29046
+ 20790
  30134
  26877
+ 24037
  22549
  24713
  18799
+ 21871
  23631
+ 22955
  29147
  Seq 2:
  3479
@@ -34135,9 +34682,24 @@ RDP len=3 num pairs=8
  20509
  Seq 2:
  2780
-GGSE len=4 num pairs=1
+GGSE len=4 num pairs=16
  Seq 1:
+ 22608
+ 26936
+ 24772
+ 23690
+ 16150
+ 20342
+ 21030
  28710
+ 17670
+ 22709
+ 21525
+ 29105
+ 24873
+ 15755
+ 18955
+ 16451
  Seq 2:
  17886
 VVSA len=4 num pairs=2
@@ -34163,11 +34725,12 @@ VQM len=3 num pairs=2
  Seq 2:
  9004
  6682
-RGG len=3 num pairs=1
+RGG len=3 num pairs=2
  Seq 1:
  5425
  Seq 2:
  3224
+ 4470
 DSGLYTC len=7 num pairs=1
  Seq 1:
  33844
@@ -34196,11 +34759,12 @@ QIVT len=4 num pairs=2
  22729
  Seq 2:
  1520
-NKLG len=4 num pairs=1
+NKLG len=4 num pairs=2
  Seq 1:
  15389
  Seq 2:
  1102
+ 4679
 IKKPK len=5 num pairs=1
  Seq 1:
  2797
@@ -34415,11 +34979,12 @@ SVTK len=4 num pairs=3
  19971
  Seq 2:
  13853
-PVDD len=4 num pairs=2
+PVDD len=4 num pairs=4
  Seq 1:
  21521
  25851
  Seq 2:
+ 17680
  6347
 LFD len=3 num pairs=3
  Seq 1:
@@ -34445,8 +35010,9 @@ FVN len=3 num pairs=10
  Seq 2:
  3034
  1326
-VWTK len=4 num pairs=1
+VWTK len=4 num pairs=2
  Seq 1:
+ 18749
  16063
  Seq 2:
  2892
@@ -34561,8 +35127,9 @@ VAEP len=4 num pairs=4
  Seq 2:
  3258
  6329
-KLTI len=4 num pairs=4
+KLTI len=4 num pairs=5
  Seq 1:
+ 33864
  9726
  30721
  17753
@@ -34788,8 +35355,9 @@ SNS len=3 num pairs=3
  7543
  Seq 2:
  9277
-KVVI len=4 num pairs=3
+KVVI len=4 num pairs=4
  Seq 1:
+ 11124
  1503
  523
  16515
@@ -35307,12 +35875,42 @@ YEIS len=4 num pairs=2
  Seq 2:
  300
  14277
-ETVE len=4 num pairs=2
+ETVE len=4 num pairs=32
  Seq 1:
  9183
  Seq 2:
+ 10688
+ 9552
+ 10120
  14776
+ 11256
+ 10404
+ 10972
+ 9978
+ 11114
  14018
+ 9410
+ 10546
+ 10830
+ 9694
+ 5782
+ 10262
+ 11398
+ 10333
+ 9765
+ 10901
+ 11185
+ 10049
+ 10617
+ 9481
+ 9623
+ 10759
+ 11327
+ 10191
+ 10475
+ 9339
+ 9907
+ 11043
 TYELKI len=6 num pairs=1
  Seq 1:
  33699
@@ -35490,8 +36088,9 @@ VAKV len=4 num pairs=1
  32483
  Seq 2:
  8153
-IKDT len=4 num pairs=1
+IKDT len=4 num pairs=2
  Seq 1:
+ 21646
  33870
  Seq 2:
  17423
@@ -35587,11 +36186,12 @@ QVI len=3 num pairs=8
  Seq 2:
  17652
  14297
-FTKK len=4 num pairs=2
+FTKK len=4 num pairs=4
  Seq 1:
  6165
  5603
  Seq 2:
+ 16919
  4395
 NVV len=3 num pairs=8
  Seq 1:
@@ -35752,12 +36352,14 @@ SLLI len=4 num pairs=2
  159
  Seq 2:
  144
-VVAK len=4 num pairs=5
+VVAK len=4 num pairs=7
  Seq 1:
  15304
  9922
  19414
+ 23654
  2182
+ 27983
  11635
  Seq 2:
  16573
@@ -36318,11 +36920,12 @@ EGQE len=4 num pairs=4
  16187
  Seq 2:
  17081
-APPK len=4 num pairs=8
+APPK len=4 num pairs=9
  Seq 1:
  21024
  29968
  10584
+ 11364
  10266
  33642
  11813
@@ -36500,11 +37103,12 @@ EVPA len=4 num pairs=3
  28387
  Seq 2:
  17880
-LAW len=3 num pairs=16
+LAW len=3 num pairs=18
  Seq 1:
  24864
  29490
  24690
+ 14034
  30286
  22526
  23582
@@ -36518,6 +37122,7 @@ LAW len=3 num pairs=16
  29023
  25947
  25747
+ 30579
  Seq 2:
  17776
 IGT len=3 num pairs=9
@@ -36557,9 +37162,10 @@ LKID len=4 num pairs=2
  1614
  Seq 2:
  17433
-FVEG len=4 num pairs=1
+FVEG len=4 num pairs=2
  Seq 1:
  3140
+ 5089
  Seq 2:
  17234
 AEF len=3 num pairs=12
@@ -36611,11 +37217,12 @@ ARTE len=4 num pairs=1
  26760
  Seq 2:
  2209
-QNQ len=3 num pairs=4
+QNQ len=3 num pairs=5
  Seq 1:
  19506
  Seq 2:
  896
+ 3910
  6713
  6507
  11
@@ -36631,12 +37238,13 @@ ADLK len=4 num pairs=3
  12649
  Seq 2:
  15797
-ESEE len=4 num pairs=3
+ESEE len=4 num pairs=4
  Seq 1:
  1992
  Seq 2:
  5741
  6281
+ 8905
  18067
 PPQFI len=5 num pairs=1
  Seq 1:
@@ -36653,8 +37261,9 @@ ALEKI len=5 num pairs=1
  17801
  Seq 2:
  2195
-FFN len=3 num pairs=2
+FFN len=3 num pairs=4
  Seq 1:
+ 3536
  8562
  Seq 2:
  3990
@@ -36803,10 +37412,11 @@ KITKS len=5 num pairs=1
  853
  Seq 2:
  15895
-EEVD len=4 num pairs=1
+EEVD len=4 num pairs=2
  Seq 1:
  32152
  Seq 2:
+ 11796
  6148
 NLECV len=5 num pairs=1
  Seq 1:
@@ -36883,10 +37493,11 @@ VIE len=3 num pairs=540
  9039
  12475
  17091
-TPR len=3 num pairs=1
+TPR len=3 num pairs=2
  Seq 1:
  9930
  Seq 2:
+ 15734
  5431
 NEI len=3 num pairs=36
  Seq 1:
@@ -36991,11 +37602,13 @@ DAGEY len=5 num pairs=6
  2859
  Seq 2:
  2290
-CET len=3 num pairs=3
+CET len=3 num pairs=5
  Seq 1:
  5026
  19262
+ 30549
  28377
+ 2195
  Seq 2:
  16939
 LFEE len=4 num pairs=1
@@ -37176,7 +37789,7 @@ PVEA len=4 num pairs=1
  14107
  Seq 2:
  5459
-GTE len=3 num pairs=14
+GTE len=3 num pairs=15
  Seq 1:
  29696
  25856
@@ -37190,6 +37803,7 @@ GTE len=3 num pairs=14
  27065
  15177
  13247
+ 32847
  30603
  9619
  Seq 2:
@@ -37328,11 +37942,12 @@ SCNL len=4 num pairs=1
  13290
  Seq 2:
  3115
-TWYKDG len=6 num pairs=1
+TWYKDG len=6 num pairs=2
  Seq 1:
  33676
  Seq 2:
  17037
+ 16759
 VITE len=4 num pairs=2
  Seq 1:
  28419
@@ -37713,10 +38328,11 @@ ILS len=3 num pairs=48
  6725
  705
  8201
-FSG len=3 num pairs=2
+FSG len=3 num pairs=3
  Seq 1:
  4192
  5528
+ 31977
  Seq 2:
  4444
 KVTS len=4 num pairs=3
@@ -37965,9 +38581,10 @@ VVKED len=5 num pairs=1
  19119
  Seq 2:
  5652
-FECR len=4 num pairs=2
+FECR len=4 num pairs=4
  Seq 1:
  8061
+ 1721
  Seq 2:
  1576
  3557
@@ -37977,11 +38594,13 @@ NLD len=3 num pairs=2
  Seq 2:
  3684
  4697
-SDQ len=3 num pairs=8
+SDQ len=3 num pairs=12
  Seq 1:
  34016
+ 2362
  33710
  21934
+ 33753
  14227
  Seq 2:
  6829
@@ -38113,11 +38732,12 @@ VEGV len=4 num pairs=1
  2383
  Seq 2:
  6558
-GAL len=3 num pairs=3
+GAL len=3 num pairs=4
  Seq 1:
  6996
  5124
  7394
+ 1825
  Seq 2:
  8110
 EKPT len=4 num pairs=1
@@ -38140,9 +38760,10 @@ QKEI len=4 num pairs=1
  10191
  Seq 2:
  4351
-TVTP len=4 num pairs=2
+TVTP len=4 num pairs=3
  Seq 1:
  2964
+ 15069
  19673
  Seq 2:
  6741
@@ -38224,8 +38845,9 @@ AMN len=3 num pairs=4
  Seq 2:
  4012
  2604
-PAEV len=4 num pairs=2
+PAEV len=4 num pairs=3
  Seq 1:
+ 11604
  31044
  10477
  Seq 2:
@@ -38283,15 +38905,18 @@ ADISM len=5 num pairs=1
  3511
  Seq 2:
  8356
-RIY len=3 num pairs=1
+RIY len=3 num pairs=3
  Seq 1:
+ 22756
  2122
+ 20091
  Seq 2:
  17831
-VRVT len=4 num pairs=1
+VRVT len=4 num pairs=2
  Seq 1:
  124
  Seq 2:
+ 4112
  4774
 PKA len=3 num pairs=78
  Seq 1:
@@ -38410,9 +39035,10 @@ AESI len=4 num pairs=1
  24263
  Seq 2:
  13224
-ESSS len=4 num pairs=1
+ESSS len=4 num pairs=2
  Seq 1:
  4260
+ 33186
  Seq 2:
  4810
 EIGE len=4 num pairs=1
@@ -38455,11 +39081,12 @@ HHV len=3 num pairs=2
  18343
  Seq 2:
  8044
-PVH len=3 num pairs=2
+PVH len=3 num pairs=3
  Seq 1:
  16341
  Seq 2:
  1973
+ 8529
  2247
 RTTL len=4 num pairs=2
  Seq 1:
@@ -38495,11 +39122,12 @@ DRH len=3 num pairs=1
  9636
  Seq 2:
  2715
-AVI len=3 num pairs=10
+AVI len=3 num pairs=11
  Seq 1:
  24114
  31666
  16758
+ 21686
  6630
  12989
  25421
@@ -38627,9 +39255,10 @@ PAS len=3 num pairs=18
  Seq 2:
  8640
  13212
-DSIT len=4 num pairs=1
+DSIT len=4 num pairs=2
  Seq 1:
  26428
+ 23182
  Seq 2:
  17385
 ANA len=3 num pairs=10
@@ -38734,10 +39363,13 @@ PKPE len=4 num pairs=18
  14977
  15247
  15755
-TWY len=3 num pairs=6
+TWY len=3 num pairs=12
  Seq 1:
+ 32648
+ 33676
  974
  30877
+ 9791
  32527
  Seq 2:
  17037
@@ -38791,9 +39423,11 @@ RKKP len=4 num pairs=3
  15752
  16118
  5285
-DSGR len=4 num pairs=1
+DSGR len=4 num pairs=3
  Seq 1:
  1008
+ 29640
+ 26098
  Seq 2:
  4562
 STA len=3 num pairs=96
@@ -38945,11 +39579,12 @@ YDK len=3 num pairs=2
  19319
  Seq 2:
  2630
-TSRS len=4 num pairs=2
+TSRS len=4 num pairs=4
  Seq 1:
  25940
  22693
  Seq 2:
+ 1916
  17871
 KVLK len=4 num pairs=6
  Seq 1:
@@ -38959,11 +39594,13 @@ KVLK len=4 num pairs=6
  Seq 2:
  11744
  12952
-TCE len=3 num pairs=5
+TCE len=3 num pairs=7
  Seq 1:
  34080
  4402
+ 3309
  16689
+ 8303
  12367
  28443
  Seq 2:
@@ -39172,10 +39809,11 @@ EVID len=4 num pairs=2
  Seq 2:
  13496
  12908
-VEVK len=4 num pairs=2
+VEVK len=4 num pairs=3
  Seq 1:
  25965
  20551
+ 895
  Seq 2:
  13242
 DGA len=3 num pairs=4
@@ -39186,10 +39824,11 @@ DGA len=3 num pairs=4
  139
  Seq 2:
  16392
-VTKS len=4 num pairs=2
+VTKS len=4 num pairs=3
  Seq 1:
  30572
  20127
+ 31267
  Seq 2:
  9315
 QNI len=3 num pairs=12
@@ -39278,9 +39917,10 @@ QIR len=3 num pairs=6
  12923
  Seq 2:
  18040
-ARLE len=4 num pairs=1
+ARLE len=4 num pairs=2
  Seq 1:
  23514
+ 9833
  Seq 2:
  911
 TFD len=3 num pairs=12
@@ -39639,10 +40279,12 @@ RHT len=3 num pairs=2
  9637
  Seq 2:
  8716
-VSST len=4 num pairs=1
+VSST len=4 num pairs=3
  Seq 1:
  3424
  Seq 2:
+ 8012
+ 2572
  2306
 VEKR len=4 num pairs=20
  Seq 1:
@@ -39668,11 +40310,12 @@ VEKR len=4 num pairs=20
  24483
  Seq 2:
  17895
-CEL len=3 num pairs=6
+CEL len=3 num pairs=7
  Seq 1:
  12160
  6464
  8346
+ 2133
  12521
  13321
  13143
@@ -39841,13 +40484,14 @@ IEV len=3 num pairs=143
  7759
  18027
  15435
-LGY len=3 num pairs=10
+LGY len=3 num pairs=11
  Seq 1:
  15860
  18762
  14250
  24878
  31389
+ 22217
  18071
  23007
  23695
@@ -39884,9 +40528,10 @@ KED len=3 num pairs=99
  9013
  11457
  9155
-TIKL len=4 num pairs=2
+TIKL len=4 num pairs=3
  Seq 1:
  16322
+ 20306
  13405
  Seq 2:
  13301
@@ -39941,10 +40586,12 @@ TSM len=3 num pairs=1
  2971
  Seq 2:
  7329
-WYL len=3 num pairs=2
+WYL len=3 num pairs=4
  Seq 1:
  13154
  5821
+ 2477
+ 1873
  Seq 2:
  652
 IKEI len=4 num pairs=1
@@ -40095,10 +40742,11 @@ QVDI len=4 num pairs=1
  8948
  Seq 2:
  16224
-LKPA len=4 num pairs=1
+LKPA len=4 num pairs=2
  Seq 1:
  20262
  Seq 2:
+ 9248
  5971
 IVI len=3 num pairs=35
  Seq 1:
@@ -40127,8 +40775,9 @@ LRH len=3 num pairs=3
  5080
  12341
  595
-TEVQ len=4 num pairs=1
+TEVQ len=4 num pairs=2
  Seq 1:
+ 25780
  15178
  Seq 2:
  4319
@@ -40601,9 +41250,10 @@ EDIQS len=5 num pairs=1
  21450
  Seq 2:
  13193
-PVAE len=4 num pairs=1
+PVAE len=4 num pairs=2
  Seq 1:
  14566
+ 11751
  Seq 2:
  15547
 ADK len=3 num pairs=3
@@ -40677,7 +41327,7 @@ TINE len=4 num pairs=1
  7349
  Seq 2:
  16146
-AGT len=3 num pairs=51
+AGT len=3 num pairs=57
  Seq 1:
  8536
  25316
@@ -40689,7 +41339,9 @@ AGT len=3 num pairs=51
  18450
  6654
  14630
+ 12205
  7029
+ 6697
  4967
  5343
  8911
@@ -40836,10 +41488,12 @@ EIN len=3 num pairs=4
  Seq 2:
  12368
  8577
-EARL len=4 num pairs=3
+EARL len=4 num pairs=5
  Seq 1:
  12673
  Seq 2:
+ 2376
+ 1710
  910
  16710
  3283
@@ -40914,9 +41568,10 @@ EKPL len=4 num pairs=6
  13570
  14222
  2470
-VKVE len=4 num pairs=1
+VKVE len=4 num pairs=2
  Seq 1:
  4726
+ 33075
  Seq 2:
  16016
 SIP len=3 num pairs=6
@@ -41016,7 +41671,7 @@ QVA len=3 num pairs=8
  6588
  7178
  8435
-FAE len=3 num pairs=7
+FAE len=3 num pairs=8
  Seq 1:
  18704
  31432
@@ -41024,6 +41679,7 @@ FAE len=3 num pairs=7
  1650
  27374
  25406
+ 1005
  20787
  Seq 2:
  4559
@@ -41035,10 +41691,12 @@ LKEP len=4 num pairs=4
  3825
  Seq 2:
  15317
-KGN len=3 num pairs=4
+KGN len=3 num pairs=6
  Seq 1:
+ 14284
  27958
  1369
+ 5167
  26875
  22547
  Seq 2:
@@ -41194,8 +41852,9 @@ TGSR len=4 num pairs=2
  Seq 2:
  3720
  2666
-NGVEL len=5 num pairs=1
+NGVEL len=5 num pairs=2
  Seq 1:
+ 33336
  33999
  Seq 2:
  2526
@@ -41593,9 +42252,10 @@ SLQ len=3 num pairs=50
  3231
  723
  3651
-NWTK len=4 num pairs=1
+NWTK len=4 num pairs=2
  Seq 1:
  14929
+ 20459
  Seq 2:
  17904
 VHP len=3 num pairs=1
@@ -41603,9 +42263,11 @@ VHP len=3 num pairs=1
  32641
  Seq 2:
  5640
-GLYT len=4 num pairs=2
+GLYT len=4 num pairs=4
  Seq 1:
+ 9244
  17118
+ 33846
  34325
  Seq 2:
  3608
@@ -41714,11 +42376,12 @@ VIPQ len=4 num pairs=1
  17108
  Seq 2:
  13176
-DLV len=3 num pairs=24
+DLV len=3 num pairs=26
  Seq 1:
  31132
  14476
  17006
+ 13934
  29990
  19581
  23069
@@ -41737,8 +42400,9 @@ SSVL len=4 num pairs=2
  33667
  Seq 2:
  8975
-ITGL len=4 num pairs=2
+ITGL len=4 num pairs=3
  Seq 1:
+ 22744
  23034
  16182
  Seq 2:
@@ -41863,27 +42527,32 @@ PFEI len=4 num pairs=2
  5347
  Seq 2:
  14010
-GSKI len=4 num pairs=14
+GSKI len=4 num pairs=18
  Seq 1:
+ 20144
  23988
  17172
+ 14044
  32076
  22906
  27722
  26250
  14738
  15534
+ 24085
  25557
  23393
  28809
  21919
  17867
  18067
+ 29795
  Seq 2:
  17786
-INA len=3 num pairs=4
+INA len=3 num pairs=5
  Seq 1:
  17324
+ 2977
  30935
  16607
  26735
@@ -42038,8 +42707,9 @@ EPEV len=4 num pairs=4
  4203
  Seq 2:
  15923
-LEVI len=4 num pairs=1
+LEVI len=4 num pairs=2
  Seq 1:
+ 15016
  14330
  Seq 2:
  6695
@@ -42048,11 +42718,12 @@ TNII len=4 num pairs=1
  23417
  Seq 2:
  6620
-DVEE len=4 num pairs=1
+DVEE len=4 num pairs=2
  Seq 1:
  16996
  Seq 2:
  13674
+ 5817
 EVIT len=4 num pairs=2
  Seq 1:
  496
@@ -42075,9 +42746,10 @@ NSG len=3 num pairs=12
  Seq 2:
  2821
  3331
-TCRATN len=6 num pairs=2
+TCRATN len=6 num pairs=4
  Seq 1:
  5110
+ 1775
  Seq 2:
  3102
  3749
@@ -42310,10 +42982,11 @@ TFT len=3 num pairs=22
  Seq 2:
  17296
  16918
-EVDE len=4 num pairs=1
+EVDE len=4 num pairs=2
  Seq 1:
  32153
  Seq 2:
+ 11797
  16913
 HGE len=3 num pairs=4
  Seq 1:
@@ -42353,8 +43026,9 @@ AIR len=3 num pairs=6
  Seq 2:
  2597
  18017
-SIEI len=4 num pairs=1
+SIEI len=4 num pairs=2
  Seq 1:
+ 24240
  32490
  Seq 2:
  13226
@@ -42468,11 +43142,12 @@ KVTGT len=5 num pairs=1
  5248
  Seq 2:
  4518
-DEGEYT len=6 num pairs=1
+DEGEYT len=6 num pairs=2
  Seq 1:
  3568
  Seq 2:
  17344
+ 154
 SSR len=3 num pairs=15
  Seq 1:
  13464
@@ -42491,8 +43166,9 @@ RHD len=3 num pairs=3
  18063
  Seq 2:
  5265
-YTCEA len=5 num pairs=1
+YTCEA len=5 num pairs=2
  Seq 1:
+ 3308
  8302
  Seq 2:
  6605
@@ -42819,10 +43495,11 @@ KDA len=3 num pairs=14
  27859
  Seq 2:
  16882
-DEGT len=4 num pairs=1
+DEGT len=4 num pairs=2
  Seq 1:
  3409
  Seq 2:
+ 4669
  11805
 ATK len=3 num pairs=18
  Seq 1:
@@ -42947,11 +43624,13 @@ LKPQ len=4 num pairs=1
  9710
  Seq 2:
  8384
-IVY len=3 num pairs=1
+IVY len=3 num pairs=3
  Seq 1:
  20967
  Seq 2:
  3773
+ 8689
+ 4051
 KHE len=3 num pairs=3
  Seq 1:
  23832
@@ -43079,10 +43758,12 @@ AFQ len=3 num pairs=3
  4826
  4798
  8275
-WLKN len=4 num pairs=2
+WLKN len=4 num pairs=4
  Seq 1:
+ 3000
  1588
  5914
+ 2913
  Seq 2:
  4529
 SVS len=3 num pairs=128
@@ -43303,10 +43984,11 @@ GRK len=3 num pairs=12
  Seq 2:
  5284
  17853
-WYRN len=4 num pairs=1
+WYRN len=4 num pairs=2
  Seq 1:
  13781
  Seq 2:
+ 3845
  2391
 IEDR len=4 num pairs=1
  Seq 1:
@@ -43320,12 +44002,13 @@ KRG len=3 num pairs=3
  6216
  11698
  12038
-PFP len=3 num pairs=8
+PFP len=3 num pairs=10
  Seq 1:
  18172
  31090
  17070
  17351
+ 19155
  Seq 2:
  6562
  11507
@@ -43367,12 +44050,15 @@ VAQL len=4 num pairs=1
  4997
  Seq 2:
  976
-IAR len=3 num pairs=6
+IAR len=3 num pairs=9
  Seq 1:
+ 23440
  9832
+ 25604
  996
  20193
  26313
+ 28855
  14411
  32227
  Seq 2:
@@ -43640,11 +44326,12 @@ SELH len=4 num pairs=1
  7329
  Seq 2:
  8643
-EHK len=3 num pairs=2
+EHK len=3 num pairs=4
  Seq 1:
  1921
  9721
  Seq 2:
+ 15725
  4373
 EASI len=4 num pairs=1
  Seq 1:
@@ -43684,9 +44371,10 @@ VEEEE len=5 num pairs=2
  Seq 2:
  5784
  15703
-FKVE len=4 num pairs=2
+FKVE len=4 num pairs=3
  Seq 1:
  25100
+ 15270
  6139
  Seq 2:
  13827
@@ -43796,8 +44484,9 @@ LEGL len=4 num pairs=2
  Seq 2:
  3138
  3518
-VAKN len=4 num pairs=1
+VAKN len=4 num pairs=2
  Seq 1:
+ 27984
  23655
  Seq 2:
  16574
@@ -43894,13 +44583,15 @@ SITL len=4 num pairs=6
  23183
  Seq 2:
  17386
-NVN len=3 num pairs=5
+NVN len=3 num pairs=7
  Seq 1:
  23928
  22846
  20657
  9465
  20681
+ 1563
+ 17059
  Seq 2:
  8462
 IEPV len=4 num pairs=2
@@ -44097,12 +44788,13 @@ EKEE len=4 num pairs=4
  Seq 2:
  8197
  8587
-TGTY len=4 num pairs=2
+TGTY len=4 num pairs=3
  Seq 1:
  14684
  Seq 2:
  3098
  2026
+ 2158
 IDS len=3 num pairs=30
  Seq 1:
  1616
@@ -44193,8 +44885,9 @@ KPKV len=4 num pairs=9
  7094
  4857
  15983
-QSP len=3 num pairs=1
+QSP len=3 num pairs=2
  Seq 1:
+ 280
  3958
  Seq 2:
  4586
@@ -44301,15 +44994,17 @@ YVI len=3 num pairs=22
  Seq 2:
  15944
  13198
-EESE len=4 num pairs=1
+EESE len=4 num pairs=2
  Seq 1:
  1991
  Seq 2:
+ 8904
  16405
-NAM len=3 num pairs=2
+NAM len=3 num pairs=3
  Seq 1:
  12294
  29781
+ 27875
  Seq 2:
  968
 KKTV len=4 num pairs=4
@@ -44489,10 +45184,11 @@ SQEQ len=4 num pairs=1
  34297
  Seq 2:
  30
-TWQ len=3 num pairs=3
+TWQ len=3 num pairs=4
  Seq 1:
  26532
  18058
+ 31986
  23213
  Seq 2:
  502
@@ -44590,8 +45286,9 @@ STI len=3 num pairs=21
  12718
  8341
  7281
-KPLE len=4 num pairs=2
+KPLE len=4 num pairs=3
  Seq 1:
+ 1742
  29751
  13215
  Seq 2:
@@ -44672,7 +45369,7 @@ LPSE len=4 num pairs=4
  Seq 2:
  12327
  7875
-KQP len=3 num pairs=39
+KQP len=3 num pairs=40
  Seq 1:
  15503
  Seq 2:
@@ -44689,6 +45386,7 @@ KQP len=3 num pairs=39
  11050
  9346
  10482
+ 3950
  10766
  14270
  9630
@@ -44715,9 +45413,10 @@ KQP len=3 num pairs=39
  9843
  10979
  15395
-KTVS len=4 num pairs=1
+KTVS len=4 num pairs=2
  Seq 1:
  18224
+ 3921
  Seq 2:
  3179
 SVTVI len=5 num pairs=1
@@ -44734,8 +45433,9 @@ GPA len=3 num pairs=8
  Seq 2:
  249
  12603
-GKYK len=4 num pairs=1
+GKYK len=4 num pairs=2
  Seq 1:
+ 31624
  33822
  Seq 2:
  17632
@@ -44753,25 +45453,29 @@ TLSI len=4 num pairs=4
  Seq 2:
  2680
  7057
-AVNAAG len=6 num pairs=3
+AVNAAG len=6 num pairs=5
  Seq 1:
+ 16004
  28068
+ 18117
  17019
  30243
  Seq 2:
  4570
-PHF len=3 num pairs=4
+PHF len=3 num pairs=5
  Seq 1:
  3620
  4570
  31854
+ 813
  33059
  Seq 2:
  2221
-GQT len=3 num pairs=5
+GQT len=3 num pairs=6
  Seq 1:
  4864
  18108
+ 1470
  26358
  9685
  18849
@@ -44861,8 +45565,9 @@ IKLK len=4 num pairs=2
  20307
  Seq 2:
  13302
-PKVTWK len=6 num pairs=1
+PKVTWK len=6 num pairs=2
  Seq 1:
+ 18174
  29603
  Seq 2:
  17501
@@ -44944,13 +45649,15 @@ DGN len=3 num pairs=3
  7703
  Seq 2:
  4753
-LPVS len=4 num pairs=1
+LPVS len=4 num pairs=2
  Seq 1:
  30806
+ 33638
  Seq 2:
  8915
-NNI len=3 num pairs=1
+NNI len=3 num pairs=2
  Seq 1:
+ 9212
  2662
  Seq 2:
  2760
@@ -45014,10 +45721,11 @@ KESL len=4 num pairs=1
  4062
  Seq 2:
  12760
-DVQV len=4 num pairs=1
+DVQV len=4 num pairs=2
  Seq 1:
  28214
  Seq 2:
+ 7430
  12991
 TFK len=3 num pairs=40
  Seq 1:
@@ -45035,7 +45743,7 @@ TFK len=3 num pairs=40
  16377
  14511
  11695
-ISG len=3 num pairs=21
+ISG len=3 num pairs=25
  Seq 1:
  23572
  28
@@ -45047,15 +45755,19 @@ ISG len=3 num pairs=21
  27822
  9006
  27070
+ 3261
  32253
+ 29597
  15629
  965
+ 28737
  26281
  33719
  28023
  5847
  7407
  27755
+ 24179
  34083
  387
  Seq 2:
@@ -45138,9 +45850,10 @@ LQEE len=4 num pairs=2
  Seq 2:
  5893
  12303
-EKSL len=4 num pairs=1
+EKSL len=4 num pairs=2
  Seq 1:
  1796
+ 33469
  Seq 2:
  12968
 DTA len=3 num pairs=6
@@ -45229,8 +45942,24 @@ GLVPD len=5 num pairs=1
  31319
  Seq 2:
  8131
-FRVS len=4 num pairs=2
+FRVS len=4 num pairs=18
  Seq 1:
+ 14088
+ 29252
+ 29050
+ 31226
+ 18010
+ 31722
+ 21570
+ 21074
+ 21470
+ 28166
+ 29446
+ 23045
+ 24817
+ 23735
+ 20879
+ 23339
  29739
  27275
  Seq 2:
@@ -45327,7 +46056,7 @@ CDV len=3 num pairs=2
  23803
  Seq 2:
  17696
-RKD len=3 num pairs=11
+RKD len=3 num pairs=13
  Seq 1:
  18248
  28232
@@ -45339,7 +46068,9 @@ RKD len=3 num pairs=11
  19889
  16161
  33081
+ 12171
  32019
+ 26355
  Seq 2:
  3013
 PPA len=3 num pairs=78
@@ -45693,10 +46424,11 @@ MQA len=3 num pairs=1
  24095
  Seq 2:
  1287
-EEEL len=4 num pairs=2
+EEEL len=4 num pairs=3
  Seq 1:
  33042
  Seq 2:
+ 6284
  2870
  5843
 KLTN len=4 num pairs=1
@@ -45736,8 +46468,9 @@ ATT len=3 num pairs=24
  4173
  9239
  3759
-SHR len=3 num pairs=1
+SHR len=3 num pairs=2
  Seq 1:
+ 33308
  34026
  Seq 2:
  3074
@@ -45777,10 +46510,11 @@ VDS len=3 num pairs=24
  2613
  14177
  13987
-SEST len=4 num pairs=3
+SEST len=4 num pairs=4
  Seq 1:
  23452
  26698
+ 21287
  29955
  Seq 2:
  8515
@@ -45863,9 +46597,10 @@ EQAL len=4 num pairs=1
  1220
  Seq 2:
  15152
-VGEY len=4 num pairs=2
+VGEY len=4 num pairs=3
  Seq 1:
  4824
+ 8013
  7451
  Seq 2:
  17162
@@ -45934,21 +46669,23 @@ EVFEE len=5 num pairs=1
  11590
  Seq 2:
  15721
-VTLKP len=5 num pairs=1
+VTLKP len=5 num pairs=2
  Seq 1:
  30611
  Seq 2:
+ 5426
  16073
 KVVN len=4 num pairs=1
  Seq 1:
  32568
  Seq 2:
  6797
-IPEE len=4 num pairs=10
+IPEE len=4 num pairs=12
  Seq 1:
  10994
  4069
  11225
+ 11177
  11303
  30171
  Seq 2:
@@ -45966,11 +46703,12 @@ QGK len=3 num pairs=14
  Seq 2:
  8142
  3493
-VESE len=4 num pairs=1
+VESE len=4 num pairs=2
  Seq 1:
  30152
  Seq 2:
  15542
+ 6863
 IHTP len=4 num pairs=1
  Seq 1:
  4290
@@ -46054,14 +46792,20 @@ LTI len=3 num pairs=156
  949
  16809
  17335
-RAV len=3 num pairs=35
+RAV len=3 num pairs=65
  Seq 1:
+ 14984
+ 16500
  9876
  10596
  6810
  3162
  6722
+ 17422
+ 30141
  15337
+ 15287
+ 27967
  33371
  Seq 2:
  826
@@ -46069,13 +46813,14 @@ RAV len=3 num pairs=35
  2297
  2431
  1499
-TIEE len=4 num pairs=4
+TIEE len=4 num pairs=5
  Seq 1:
  32910
  Seq 2:
  16928
  16810
  6126
+ 5559
  12719
 GEIR len=4 num pairs=1
  Seq 1:
@@ -46343,9 +47088,10 @@ PRVM len=4 num pairs=1
  26713
  Seq 2:
  4120
-KEDG len=4 num pairs=1
+KEDG len=4 num pairs=2
  Seq 1:
  4284
+ 1507
  Seq 2:
  11457
 VLK len=3 num pairs=104
@@ -46516,9 +47262,10 @@ FGL len=3 num pairs=3
  2676
  7741
  8395
-GLPV len=4 num pairs=1
+GLPV len=4 num pairs=2
  Seq 1:
  8997
+ 7115
  Seq 2:
  13500
 GKY len=3 num pairs=60
@@ -46651,9 +47398,10 @@ WDR len=3 num pairs=1
  20038
  Seq 2:
  5281
-TLEEE len=5 num pairs=1
+TLEEE len=5 num pairs=2
  Seq 1:
  10657
+ 12143
  Seq 2:
  5514
 EIA len=3 num pairs=45
@@ -46754,15 +47502,17 @@ IKVLE len=5 num pairs=1
  3066
  Seq 2:
  17009
-EEEYE len=5 num pairs=1
+EEEYE len=5 num pairs=2
  Seq 1:
+ 10668
  33174
  Seq 2:
  16181
-TVTG len=4 num pairs=4
+TVTG len=4 num pairs=5
  Seq 1:
  28840
  31316
+ 14639
  14075
  4499
  Seq 2:
@@ -46780,7 +47530,7 @@ SYEF len=4 num pairs=2
  Seq 2:
  15419
  15459
-LQP len=3 num pairs=8
+LQP len=3 num pairs=9
  Seq 1:
  3244
  Seq 2:
@@ -46789,6 +47539,7 @@ LQP len=3 num pairs=8
  16506
  11874
  4865
+ 1313
  185
  3561
  4991
@@ -46813,7 +47564,7 @@ ESYV len=4 num pairs=1
  14942
  Seq 2:
  13310
-TETT len=4 num pairs=5
+TETT len=4 num pairs=6
  Seq 1:
  21879
  Seq 2:
@@ -46821,6 +47572,7 @@ TETT len=4 num pairs=5
  13628
  14650
  6790
+ 4367
  17615
 LFVE len=4 num pairs=3
  Seq 1:
@@ -47041,13 +47793,16 @@ SVVV len=4 num pairs=2
  13
  Seq 2:
  6825
-IDL len=3 num pairs=8
+IDL len=3 num pairs=11
  Seq 1:
  30664
+ 23868
+ 19532
  5618
  27798
  17046
  20221
+ 28197
  28353
  30411
  15315
@@ -47082,11 +47837,14 @@ TIP len=3 num pairs=24
  17324
  17582
  13093
-PKVT len=4 num pairs=6
+PKVT len=4 num pairs=12
  Seq 1:
  27432
+ 19562
+ 18174
  17353
  25935
+ 29603
  Seq 2:
  16756
  17501
@@ -47170,9 +47928,10 @@ KFTT len=4 num pairs=1
  1047
  Seq 2:
  3811
-HIT len=3 num pairs=3
+HIT len=3 num pairs=4
  Seq 1:
  2882
+ 7618
  5939
  21939
  Seq 2:
@@ -47313,12 +48072,14 @@ SGI len=3 num pairs=11
  4067
  Seq 2:
  4769
-GGSKI len=5 num pairs=14
+GGSKI len=5 num pairs=18
  Seq 1:
  23392
  28808
+ 24084
  25556
  17866
+ 29794
  18066
  21918
  15533
@@ -47326,7 +48087,9 @@ GGSKI len=5 num pairs=14
  22905
  26249
  27721
+ 20143
  32075
+ 14043
  17171
  23987
  Seq 2:
@@ -47340,10 +48103,14 @@ HEP len=3 num pairs=5
  1951
  Seq 2:
  12458
-PAD len=3 num pairs=3
+PAD len=3 num pairs=7
  Seq 1:
+ 27916
+ 31178
  4765
+ 20437
  16345
+ 31673
  19769
  Seq 2:
  3426
@@ -47484,10 +48251,11 @@ EYQ len=3 num pairs=60
  17408
  5092
  7111
-VAVP len=4 num pairs=2
+VAVP len=4 num pairs=3
  Seq 1:
  11688
  10366
+ 11569
  Seq 2:
  16648
 VKH len=3 num pairs=2
@@ -47512,9 +48280,13 @@ RFIKK len=5 num pairs=1
  8232
  Seq 2:
  9536
-DSGE len=4 num pairs=8
+DSGE len=4 num pairs=40
  Seq 1:
+ 5292
+ 8953
+ 7071
  1523
+ 5571
  Seq 2:
  3744
  1892
@@ -47524,11 +48296,12 @@ DSGE len=4 num pairs=8
  3878
  3469
  685
-STV len=3 num pairs=16
+STV len=3 num pairs=18
  Seq 1:
  33760
  14672
  19672
+ 8856
  20760
  8428
  332
@@ -47540,15 +48313,17 @@ STV len=3 num pairs=16
  21905
  14761
  29879
+ 6271
  30575
  5995
  Seq 2:
  16997
-QEAT len=4 num pairs=1
+QEAT len=4 num pairs=2
  Seq 1:
  17493
  Seq 2:
  7241
+ 6123
 TSASL len=5 num pairs=2
  Seq 1:
  25153
@@ -47580,7 +48355,7 @@ KEDGT len=5 num pairs=1
  1507
  Seq 2:
  11457
-LVS len=3 num pairs=14
+LVS len=3 num pairs=16
  Seq 1:
  9568
  624
@@ -47592,8 +48367,10 @@ LVS len=3 num pairs=14
  16542
  6998
  5373
+ 28669
  17445
  2841
+ 31699
  12067
  7939
  Seq 2:
@@ -47658,9 +48435,10 @@ EPLT len=4 num pairs=2
  14038
  Seq 2:
  11645
-INN len=3 num pairs=1
+INN len=3 num pairs=2
  Seq 1:
  33704
+ 23199
  Seq 2:
  3887
 GQK len=3 num pairs=21
@@ -47721,9 +48499,10 @@ VVEEPE len=6 num pairs=1
  11607
  Seq 2:
  15871
-WQK len=3 num pairs=3
+WQK len=3 num pairs=4
  Seq 1:
  27642
+ 4510
  28729
  31987
  Seq 2:
@@ -47755,15 +48534,17 @@ LAP len=3 num pairs=10
  9053
  2473
  3977
-FRM len=3 num pairs=1
+FRM len=3 num pairs=2
  Seq 1:
+ 8278
  3389
  Seq 2:
  132
-KYG len=3 num pairs=24
+KYG len=3 num pairs=26
  Seq 1:
  22560
  26888
+ 32696
  16504
  24724
  23642
@@ -47819,11 +48600,12 @@ VPAR len=4 num pairs=1
  26605
  Seq 2:
  17881
-DGKE len=4 num pairs=6
+DGKE len=4 num pairs=7
  Seq 1:
  22424
  8548
  25670
+ 15349
  6199
  5075
  12979
@@ -48052,9 +48834,11 @@ YIE len=3 num pairs=4
  8867
  Seq 2:
  860
-TGN len=3 num pairs=1
+TGN len=3 num pairs=3
  Seq 1:
+ 7584
  29090
+ 1579
  Seq 2:
  395
 TIEED len=5 num pairs=1
@@ -48156,14 +48940,17 @@ HAL len=3 num pairs=2
  Seq 2:
  9234
  7765
-RDG len=3 num pairs=8
+RDG len=3 num pairs=11
  Seq 1:
  7136
  40
  18106
  138
  27438
+ 19750
+ 28806
  2653
+ 18361
  30871
  12283
  Seq 2:
@@ -48315,7 +49102,7 @@ RKT len=3 num pairs=36
  6168
  1945
  6089
-ETP len=3 num pairs=16
+ETP len=3 num pairs=19
  Seq 1:
  18322
  Seq 2:
@@ -48323,13 +49110,16 @@ ETP len=3 num pairs=16
  12176
  4744
  6008
+ 15444
  5732
  14444
  12046
  14150
  14077
  15733
+ 13521
  9225
+ 14391
  7927
  15807
  2751
@@ -48498,9 +49288,10 @@ TTAT len=4 num pairs=2
  9395
  Seq 2:
  3486
-KVTWK len=5 num pairs=1
+KVTWK len=5 num pairs=2
  Seq 1:
  29604
+ 18175
  Seq 2:
  17502
 AKKP len=4 num pairs=4
@@ -48666,8 +49457,9 @@ EFKA len=4 num pairs=1
  6274
  Seq 2:
  12881
-DSGLY len=5 num pairs=2
+DSGLY len=5 num pairs=3
  Seq 1:
+ 33844
  3687
  9447
  Seq 2:
@@ -48854,8 +49646,9 @@ DAAI len=4 num pairs=1
  23911
  Seq 2:
  16052
-VIRD len=4 num pairs=1
+VIRD len=4 num pairs=2
  Seq 1:
+ 2136
  12229
  Seq 2:
  17064
@@ -48916,10 +49709,11 @@ IIED len=4 num pairs=4
  Seq 2:
  2397
  13219
-ERF len=3 num pairs=1
+ERF len=3 num pairs=2
  Seq 1:
  913
  Seq 2:
+ 16826
  515
 FDS len=3 num pairs=10
  Seq 1:
@@ -48937,10 +49731,12 @@ NMV len=3 num pairs=2
  32461
  Seq 2:
  16735
-GRD len=3 num pairs=2
+GRD len=3 num pairs=4
  Seq 1:
  4056
  1636
+ 3143
+ 6991
  Seq 2:
  7881
 HYT len=3 num pairs=6
@@ -48977,13 +49773,15 @@ VLAV len=4 num pairs=2
  18115
  Seq 2:
  340
-SAEN len=4 num pairs=8
+SAEN len=4 num pairs=10
  Seq 1:
  24820
  23738
  25506
+ 20882
  23342
  31229
+ 18013
  21573
  14293
  21077
@@ -49095,9 +49893,10 @@ QEQ len=3 num pairs=91
  8655
  5747
  35
-TMVV len=4 num pairs=1
+TMVV len=4 num pairs=2
  Seq 1:
  13944
+ 1732
  Seq 2:
  647
 QVKE len=4 num pairs=1
@@ -49242,10 +50041,11 @@ AGK len=3 num pairs=57
  4488
  4954
  365
-VKIQ len=4 num pairs=2
+VKIQ len=4 num pairs=3
  Seq 1:
  4273
  Seq 2:
+ 11576
  7030
  7619
 SWI len=3 num pairs=2
@@ -49273,15 +50073,17 @@ EENK len=4 num pairs=1
  20851
  Seq 2:
  13407
-SDV len=3 num pairs=8
+SDV len=3 num pairs=10
  Seq 1:
  5896
  20602
  19634
  12773
+ 7449
  32057
  31847
  7399
+ 8011
  18979
  Seq 2:
  6600
@@ -49356,9 +50158,10 @@ EHD len=3 num pairs=10
  Seq 2:
  12729
  14283
-VTWKK len=5 num pairs=3
+VTWKK len=5 num pairs=4
  Seq 1:
  18176
+ 8825
  22023
  6943
  Seq 2:
@@ -49475,12 +50278,13 @@ VYTCEAKN len=8 num pairs=1
  3307
  Seq 2:
  6604
-EKPS len=4 num pairs=2
+EKPS len=4 num pairs=3
  Seq 1:
  27299
  Seq 2:
  13746
  13819
+ 17755
 TKPV len=4 num pairs=4
  Seq 1:
  24468
@@ -49634,10 +50438,11 @@ NVA len=3 num pairs=40
  Seq 2:
  16554
  8723
-KGQ len=3 num pairs=6
+KGQ len=3 num pairs=7
  Seq 1:
  12712
  12152
+ 27342
  31989
  4885
  19577
@@ -49654,11 +50459,12 @@ RATN len=4 num pairs=12
  4029
  1233
  3751
-GEEV len=4 num pairs=1
+GEEV len=4 num pairs=2
  Seq 1:
  13696
  Seq 2:
  13377
+ 5823
 VNWR len=4 num pairs=1
  Seq 1:
  26352
@@ -49736,12 +50542,14 @@ PKF len=3 num pairs=15
  8178
  3262
  3675
-YFV len=3 num pairs=4
+YFV len=3 num pairs=6
  Seq 1:
  8888
  15962
  7006
+ 20150
  4713
+ 5695
  Seq 2:
  16323
 EPIE len=4 num pairs=3
@@ -49801,17 +50609,19 @@ PMP len=3 num pairs=3
  1483
  Seq 2:
  181
-FTC len=3 num pairs=3
+FTC len=3 num pairs=4
  Seq 1:
  1012
+ 5109
  4401
  34079
  Seq 2:
  6910
-KVKW len=4 num pairs=4
+KVKW len=4 num pairs=5
  Seq 1:
  13240
  7790
+ 6097
  13329
  2203
  Seq 2:
@@ -50041,8 +50851,9 @@ SEISE len=5 num pairs=2
  31837
  Seq 2:
  7347
-GTKI len=4 num pairs=1
+GTKI len=4 num pairs=2
  Seq 1:
+ 14631
  25459
  Seq 2:
  3092
@@ -50179,12 +50990,14 @@ SKNS len=4 num pairs=2
  24435
  Seq 2:
  9136
-LVVE len=4 num pairs=2
+LVVE len=4 num pairs=4
  Seq 1:
  12131
  Seq 2:
+ 4480
  3294
  7801
+ 5795
 VSEE len=4 num pairs=6
  Seq 1:
  4298
@@ -50363,9 +51176,10 @@ TLKN len=4 num pairs=4
  2711
  Seq 2:
  15007
-KITK len=4 num pairs=2
+KITK len=4 num pairs=3
  Seq 1:
  28002
+ 853
  25391
  Seq 2:
  15895
@@ -50424,11 +51238,12 @@ SRIRS len=5 num pairs=1
  1399
  Seq 2:
  2668
-YSVQ len=4 num pairs=2
+YSVQ len=4 num pairs=3
  Seq 1:
  24165
  Seq 2:
  6708
+ 17165
  16347
 EKAV len=4 num pairs=2
  Seq 1:
@@ -50554,13 +51369,14 @@ NSP len=3 num pairs=2
  Seq 2:
  4192
  4435
-AEY len=3 num pairs=9
+AEY len=3 num pairs=10
  Seq 1:
  32388
  2948
  31324
  26506
  12301
+ 27077
  13367
  32687
  28651
@@ -50590,9 +51406,10 @@ DGF len=3 num pairs=1
  6948
  Seq 2:
  8326
-GEG len=3 num pairs=10
+GEG len=3 num pairs=12
  Seq 1:
  20888
+ 18812
  21085
  33721
  16009
@@ -50645,14 +51462,16 @@ PDQP len=4 num pairs=1
  17941
  Seq 2:
  5288
-HGR len=3 num pairs=1
+HGR len=3 num pairs=2
  Seq 1:
  16097
+ 919
  Seq 2:
  4338
-PELP len=4 num pairs=1
+PELP len=4 num pairs=2
  Seq 1:
  11640
+ 10215
  Seq 2:
  11509
 DVPK len=4 num pairs=3
@@ -50718,11 +51537,12 @@ SLTN len=4 num pairs=1
  13638
  Seq 2:
  1431
-LNS len=3 num pairs=4
+LNS len=3 num pairs=5
  Seq 1:
  27864
  6972
  6542
+ 23253
  6785
  Seq 2:
  9281
@@ -50783,12 +51603,13 @@ TQEE len=4 num pairs=1
  10570
  Seq 2:
  12092
-LEEA len=4 num pairs=1
+LEEA len=4 num pairs=2
  Seq 1:
  1171
  Seq 2:
  6192
-NEV len=3 num pairs=7
+ 12012
+NEV len=3 num pairs=28
  Seq 1:
  7460
  4833
@@ -50799,6 +51620,9 @@ NEV len=3 num pairs=7
  9155
  Seq 2:
  6884
+ 17836
+ 17937
+ 17447
 KVSG len=4 num pairs=8
  Seq 1:
  26573
@@ -51022,8 +51846,10 @@ LDDE len=4 num pairs=2
  13363
  Seq 2:
  11740
-NGGS len=4 num pairs=5
+NGGS len=4 num pairs=7
  Seq 1:
+ 18954
+ 16450
  27622
  15237
  24375
@@ -51084,11 +51910,12 @@ LFK len=3 num pairs=1
  14484
  Seq 2:
  7601
-EYEP len=4 num pairs=1
+EYEP len=4 num pairs=2
  Seq 1:
  10684
  Seq 2:
  14353
+ 13471
 EAA len=3 num pairs=88
  Seq 1:
  30504
@@ -51166,8 +51993,9 @@ ECQV len=4 num pairs=1
  4590
  Seq 2:
  3830
-IDNV len=4 num pairs=2
+IDNV len=4 num pairs=3
  Seq 1:
+ 16078
  26091
  19571
  Seq 2:
@@ -51260,20 +52088,24 @@ AVNEVG len=6 num pairs=1
  9153
  Seq 2:
  17445
-PPSF len=4 num pairs=13
+PPSF len=4 num pairs=17
  Seq 1:
  5600
  4756
+ 8700
  7100
+ 6818
  7666
  6162
  9174
  8982
+ 4662
  6725
  5973
  8607
  6255
  7759
+ 5131
  5411
  Seq 2:
  4495
@@ -51304,19 +52136,31 @@ RRA len=3 num pairs=4
  1939
  Seq 2:
  4486
-WYK len=3 num pairs=33
+WYK len=3 num pairs=69
  Seq 1:
  9792
  32928
  9616
+ 4976
+ 27832
+ 9016
  8920
+ 6476
+ 3178
  2110
  7038
+ 2206
+ 8358
+ 33677
  13421
  9209
  32649
+ 8265
+ 6663
  3271
+ 1323
  7979
+ 8075
  Seq 2:
  16760
  786
@@ -51349,10 +52193,11 @@ RST len=3 num pairs=25
  16241
  2671
  5451
-VEDV len=4 num pairs=1
+VEDV len=4 num pairs=2
  Seq 1:
  15837
  Seq 2:
+ 14778
  6445
 CNL len=3 num pairs=3
  Seq 1:
@@ -51459,8 +52304,9 @@ QFV len=3 num pairs=4
  Seq 2:
  5210
  471
-SRSS len=4 num pairs=1
+SRSS len=4 num pairs=2
  Seq 1:
+ 22694
  25941
  Seq 2:
  1917
@@ -51511,14 +52357,42 @@ TVS len=3 num pairs=240
  14601
  8051
  8947
-EFR len=3 num pairs=6
+EFR len=3 num pairs=34
  Seq 1:
+ 25600
+ 16496
  32880
+ 22256
+ 24816
+ 31428
+ 24420
+ 16292
  22652
  10620
+ 19500
+ 23436
+ 18700
+ 26682
+ 19098
+ 23338
+ 28458
  3058
+ 22354
+ 31822
+ 17014
+ 23734
+ 24518
+ 29541
+ 20485
+ 27765
+ 21173
+ 21569
+ 18009
  21271
+ 25899
+ 27667
  28851
+ 29939
  Seq 2:
  208
 WVP len=3 num pairs=1
@@ -52068,8 +52942,9 @@ AGS len=3 num pairs=93
  548
  3582
  3445
-SWQ len=3 num pairs=2
+SWQ len=3 num pairs=3
  Seq 1:
+ 29420
  18550
  27713
  Seq 2:
@@ -52083,11 +52958,13 @@ PKKE len=4 num pairs=5
  11259
  Seq 2:
  6117
-SDN len=3 num pairs=4
+SDN len=3 num pairs=6
  Seq 1:
+ 4028
  8554
  8462
  20558
+ 6777
  29923
  Seq 2:
  2767
@@ -52110,11 +52987,13 @@ GKQ len=3 num pairs=3
  33566
  Seq 2:
  2128
-KEPK len=4 num pairs=2
+KEPK len=4 num pairs=4
  Seq 1:
  9266
  Seq 2:
+ 14366
  15318
+ 12230
  6301
 KIIR len=4 num pairs=1
  Seq 1:
@@ -52430,8 +53309,10 @@ EPQE len=4 num pairs=1
  16023
  Seq 2:
  9306
-RIF len=3 num pairs=1
+RIF len=3 num pairs=3
  Seq 1:
+ 25404
+ 24322
  21721
  Seq 2:
  18053
@@ -52652,15 +53533,18 @@ KKIP len=4 num pairs=2
  Seq 2:
  13912
  5629
-KPKA len=4 num pairs=4
+KPKA len=4 num pairs=6
  Seq 1:
  10732
  11361
  Seq 2:
  16076
  16629
-QSG len=3 num pairs=4
+ 15967
+QSG len=3 num pairs=6
  Seq 1:
+ 30448
+ 3250
  31397
  6885
  993
@@ -52763,11 +53647,12 @@ YWK len=3 num pairs=1
  1113
  Seq 2:
  17390
-VEN len=3 num pairs=15
+VEN len=3 num pairs=16
  Seq 1:
  12212
  19092
  5852
+ 6588
  29356
  16282
  25102
@@ -52910,7 +53795,7 @@ SLV len=3 num pairs=27
  7800
  9178
  8711
-TWF len=3 num pairs=7
+TWF len=3 num pairs=8
  Seq 1:
  4696
  3652
@@ -52919,6 +53804,7 @@ TWF len=3 num pairs=7
  28917
  5351
  17075
+ 31587
  Seq 2:
  286
 EETA len=4 num pairs=2
@@ -53100,13 +53986,15 @@ KITS len=4 num pairs=2
  7431
  Seq 2:
  7249
-DSGTY len=5 num pairs=10
+DSGTY len=5 num pairs=14
  Seq 1:
  5760
  4636
+ 5198
  33366
  169
  31127
+ 5667
  Seq 2:
  1758
  16982
@@ -53121,16 +54009,18 @@ MEM len=3 num pairs=1
  3449
  Seq 2:
  5031
-GPV len=3 num pairs=19
+GPV len=3 num pairs=21
  Seq 1:
  23568
  25336
  19224
+ 23172
  29668
  16124
  24650
  19626
  32494
+ 24254
  27501
  14017
  25817
@@ -53144,11 +54034,13 @@ GPV len=3 num pairs=19
  21795
  Seq 2:
  4385
-YDT len=3 num pairs=4
+YDT len=3 num pairs=6
  Seq 1:
+ 1904
  17092
  20524
  30222
+ 21766
  30461
  Seq 2:
  4155
@@ -53409,11 +54301,12 @@ KAG len=3 num pairs=128
  12805
  449
  2971
-IQET len=4 num pairs=1
+IQET len=4 num pairs=2
  Seq 1:
  26665
  Seq 2:
  12922
+ 9190
 HISG len=4 num pairs=2
  Seq 1:
  964
@@ -53483,10 +54376,11 @@ VWT len=3 num pairs=8
  Seq 2:
  16656
  2892
-GGAP len=4 num pairs=5
+GGAP len=4 num pairs=6
  Seq 1:
  25956
  19450
+ 30786
  27037
  27231
  30491
@@ -53573,11 +54467,12 @@ QIE len=3 num pairs=24
  7677
  4997
  7113
-IAED len=4 num pairs=2
+IAED len=4 num pairs=3
  Seq 1:
  32179
  Seq 2:
  8754
+ 8022
  1489
 SQTS len=4 num pairs=2
  Seq 1:
@@ -53610,10 +54505,11 @@ KVLEA len=5 num pairs=1
  12583
  Seq 2:
  3069
-VKEE len=4 num pairs=3
+VKEE len=4 num pairs=4
  Seq 1:
  10626
  Seq 2:
+ 17412
  15206
  5301
  15903
@@ -53647,9 +54543,10 @@ NDS len=3 num pairs=6
  4363
  Seq 2:
  14522
-VPSP len=4 num pairs=1
+VPSP len=4 num pairs=2
  Seq 1:
  12628
+ 26908
  Seq 2:
  17978
 VAEEV len=5 num pairs=1
@@ -53730,8 +54627,9 @@ VKLP len=4 num pairs=1
  27589
  Seq 2:
  16092
-DMT len=3 num pairs=1
+DMT len=3 num pairs=2
  Seq 1:
+ 3716
  2415
  Seq 2:
  8662
@@ -53809,11 +54707,14 @@ LPE len=3 num pairs=644
  11003
  3779
  10435
-IEKV len=4 num pairs=1
+IEKV len=4 num pairs=4
  Seq 1:
  4104
  Seq 2:
  6406
+ 861
+ 11905
+ 6103
 EDSS len=4 num pairs=2
  Seq 1:
  32575
@@ -54026,10 +54927,11 @@ LDA len=3 num pairs=72
  17911
  14855
  2059
-SVTT len=4 num pairs=2
+SVTT len=4 num pairs=3
  Seq 1:
  32680
  31705
+ 31799
  Seq 2:
  7704
 GREI len=4 num pairs=3
@@ -54131,17 +55033,20 @@ KES len=3 num pairs=70
  15949
  2765
  7745
-IERK len=4 num pairs=2
+IERK len=4 num pairs=4
  Seq 1:
+ 31292
+ 20054
  29901
  16159
  Seq 2:
  14842
-DDI len=3 num pairs=3
+DDI len=3 num pairs=4
  Seq 1:
  12564
  31164
  2683
+ 13059
  Seq 2:
  14378
 EEET len=4 num pairs=5
@@ -54257,12 +55162,13 @@ QLD len=3 num pairs=1
  17451
  Seq 2:
  898
-VEES len=4 num pairs=2
+VEES len=4 num pairs=3
  Seq 1:
  1800
  Seq 2:
  16404
  5797
+ 14755
 VDK len=3 num pairs=40
  Seq 1:
  804
@@ -54408,9 +55314,10 @@ EVGE len=4 num pairs=1
  31536
  Seq 2:
  11980
-IKKP len=4 num pairs=3
+IKKP len=4 num pairs=4
  Seq 1:
  5790
+ 2797
  11781
  10107
  Seq 2:
@@ -54819,10 +55726,12 @@ SSTA len=4 num pairs=6
  2573
  8013
  511
-TSAS len=4 num pairs=2
+TSAS len=4 num pairs=4
  Seq 1:
  1164
+ 25153
  17889
+ 3321
  Seq 2:
  1775
 IIHE len=4 num pairs=2
@@ -55030,7 +55939,7 @@ KKPE len=4 num pairs=45
  14971
  16059
  12467
-SCE len=3 num pairs=7
+SCE len=3 num pairs=8
  Seq 1:
  13370
  29265
@@ -55039,6 +55948,7 @@ SCE len=3 num pairs=7
  14071
  6983
  4735
+ 12159
  Seq 2:
  17086
 ASG len=3 num pairs=5
@@ -55082,8 +55992,10 @@ KSLQ len=4 num pairs=1
  24110
  Seq 2:
  4863
-VVKV len=4 num pairs=1
+VVKV len=4 num pairs=3
  Seq 1:
+ 20706
+ 27197
  29185
  Seq 2:
  13078
@@ -55260,12 +56172,20 @@ TTTM len=4 num pairs=1
  31311
  Seq 2:
  1738
-WYKD len=4 num pairs=12
+WYKD len=4 num pairs=36
  Seq 1:
+ 4976
  27832
+ 9016
  6476
+ 3178
+ 2206
  8358
+ 33677
  8265
+ 6663
+ 1323
+ 8075
  Seq 2:
  16760
  786
@@ -55410,7 +56330,7 @@ WLRD len=4 num pairs=2
  Seq 2:
  18098
  7099
-AYE len=3 num pairs=8
+AYE len=3 num pairs=10
  Seq 1:
  22352
  22254
@@ -55418,6 +56338,7 @@ AYE len=3 num pairs=8
  5466
  350
  9222
+ 1341
  12019
 LVAV len=4 num pairs=1
  Seq 1:
@@ -55555,9 +56476,10 @@ LET len=3 num pairs=84
  11791
  9035
  7843
-IKW len=3 num pairs=4
+IKW len=3 num pairs=5
  Seq 1:
  26240
+ 31490
  12262
  5725
  6287
@@ -55826,10 +56748,12 @@ DVKL len=4 num pairs=6
  Seq 2:
  14985
  16091
-DQP len=3 num pairs=7
+DQP len=3 num pairs=9
  Seq 1:
  17942
  Seq 2:
+ 13564
+ 13738
  14082
  5886
  15477
@@ -55842,8 +56766,12 @@ YVN len=3 num pairs=1
  3231
  Seq 2:
  1753
-ESDG len=4 num pairs=1
+ESDG len=4 num pairs=5
  Seq 1:
+ 30190
+ 29102
+ 26246
+ 26933
  2667
  Seq 2:
  18004
@@ -55912,9 +56840,10 @@ TEL len=3 num pairs=78
  4175
  14395
  7707
-IDGK len=4 num pairs=1
+IDGK len=4 num pairs=2
  Seq 1:
  16879
+ 2339
  Seq 2:
  17145
 VQIS len=4 num pairs=2
@@ -56032,11 +56961,13 @@ KMK len=3 num pairs=4
  Seq 2:
  7794
  13949
-STN len=3 num pairs=1
+STN len=3 num pairs=3
  Seq 1:
  22442
  Seq 2:
+ 2308
  17902
+ 9319
 DLA len=3 num pairs=4
  Seq 1:
  8148
@@ -56088,8 +57019,9 @@ ESNE len=4 num pairs=1
  2747
  Seq 2:
  8120
-WYKDGK len=6 num pairs=3
+WYKDGK len=6 num pairs=4
  Seq 1:
+ 9016
  33677
  6663
  1323
@@ -56100,9 +57032,11 @@ APPT len=4 num pairs=1
  17742
  Seq 2:
  4700
-NKH len=3 num pairs=3
+NKH len=3 num pairs=9
  Seq 1:
  4530
+ 1159
+ 13999
  Seq 2:
  3616
  9127
@@ -56145,11 +57079,12 @@ INV len=3 num pairs=10
  Seq 2:
  8578
  12369
-KNEA len=4 num pairs=1
+KNEA len=4 num pairs=2
  Seq 1:
  17524
  Seq 2:
  11944
+ 6610
 GQS len=3 num pairs=16
  Seq 1:
  24330
@@ -56161,9 +57096,10 @@ GQS len=3 num pairs=16
  1838
  3277
  8075
-VKWFKN len=6 num pairs=1
+VKWFKN len=6 num pairs=2
  Seq 1:
  12885
+ 13241
  Seq 2:
  17126
 GRYE len=4 num pairs=2
@@ -56377,9 +57313,10 @@ YQI len=3 num pairs=6
  Seq 2:
  7112
  14725
-TAVN len=4 num pairs=3
+TAVN len=4 num pairs=4
  Seq 1:
  20196
+ 30242
  19699
  17123
  Seq 2:
@@ -56532,9 +57469,10 @@ VIV len=3 num pairs=96
  13885
  12589
  14527
-PARF len=4 num pairs=1
+PARF len=4 num pairs=2
  Seq 1:
  3360
+ 3254
  Seq 2:
  4107
 TPA len=3 num pairs=4
@@ -56595,15 +57533,17 @@ DSEK len=4 num pairs=1
  3494
  Seq 2:
  15842
-KKY len=3 num pairs=9
+KKY len=3 num pairs=11
  Seq 1:
  13792
  13254
  14877
+ 5925
  8369
  19793
  4801
  6487
+ 32663
  13343
  4987
  Seq 2:
@@ -56642,9 +57582,10 @@ LPY len=3 num pairs=2
  28511
  Seq 2:
  9357
-VRAT len=4 num pairs=1
+VRAT len=4 num pairs=2
  Seq 1:
  1576
+ 31928
  Seq 2:
  1232
 PKPVL len=5 num pairs=1
@@ -56722,8 +57663,9 @@ PQP len=3 num pairs=96
  17591
  5527
  9055
-LTIP len=4 num pairs=2
+LTIP len=4 num pairs=3
  Seq 1:
+ 64
  31082
  28255
  Seq 2:
@@ -56747,7 +57689,7 @@ ETD len=3 num pairs=30
  8582
  16887
  15131
-DYT len=3 num pairs=7
+DYT len=3 num pairs=8
  Seq 1:
  12952
  3036
@@ -56756,6 +57698,7 @@ DYT len=3 num pairs=7
  15093
  33393
  1499
+ 20291
  Seq 2:
  7965
 PPE len=3 num pairs=70
@@ -56803,10 +57746,11 @@ KKELP len=5 num pairs=1
  23403
  Seq 2:
  6118
-ELL len=3 num pairs=15
+ELL len=3 num pairs=16
  Seq 1:
  12360
  1268
+ 2036
  12324
  33020
  2028
@@ -56926,21 +57870,25 @@ TWYKDGK len=7 num pairs=1
  33676
  Seq 2:
  16759
-DGGSKI len=6 num pairs=14
+DGGSKI len=6 num pairs=18
  Seq 1:
  14736
  26248
  27720
  22904
  15532
+ 14042
  32074
  23986
  17170
+ 20142
  21917
  18065
+ 29793
  17865
  28807
  23391
+ 24083
  25555
  Seq 2:
  17784
@@ -56954,18 +57902,20 @@ DYVV len=4 num pairs=1
  30218
  Seq 2:
  13810
-PEDD len=4 num pairs=4
+PEDD len=4 num pairs=8
  Seq 1:
  16146
  19246
  17566
  30881
  Seq 2:
+ 17394
  12178
-EAM len=3 num pairs=3
+EAM len=3 num pairs=4
  Seq 1:
  15520
  21017
+ 12927
  32403
  Seq 2:
  8798
@@ -57057,7 +58007,7 @@ VAES len=4 num pairs=2
  2630
  Seq 2:
  699
-QQA len=3 num pairs=7
+QQA len=3 num pairs=8
  Seq 1:
  6265
  Seq 2:
@@ -57065,6 +58015,7 @@ QQA len=3 num pairs=7
  2618
  5162
  5006
+ 5086
  1109
  3249
  7919
@@ -57319,11 +58270,12 @@ RAR len=3 num pairs=8
  554
  16239
  11887
-KEVI len=4 num pairs=1
+KEVI len=4 num pairs=2
  Seq 1:
  495
  Seq 2:
  5700
+ 14482
 ESG len=3 num pairs=24
  Seq 1:
  4264
@@ -57380,13 +58332,14 @@ ARV len=3 num pairs=72
  1045
  12587
  275
-YRN len=3 num pairs=3
+YRN len=3 num pairs=4
  Seq 1:
  13782
  Seq 2:
  2392
  4186
  3858
+ 3846
 ERR len=3 num pairs=20
  Seq 1:
  19064
@@ -57575,8 +58528,9 @@ DVTS len=4 num pairs=3
  15839
  Seq 2:
  17869
-GLYTC len=5 num pairs=1
+GLYTC len=5 num pairs=2
  Seq 1:
+ 9244
  33846
  Seq 2:
  3608
@@ -58095,11 +59049,12 @@ VLVI len=4 num pairs=1
  8032
  Seq 2:
  7123
-IPQE len=4 num pairs=2
+IPQE len=4 num pairs=3
  Seq 1:
  20172
  Seq 2:
  15164
+ 6930
  13177
 DNG len=3 num pairs=6
  Seq 1:
@@ -58389,9 +59344,10 @@ RSIA len=4 num pairs=1
  231
  Seq 2:
  17442
-KTSI len=4 num pairs=1
+KTSI len=4 num pairs=2
  Seq 1:
  14158
+ 27057
  Seq 2:
  1784
 PIPD len=4 num pairs=1
@@ -58461,9 +59417,10 @@ SVSS len=4 num pairs=1
  33858
  Seq 2:
  9186
-TWYK len=4 num pairs=4
+TWYK len=4 num pairs=6
  Seq 1:
  32648
+ 33676
  9791
  Seq 2:
  17037
@@ -58559,9 +59516,10 @@ GGA len=3 num pairs=66
  522
  66
  18007
-EKTS len=4 num pairs=1
+EKTS len=4 num pairs=2
  Seq 1:
  10116
+ 12124
  Seq 2:
  4314
 NAV len=3 num pairs=21
@@ -58703,17 +59661,20 @@ NFE len=3 num pairs=2
  Seq 2:
  7116
  8731
-VAVT len=4 num pairs=1
+VAVT len=4 num pairs=2
  Seq 1:
  10577
  Seq 2:
+ 17105
  7147
-KWFK len=4 num pairs=10
+KWFK len=4 num pairs=12
  Seq 1:
  8544
  6288
  7792
+ 13242
  5726
+ 12886
  5537
  12263
  12975
@@ -58880,8 +59841,9 @@ PTID len=4 num pairs=3
  30487
  Seq 2:
  17326
-SAC len=3 num pairs=1
+SAC len=3 num pairs=2
  Seq 1:
+ 27584
  22173
  Seq 2:
  1244
@@ -58960,13 +59922,14 @@ EEEVVP len=6 num pairs=2
  Seq 2:
  6363
  16019
-IEED len=4 num pairs=3
+IEED len=4 num pairs=4
  Seq 1:
  32911
  Seq 2:
  5560
  12998
  13119
+ 5883
 EMQ len=3 num pairs=14
  Seq 1:
  25176
@@ -58992,12 +59955,14 @@ RELV len=4 num pairs=2
  6857
  Seq 2:
  15736
-TCV len=3 num pairs=6
+TCV len=3 num pairs=8
  Seq 1:
+ 7738
  6890
  7246
  33662
  6525
+ 6797
  8407
  12115
  Seq 2:
@@ -59026,9 +59991,10 @@ GYVA len=4 num pairs=6
  4009
  1079
  1479
-EVQW len=4 num pairs=2
+EVQW len=4 num pairs=4
  Seq 1:
  23284
+ 13867
  Seq 2:
  16852
  7439
@@ -59137,7 +60103,7 @@ IRKE len=4 num pairs=2
  31461
  Seq 2:
  2420
-FRI len=3 num pairs=24
+FRI len=3 num pairs=25
  Seq 1:
  31328
  27568
@@ -59148,6 +60114,7 @@ FRI len=3 num pairs=24
  7092
  13980
  6124
+ 20090
  20386
  26002
  17614
@@ -59320,9 +60287,10 @@ EELE len=4 num pairs=6
  13830
  6285
  865
-FIV len=3 num pairs=1
+FIV len=3 num pairs=2
  Seq 1:
  18962
+ 3678
  Seq 2:
  12627
 RVI len=3 num pairs=494
@@ -59379,12 +60347,13 @@ RVI len=3 num pairs=494
  10459
  11027
  9891
-AQA len=3 num pairs=3
+AQA len=3 num pairs=4
  Seq 1:
  33109
  Seq 2:
  9088
  9096
+ 9169
  251
 SEG len=3 num pairs=20
  Seq 1:
@@ -59407,11 +60376,14 @@ DSF len=3 num pairs=2
  29334
  Seq 2:
  8477
-QII len=3 num pairs=2
+QII len=3 num pairs=8
  Seq 1:
  32380
  4037
  Seq 2:
+ 12996
+ 7578
+ 13117
  4951
 LRKD len=4 num pairs=1
  Seq 1:
@@ -59426,10 +60398,11 @@ RQR len=3 num pairs=6
  2352
  1676
  5907
-TESK len=4 num pairs=1
+TESK len=4 num pairs=2
  Seq 1:
  19308
  Seq 2:
+ 11584
  7934
 ISS len=3 num pairs=60
  Seq 1:
@@ -59471,12 +60444,13 @@ TDFK len=4 num pairs=1
  24603
  Seq 2:
  8664
-IRN len=3 num pairs=4
+IRN len=3 num pairs=5
  Seq 1:
  18202
  3026
  31782
  34119
+ 30323
  Seq 2:
  16975
 KVP len=3 num pairs=236
@@ -59716,11 +60690,12 @@ GGSV len=4 num pairs=4
  1095
  Seq 2:
  6918
-KPSE len=4 num pairs=3
+KPSE len=4 num pairs=4
  Seq 1:
  22272
  864
  32130
+ 4253
  Seq 2:
  13820
 FRVVA len=5 num pairs=1
@@ -59801,10 +60776,11 @@ VEKI len=4 num pairs=3
  13978
  5966
  8473
-TLLA len=4 num pairs=1
+TLLA len=4 num pairs=2
  Seq 1:
  3886
  Seq 2:
+ 325
  9059
 QIVG len=4 num pairs=1
  Seq 1:
@@ -60204,12 +61180,13 @@ EGVE len=4 num pairs=1
  23333
  Seq 2:
  16149
-SAKLT len=5 num pairs=2
+SAKLT len=5 num pairs=4
  Seq 1:
  9663
  4371
  Seq 2:
  17332
+ 4786
 WYW len=3 num pairs=1
  Seq 1:
  2125
@@ -60273,9 +61250,10 @@ KIS len=3 num pairs=56
  12705
  14263
  15423
-LSN len=3 num pairs=4
+LSN len=3 num pairs=5
  Seq 1:
  5768
+ 4536
  31630
  23510
  25709
@@ -60361,12 +61339,13 @@ FPS len=3 num pairs=2
  3867
  Seq 2:
  16863
-EFN len=3 num pairs=2
+EFN len=3 num pairs=3
  Seq 1:
  16588
  Seq 2:
  16252
  13205
+ 13507
 EDFV len=4 num pairs=2
  Seq 1:
  7811
@@ -60494,10 +61473,12 @@ DEGVY len=5 num pairs=3
  9825
  Seq 2:
  2424
-SDPV len=4 num pairs=2
+SDPV len=4 num pairs=4
  Seq 1:
  29066
  14998
+ 28470
+ 20207
  Seq 2:
  17745
 LIL len=3 num pairs=18
@@ -60552,11 +61533,13 @@ GEEVP len=5 num pairs=1
  13696
  Seq 2:
  5823
-ILP len=3 num pairs=3
+ILP len=3 num pairs=5
  Seq 1:
  11151
  Seq 2:
+ 13290
  11606
+ 9158
  12166
  7723
 PENV len=4 num pairs=2
@@ -60972,9 +61955,10 @@ EEPI len=4 num pairs=4
  16300
  13970
  15161
-KVRV len=4 num pairs=1
+KVRV len=4 num pairs=2
  Seq 1:
  11407
+ 31147
  Seq 2:
  15727
 SIK len=3 num pairs=96
@@ -61076,12 +62060,13 @@ SRT len=3 num pairs=10
  Seq 2:
  40
  6618
-EIPE len=4 num pairs=2
+EIPE len=4 num pairs=4
  Seq 1:
  11176
  11302
  Seq 2:
  15073
+ 6075
 DEGEYTC len=7 num pairs=1
  Seq 1:
  3568
@@ -61216,10 +62201,12 @@ MFV len=3 num pairs=1
  1556
  Seq 2:
  2611
-EIEEI len=5 num pairs=1
+EIEEI len=5 num pairs=3
  Seq 1:
  9551
  Seq 2:
+ 15816
+ 15932
  5705
 TID len=3 num pairs=72
  Seq 1:
@@ -61280,7 +62267,7 @@ KCA len=3 num pairs=4
  Seq 2:
  3353
  8671
-DEP len=3 num pairs=10
+DEP len=3 num pairs=11
  Seq 1:
  14502
  Seq 2:
@@ -61290,6 +62277,7 @@ DEP len=3 num pairs=10
  6334
  13990
  13269
+ 13945
  14647
  15607
  5611
@@ -61364,20 +62352,22 @@ RPG len=3 num pairs=30
  Seq 2:
  16490
  606
-DRK len=3 num pairs=5
+DRK len=3 num pairs=6
  Seq 1:
  13824
  2224
  4596
+ 7420
  12098
  19667
  Seq 2:
  3948
-TATT len=4 num pairs=1
+TATT len=4 num pairs=2
  Seq 1:
  21842
  Seq 2:
  3758
+ 7593
 GGQ len=3 num pairs=4
  Seq 1:
  25702
@@ -61439,10 +62429,11 @@ PRKEE len=5 num pairs=1
  10341
  Seq 2:
  6097
-KPVL len=4 num pairs=4
+KPVL len=4 num pairs=6
  Seq 1:
  19714
  19126
+ 11707
  Seq 2:
  12982
  17561
@@ -61479,14 +62470,16 @@ PAP len=3 num pairs=85
  12604
  5973
  14899
-SGTY len=4 num pairs=12
+SGTY len=4 num pairs=16
  Seq 1:
  31128
+ 5668
  170
  4637
  5761
  33367
  5855
+ 5199
  Seq 2:
  16983
  1759
@@ -61557,11 +62550,14 @@ IPD len=3 num pairs=24
  6184
  7038
  12583
-IDGG len=4 num pairs=4
+IDGG len=4 num pairs=7
  Seq 1:
  20738
+ 26150
  28317
+ 30489
  24617
+ 25067
  21819
  Seq 2:
  520
@@ -61687,8 +62683,9 @@ LVG len=3 num pairs=2
  5716
  Seq 2:
  13862
-PTIT len=4 num pairs=3
+PTIT len=4 num pairs=4
  Seq 1:
+ 31757
  24185
  32137
  15635
@@ -61767,9 +62764,10 @@ EMA len=3 num pairs=4
  Seq 2:
  13362
  3967
-KAKL len=4 num pairs=1
+KAKL len=4 num pairs=2
  Seq 1:
  2873
+ 32703
  Seq 2:
  17175
 AEDQ len=4 num pairs=2
@@ -61869,18 +62867,20 @@ EPEE len=4 num pairs=25
  11767
  16319
  14963
-VGSK len=4 num pairs=1
+VGSK len=4 num pairs=2
  Seq 1:
  18196
+ 5117
  Seq 2:
  7160
-DPTM len=4 num pairs=4
+DPTM len=4 num pairs=5
  Seq 1:
  1730
  Seq 2:
  3704
  1186
  2781
+ 645
  1985
 VTWT len=4 num pairs=1
  Seq 1:
@@ -61933,12 +62933,13 @@ VGRV len=4 num pairs=1
  2518
  Seq 2:
  18029
-CKI len=3 num pairs=8
+CKI len=3 num pairs=10
  Seq 1:
  7312
  5060
  8253
  6371
+ 32515
  Seq 2:
  17078
  1445
@@ -61975,11 +62976,14 @@ RVQ len=3 num pairs=8
  Seq 2:
  7718
  8497
-LECK len=4 num pairs=3
+LECK len=4 num pairs=6
  Seq 1:
  7310
  2870
  6369
+ 6745
+ 6649
+ 2463
  Seq 2:
  6554
 AQY len=3 num pairs=16
@@ -62193,8 +63197,9 @@ VPPS len=4 num pairs=5
  7665
  Seq 2:
  70
-LEEE len=4 num pairs=3
+LEEE len=4 num pairs=4
  Seq 1:
+ 12144
  10658
  33041
  13385
@@ -62207,18 +63212,20 @@ NER len=3 num pairs=3
  17487
  Seq 2:
  17138
-SKY len=3 num pairs=5
+SKY len=3 num pairs=6
  Seq 1:
  14112
+ 4208
  5549
  4433
  13609
  2575
  Seq 2:
  13541
-ITAA len=4 num pairs=1
+ITAA len=4 num pairs=2
  Seq 1:
  560
+ 27475
  Seq 2:
  1066
 KKQ len=3 num pairs=36
@@ -62548,13 +63555,14 @@ PLA len=3 num pairs=20
  12542
  13157
  13271
-WMK len=3 num pairs=8
+WMK len=3 num pairs=9
  Seq 1:
  21246
  24493
  12077
  3089
  25575
+ 30607
  4883
  2387
  23411
@@ -62849,11 +63857,12 @@ VEEG len=4 num pairs=6
  Seq 2:
  4102
  4614
-DGGAP len=5 num pairs=5
+DGGAP len=5 num pairs=6
  Seq 1:
  27036
  30490
  27230
+ 30785
  19449
  25955
  Seq 2:
@@ -63290,11 +64299,12 @@ KRT len=3 num pairs=16
  17322
  6382
  14089
-DEQI len=4 num pairs=2
+DEQI len=4 num pairs=3
  Seq 1:
  2481
  Seq 2:
  12260
+ 6834
  7103
 EKG len=3 num pairs=44
  Seq 1:
@@ -63320,12 +64330,13 @@ WKE len=3 num pairs=2
  16241
  Seq 2:
  5053
-ILH len=3 num pairs=4
+ILH len=3 num pairs=5
  Seq 1:
  18828
  3438
  12734
  15437
+ 32233
  Seq 2:
  812
 RISA len=4 num pairs=2
@@ -63550,8 +64561,10 @@ ASS len=3 num pairs=27
  934
  8641
  795
-AHL len=3 num pairs=5
+AHL len=3 num pairs=7
  Seq 1:
+ 15368
+ 13450
  9134
  13558
  13113
@@ -63559,9 +64572,10 @@ AHL len=3 num pairs=5
  13627
  Seq 2:
  2106
-RNGR len=4 num pairs=1
+RNGR len=4 num pairs=2
  Seq 1:
  9705
+ 13783
  Seq 2:
  6774
 PET len=3 num pairs=216
@@ -63864,10 +64878,11 @@ PRG len=3 num pairs=20
  3914
  3367
  2315
-AYQ len=3 num pairs=2
+AYQ len=3 num pairs=3
  Seq 1:
  29306
  10069
+ 23753
  Seq 2:
  4204
 KPES len=4 num pairs=10
@@ -63941,16 +64956,20 @@ EVEHK len=5 num pairs=1
  9719
  Seq 2:
  4371
-KVKK len=4 num pairs=8
+KVKK len=4 num pairs=12
  Seq 1:
  11897
  Seq 2:
+ 6172
  12618
  5802
  14562
  5758
  14374
  16989
+ 5805
+ 15077
+ 5761
  5865
  16691
 MSG len=3 num pairs=2
@@ -64058,10 +65077,11 @@ SFP len=3 num pairs=3
  6447
  Seq 2:
  4430
-SGLY len=4 num pairs=2
+SGLY len=4 num pairs=3
  Seq 1:
  9448
  3688
+ 33845
  Seq 2:
  3607
 GGI len=3 num pairs=6
@@ -64404,12 +65424,14 @@ QRVT len=4 num pairs=1
  3930
  Seq 2:
  5064
-AHFEC len=5 num pairs=2
+AHFEC len=5 num pairs=4
  Seq 1:
  1719
  Seq 2:
+ 1574
  1441
  3147
+ 3555
 GQG len=3 num pairs=4
  Seq 1:
  17724
@@ -64653,7 +65675,7 @@ SYS len=3 num pairs=8
  21839
  Seq 2:
  303
-DGR len=3 num pairs=12
+DGR len=3 num pairs=13
  Seq 1:
  25572
  24490
@@ -64661,6 +65683,7 @@ DGR len=3 num pairs=12
  26654
  31510
  13261
+ 9377
  27737
  7607
  29911
@@ -65088,18 +66111,21 @@ KDGQPL len=6 num pairs=1
  32756
  Seq 2:
  927
-DAVF len=4 num pairs=2
+DAVF len=4 num pairs=3
  Seq 1:
+ 2722
  9598
  13765
  Seq 2:
  270
-RVSAEN len=6 num pairs=7
+RVSAEN len=6 num pairs=9
  Seq 1:
+ 20880
  23736
  23340
  24818
  31227
+ 18011
  14291
  21075
  21571
@@ -65355,9 +66381,12 @@ ISKL len=4 num pairs=2
  Seq 2:
  17430
  11737
-GTN len=3 num pairs=2
+GTN len=3 num pairs=5
  Seq 1:
+ 20236
  15970
+ 17057
+ 8715
  4771
  Seq 2:
  1304
@@ -65487,7 +66516,7 @@ IQA len=3 num pairs=4
  31851
  Seq 2:
  7032
-SPV len=3 num pairs=11
+SPV len=3 num pairs=12
  Seq 1:
  18560
  17272
@@ -65496,6 +66525,7 @@ SPV len=3 num pairs=11
  290
  4690
  33246
+ 3486
  301
  16967
  7391
@@ -65558,7 +66588,7 @@ IKKT len=4 num pairs=6
  5666
  13298
  16277
-CSA len=3 num pairs=15
+CSA len=3 num pairs=16
  Seq 1:
  7280
  5402
@@ -65574,6 +66604,7 @@ CSA len=3 num pairs=15
  5673
  7561
  5495
+ 5215
  8691
  Seq 2:
  4476
@@ -65628,9 +66659,12 @@ TVG len=3 num pairs=24
  7879
  7531
  1467
-ICK len=3 num pairs=2
+ICK len=3 num pairs=5
  Seq 1:
+ 24884
+ 3692
  21294
+ 8958
  31093
  Seq 2:
  2162
@@ -65689,8 +66723,9 @@ ESTS len=4 num pairs=2
  5419
  Seq 2:
  8268
-KEVQ len=4 num pairs=2
+KEVQ len=4 num pairs=3
  Seq 1:
+ 9972
  8433
  3153
  Seq 2:
@@ -65763,15 +66798,17 @@ KSY len=3 num pairs=10
  Seq 2:
  15418
  17714
-PEAE len=4 num pairs=3
+PEAE len=4 num pairs=4
  Seq 1:
  11951
  Seq 2:
  15976
  14345
+ 15763
  15875
-DVGEY len=5 num pairs=2
+DVGEY len=5 num pairs=3
  Seq 1:
+ 8012
  7450
  4823
  Seq 2:
@@ -65900,10 +66937,12 @@ FSL len=3 num pairs=1
  19187
  Seq 2:
  16137
-SAKL len=4 num pairs=4
+SAKL len=4 num pairs=8
  Seq 1:
  2698
  8126
+ 9663
+ 4371
  Seq 2:
  17332
  4786
@@ -66060,10 +67099,11 @@ LVKP len=4 num pairs=2
  6259
  Seq 2:
  15880
-AGG len=3 num pairs=6
+AGG len=3 num pairs=7
  Seq 1:
  17464
  24964
+ 3130
  5210
  23882
  31038
@@ -66087,7 +67127,7 @@ KKDE len=4 num pairs=2
  Seq 2:
  15529
  14095
-IEWF len=4 num pairs=5
+IEWF len=4 num pairs=6
  Seq 1:
  34091
  Seq 2:
@@ -66095,6 +67135,7 @@ IEWF len=4 num pairs=5
  2786
  3062
  3709
+ 2655
  1323
 APT len=3 num pairs=22
  Seq 1:
@@ -66112,11 +67153,13 @@ APT len=3 num pairs=22
  Seq 2:
  5597
  6739
-FGP len=3 num pairs=3
+FGP len=3 num pairs=5
  Seq 1:
  1716
+ 15826
  28886
  15809
+ 21495
  Seq 2:
  3807
 WYKDGKP len=7 num pairs=1
@@ -66159,9 +67202,10 @@ QHL len=3 num pairs=12
  1668
  1001
  1935
-VAF len=3 num pairs=4
+VAF len=3 num pairs=5
  Seq 1:
  10834
+ 9454
  11279
  8059
  2811
@@ -66390,13 +67434,15 @@ KKYT len=4 num pairs=2
  32663
  Seq 2:
  3931
-TRS len=3 num pairs=6
+TRS len=3 num pairs=8
  Seq 1:
+ 23776
  26796
  30813
  32005
  29877
  12897
+ 20527
  19171
  Seq 2:
  1117
@@ -66860,8 +67906,9 @@ DFG len=3 num pairs=36
  1211
  2675
  2275
-RLS len=3 num pairs=9
+RLS len=3 num pairs=10
  Seq 1:
+ 9180
  25772
  32954
  16326
@@ -66904,9 +67951,10 @@ SISL len=4 num pairs=2
  30283
  Seq 2:
  17949
-ESGT len=4 num pairs=2
+ESGT len=4 num pairs=3
  Seq 1:
  4264
+ 29708
  8153
  Seq 2:
  17641
@@ -66957,8 +68005,9 @@ NAN len=3 num pairs=2
  12214
  Seq 2:
  6722
-GLSE len=4 num pairs=2
+GLSE len=4 num pairs=3
  Seq 1:
+ 23744
  21856
  31337
  Seq 2:
@@ -67023,9 +68072,10 @@ TEH len=3 num pairs=6
  Seq 2:
  12456
  14282
-EEIPEE len=6 num pairs=1
+EEIPEE len=6 num pairs=2
  Seq 1:
  11301
+ 11175
  Seq 2:
  6074
 IPL len=3 num pairs=16
@@ -67060,9 +68110,10 @@ EAPE len=4 num pairs=30
  13898
  15001
  15555
-TSRSS len=5 num pairs=1
+TSRSS len=5 num pairs=2
  Seq 1:
  25940
+ 22693
  Seq 2:
  1916
 LIAE len=4 num pairs=1
@@ -67076,10 +68127,11 @@ VSEI len=4 num pairs=2
  Seq 2:
  12640
  15100
-EYM len=3 num pairs=1
+EYM len=3 num pairs=2
  Seq 1:
  5295
  Seq 2:
+ 688
  18049
 RFHI len=4 num pairs=1
  Seq 1:
@@ -67257,11 +68309,12 @@ LSEK len=4 num pairs=1
  28355
  Seq 2:
  11454
-PEDSG len=5 num pairs=2
+PEDSG len=5 num pairs=3
  Seq 1:
  167
  Seq 2:
  4020
+ 1756
  3467
 AAY len=3 num pairs=4
  Seq 1:
@@ -67297,11 +68350,14 @@ FVMT len=4 num pairs=1
  21771
  Seq 2:
  15503
-APPP len=4 num pairs=3
+APPP len=4 num pairs=6
  Seq 1:
  21104
  10376
  10100
+ 11786
+ 11446
+ 11009
  Seq 2:
  2074
 NKL len=3 num pairs=25
@@ -67431,8 +68487,9 @@ QVTT len=4 num pairs=2
  Seq 2:
  50
  14318
-REEE len=4 num pairs=10
+REEE len=4 num pairs=12
  Seq 1:
+ 10440
  19764
  10436
  27106
@@ -67446,8 +68503,9 @@ IGA len=3 num pairs=1
  16740
  Seq 2:
  14909
-EPEK len=4 num pairs=1
+EPEK len=4 num pairs=2
  Seq 1:
+ 10714
  11793
  Seq 2:
  15694
@@ -67456,14 +68514,16 @@ NVRI len=4 num pairs=1
  27699
  Seq 2:
  16671
-LEVT len=4 num pairs=2
+LEVT len=4 num pairs=3
  Seq 1:
  14022
+ 24751
  19731
  Seq 2:
  8295
-ESQL len=4 num pairs=4
+ESQL len=4 num pairs=6
  Seq 1:
+ 1802
  15689
  1447
  Seq 2:
@@ -67515,13 +68575,15 @@ VDSV len=4 num pairs=3
  8283
  Seq 2:
  14177
-DGL len=3 num pairs=21
+DGL len=3 num pairs=27
  Seq 1:
+ 24192
  21312
  5840
  14328
  28892
  15890
+ 28526
  12638
  31897
  Seq 2:
@@ -67680,11 +68742,12 @@ EVEE len=4 num pairs=20
  14754
  6342
  15017
-DKH len=3 num pairs=3
+DKH len=3 num pairs=4
  Seq 1:
  20606
  2837
  13881
+ 12841
  Seq 2:
  14142
 HFE len=3 num pairs=56
@@ -67708,8 +68771,10 @@ HFE len=3 num pairs=56
  1575
  3047
  3419
-GSEITG len=6 num pairs=1
+GSEITG len=6 num pairs=3
  Seq 1:
+ 21526
+ 22710
  16151
  Seq 2:
  17887
@@ -67795,10 +68860,11 @@ ILEC len=4 num pairs=1
  6744
  Seq 2:
  16642
-VVSD len=4 num pairs=1
+VVSD len=4 num pairs=2
  Seq 1:
  4242
  Seq 2:
+ 11725
  6827
 KPSS len=4 num pairs=2
  Seq 1:
@@ -67806,13 +68872,14 @@ KPSS len=4 num pairs=2
  Seq 2:
  14129
  13747
-EKKV len=4 num pairs=14
+EKKV len=4 num pairs=15
  Seq 1:
  10544
  10968
  10516
  11122
  11517
+ 11685
  11461
  11253
  11573
@@ -67864,7 +68931,7 @@ EPVT len=4 num pairs=2
  31244
  Seq 2:
  1448
-CEA len=3 num pairs=10
+CEA len=3 num pairs=12
  Seq 1:
  7936
  4736
@@ -67873,7 +68940,9 @@ CEA len=3 num pairs=10
  5860
  32282
  5298
+ 3310
  6422
+ 31689
  4359
  7363
  Seq 2:
@@ -68298,12 +69367,13 @@ RRK len=3 num pairs=9
  13616
  16221
  15751
-VEEI len=4 num pairs=2
+VEEI len=4 num pairs=4
  Seq 1:
  11300
  13833
  Seq 2:
  14056
+ 6073
 VDQ len=3 num pairs=9
  Seq 1:
  31000
@@ -68509,8 +69579,9 @@ YMC len=3 num pairs=4
  2428
  2029
  689
-PVPE len=4 num pairs=22
+PVPE len=4 num pairs=24
  Seq 1:
+ 32
  11112
  10360
  11626
@@ -68616,10 +69687,11 @@ SVN len=3 num pairs=5
  20283
  Seq 2:
  9214
-EIKD len=4 num pairs=1
+EIKD len=4 num pairs=2
  Seq 1:
  12046
  Seq 2:
+ 17664
  3680
 LTK len=3 num pairs=12
  Seq 1:
@@ -68766,10 +69838,11 @@ EDSGR len=5 num pairs=1
  1007
  Seq 2:
  4561
-GIYT len=4 num pairs=3
+GIYT len=4 num pairs=4
  Seq 1:
  14389
  15381
+ 7735
  1359
  Seq 2:
  2962
@@ -68844,7 +69917,7 @@ EKI len=3 num pairs=322
  13979
  2395
  17043
-WKK len=3 num pairs=11
+WKK len=3 num pairs=12
  Seq 1:
  1114
  18178
@@ -68857,6 +69930,7 @@ WKK len=3 num pairs=11
  22025
  20255
  31403
+ 8827
  Seq 2:
  17505
 EVTEE len=5 num pairs=3
@@ -69033,11 +70107,12 @@ LKPAE len=5 num pairs=1
  20262
  Seq 2:
  9248
-EPN len=3 num pairs=3
+EPN len=3 num pairs=4
  Seq 1:
  12274
  Seq 2:
  12306
+ 15361
  8099
  4419
 IMS len=3 num pairs=2
@@ -69074,11 +70149,12 @@ PEAPK len=5 num pairs=4
  10507
  Seq 2:
  3797
-EARA len=4 num pairs=1
+EARA len=4 num pairs=2
  Seq 1:
  13915
  Seq 2:
  3336
+ 8952
 ESSVL len=5 num pairs=1
  Seq 1:
  33666
@@ -69155,10 +70231,11 @@ VPQP len=4 num pairs=1
  24056
  Seq 2:
  5456
-PPQF len=4 num pairs=2
+PPQF len=4 num pairs=3
  Seq 1:
  5786
  Seq 2:
+ 616
  888
  6631
 EGHE len=4 num pairs=3
@@ -69237,18 +70314,21 @@ TVTE len=4 num pairs=90
  9947
  10515
  9379
-VNAAG len=5 num pairs=3
+VNAAG len=5 num pairs=5
  Seq 1:
  30244
  17020
+ 18118
  28069
+ 16005
  Seq 2:
  4571
-LQR len=3 num pairs=2
+LQR len=3 num pairs=3
  Seq 1:
  1812
  Seq 2:
  17002
+ 3237
  18117
 QVL len=3 num pairs=15
  Seq 1:
@@ -69273,9 +70353,10 @@ NVS len=3 num pairs=14
  Seq 2:
  7768
  9110
-TVAT len=4 num pairs=1
+TVAT len=4 num pairs=2
  Seq 1:
  22926
+ 333
  Seq 2:
  4506
 PRI len=3 num pairs=21
@@ -69472,8 +70553,9 @@ PKVV len=4 num pairs=4
  Seq 2:
  3800
  15446
-KEPEP len=5 num pairs=1
+KEPEP len=5 num pairs=2
  Seq 1:
+ 11790
  6823
  Seq 2:
  16043
@@ -69490,8 +70572,9 @@ FTQ len=3 num pairs=6
  Seq 2:
  2357
  2489
-KYTI len=4 num pairs=3
+KYTI len=4 num pairs=4
  Seq 1:
+ 30440
  20978
  2310
  34129
@@ -69530,11 +70613,12 @@ MSI len=3 num pairs=8
  Seq 2:
  8256
  2784
-YAEN len=4 num pairs=4
+YAEN len=4 num pairs=5
  Seq 1:
  26984
  24424
  26588
+ 28758
  27671
  Seq 2:
  2818
@@ -69654,16 +70738,22 @@ VED len=3 num pairs=150
  4457
  13695
  14099
-PPTG len=4 num pairs=2
+PPTG len=4 num pairs=7
  Seq 1:
+ 30760
+ 18532
  25980
+ 27498
+ 23169
  23815
+ 22087
  Seq 2:
  17981
-KKTK len=4 num pairs=4
+KKTK len=4 num pairs=5
  Seq 1:
  201
  Seq 2:
+ 14628
  5717
  14703
  15523
@@ -69710,10 +70800,11 @@ KAPE len=4 num pairs=9
  17392
  13352
  15827
-HER len=3 num pairs=3
+HER len=3 num pairs=4
  Seq 1:
  3440
  6214
+ 10087
  32827
  Seq 2:
  13659
@@ -69772,14 +70863,17 @@ IPR len=3 num pairs=4
  Seq 2:
  2314
  529
-SEIT len=4 num pairs=12
+SEIT len=4 num pairs=18
  Seq 1:
  21032
  20344
+ 16152
  33884
  20893
  18957
  16453
+ 22711
+ 21527
  Seq 2:
  17888
  7041
@@ -69833,14 +70927,19 @@ SMI len=3 num pairs=2
  23678
  Seq 2:
  2185
-NGV len=3 num pairs=6
+NGV len=3 num pairs=11
  Seq 1:
+ 33336
+ 2916
  28274
  3538
  2742
  4902
  2113
  7367
+ 32015
+ 33999
+ 3003
  Seq 2:
  2526
 IYTC len=4 num pairs=2
@@ -69983,12 +71082,13 @@ TLEEEV len=6 num pairs=1
  12143
  Seq 2:
  5514
-KLIE len=4 num pairs=12
+KLIE len=4 num pairs=15
  Seq 1:
  15792
  20377
  18441
  Seq 2:
+ 264
  11592
  14386
  14574
@@ -70028,10 +71128,11 @@ SAE len=3 num pairs=126
  4806
  17549
  15331
-NKR len=3 num pairs=2
+NKR len=3 num pairs=3
  Seq 1:
  16993
  16271
+ 24795
  Seq 2:
  12798
 RVTK len=4 num pairs=2
@@ -70130,18 +71231,20 @@ SQQP len=4 num pairs=1
  33290
  Seq 2:
  8933
-PKTL len=4 num pairs=1
+PKTL len=4 num pairs=2
  Seq 1:
  31954
  Seq 2:
+ 5505
  13523
 TNQL len=4 num pairs=1
  Seq 1:
  29579
  Seq 2:
  2166
-VARN len=4 num pairs=1
+VARN len=4 num pairs=2
  Seq 1:
+ 32692
  30158
  Seq 2:
  1099
@@ -70239,9 +71342,10 @@ HKL len=3 num pairs=5
  14757
  Seq 2:
  16971
-TSCS len=4 num pairs=1
+TSCS len=4 num pairs=2
  Seq 1:
  6431
+ 20371
  Seq 2:
  1375
 SKKKS len=5 num pairs=1
@@ -70396,12 +71500,13 @@ SLTT len=4 num pairs=1
  4485
  Seq 2:
  2663
-PGTP len=4 num pairs=7
+PGTP len=4 num pairs=8
  Seq 1:
  24352
  28784
  22772
  26516
+ 22188
  25434
  24450
  23270
@@ -70437,17 +71542,21 @@ EQVTI len=5 num pairs=1
  383
  Seq 2:
  15855
-TGL len=3 num pairs=33
+TGL len=3 num pairs=40
  Seq 1:
+ 30920
  14280
  21560
  20180
  18396
  20476
+ 21164
  28842
  20578
+ 25890
  25982
  31318
+ 28054
  33782
  14077
  17117
@@ -70457,12 +71566,15 @@ TGL len=3 num pairs=33
  23725
  29829
  25493
+ 29141
  17409
  23329
+ 22745
  28745
  18103
  16183
  22151
+ 24807
  21855
  25199
  14575
@@ -70516,9 +71628,11 @@ AHFECRL len=7 num pairs=2
  Seq 2:
  1574
  3555
-WTP len=3 num pairs=1
+WTP len=3 num pairs=3
  Seq 1:
  17589
+ 16545
+ 21419
  Seq 2:
  17677
 NEL len=3 num pairs=2
@@ -71101,11 +72215,12 @@ PTG len=3 num pairs=40
  17982
  5809
  6751
-LLKD len=4 num pairs=1
+LLKD len=4 num pairs=2
  Seq 1:
  8081
  Seq 2:
  8978
+ 8779
 TSP len=3 num pairs=18
  Seq 1:
  15208
@@ -71286,9 +72401,10 @@ QFL len=3 num pairs=6
  16356
  11862
  4839
-SNF len=3 num pairs=1
+SNF len=3 num pairs=2
  Seq 1:
  30256
+ 20924
  Seq 2:
  3643
 RIQE len=4 num pairs=2
@@ -71344,8 +72460,9 @@ KGGIQ len=5 num pairs=1
  16037
  Seq 2:
  4490
-SILI len=4 num pairs=1
+SILI len=4 num pairs=2
  Seq 1:
+ 19880
  27855
  Seq 2:
  4448
@@ -71454,9 +72571,10 @@ NMT len=3 num pairs=2
  34234
  Seq 2:
  6800
-PEDEG len=5 num pairs=2
+PEDEG len=5 num pairs=3
  Seq 1:
  30982
+ 3407
  1355
  Seq 2:
  4667
@@ -71837,8 +72955,9 @@ GDP len=3 num pairs=81
  3703
  2383
  2515
-ASM len=3 num pairs=2
+ASM len=3 num pairs=3
  Seq 1:
+ 19536
  34207
  563
  Seq 2:
@@ -71849,10 +72968,11 @@ AEAV len=4 num pairs=2
  405
  Seq 2:
  3824
-LIIKD len=5 num pairs=2
+LIIKD len=5 num pairs=3
  Seq 1:
  19882
  13805
+ 16087
  Seq 2:
  16879
 KPTP len=4 num pairs=6
@@ -72003,8 +73123,9 @@ QIDK len=4 num pairs=2
  Seq 2:
  5036
  5069
-AQLK len=4 num pairs=1
+AQLK len=4 num pairs=2
  Seq 1:
+ 12580
  4998
  Seq 2:
  4688
@@ -72250,8 +73371,9 @@ FPEL len=4 num pairs=1
  33411
  Seq 2:
  11508
-KDTT len=4 num pairs=2
+KDTT len=4 num pairs=3
  Seq 1:
+ 14864
  17282
  21647
  Seq 2:
@@ -72267,10 +73389,11 @@ LTVE len=4 num pairs=12
  Seq 2:
  17178
  1721
-LELF len=4 num pairs=4
+LELF len=4 num pairs=5
  Seq 1:
  6876
  8758
+ 7817
  20279
  5751
  Seq 2:
@@ -72352,11 +73475,12 @@ DFI len=3 num pairs=2
  Seq 2:
  7559
  17007
-ESSV len=4 num pairs=1
+ESSV len=4 num pairs=2
  Seq 1:
  33666
  Seq 2:
  4334
+ 8974
 HIF len=3 num pairs=2
  Seq 1:
  22471
@@ -72496,8 +73620,9 @@ SFN len=3 num pairs=1
  4818
  Seq 2:
  17773
-DVKF len=4 num pairs=1
+DVKF len=4 num pairs=2
  Seq 1:
+ 26718
  22390
  Seq 2:
  15118
@@ -72567,8 +73692,9 @@ VET len=3 num pairs=532
  1115
  16803
  10371
-YVD len=3 num pairs=1
+YVD len=3 num pairs=2
  Seq 1:
+ 14500
  27158
  Seq 2:
  16634
@@ -72614,7 +73740,7 @@ WFKNG len=5 num pairs=3
  17128
  2657
  1459
-PAV len=3 num pairs=14
+PAV len=3 num pairs=16
  Seq 1:
  16028
  11714
@@ -72626,10 +73752,12 @@ PAV len=3 num pairs=14
  21685
  9365
  11633
+ 23103
  10159
  10323
  16051
  11763
+ 67
  Seq 2:
  17944
 AND len=3 num pairs=2
@@ -73344,8 +74472,9 @@ EQS len=3 num pairs=9
  8423
  715
  4227
-SEY len=3 num pairs=4
+SEY len=3 num pairs=5
  Seq 1:
+ 30352
  33142
  26481
  27367
@@ -73357,10 +74486,11 @@ SWQV len=4 num pairs=1
  29420
  Seq 2:
  4073
-RQL len=3 num pairs=8
+RQL len=3 num pairs=9
  Seq 1:
  32322
  26306
+ 32533
  6481
  7105
  7097
@@ -73369,10 +74499,11 @@ RQL len=3 num pairs=8
  23059
  Seq 2:
  2068
-TFA len=3 num pairs=1
+TFA len=3 num pairs=2
  Seq 1:
  1145
  Seq 2:
+ 15604
  15837
 EVDP len=4 num pairs=1
  Seq 1:
@@ -73503,11 +74634,23 @@ ITPQK len=5 num pairs=1
  33886
  Seq 2:
  16782
-NDA len=3 num pairs=3
+NDA len=3 num pairs=15
  Seq 1:
+ 5488
+ 5104
+ 5864
+ 9252
+ 7836
+ 29548
+ 7554
+ 21678
+ 25014
  12198
  9597
+ 9241
  12535
+ 8495
+ 29347
  Seq 2:
  535
 EDKI len=4 num pairs=1
@@ -73515,11 +74658,12 @@ EDKI len=4 num pairs=1
  4621
  Seq 2:
  15383
-PEEEV len=5 num pairs=4
+PEEEV len=5 num pairs=6
  Seq 1:
  11041
  11095
  Seq 2:
+ 5888
  6362
  5693
 DTK len=3 num pairs=16
@@ -73778,13 +74922,14 @@ VDAD len=4 num pairs=1
  23489
  Seq 2:
  16064
-TMV len=3 num pairs=4
+TMV len=3 num pairs=6
  Seq 1:
  13944
  1732
  Seq 2:
  8718
  7301
+ 647
 LDS len=3 num pairs=36
  Seq 1:
  30064
@@ -73845,9 +74990,10 @@ PLG len=3 num pairs=15
  7144
  16799
  2435
-LTTG len=4 num pairs=4
+LTTG len=4 num pairs=5
  Seq 1:
  27560
+ 26477
  22149
  27073
  1121
@@ -73941,10 +75087,11 @@ QPR len=3 num pairs=3
  5244
  12170
  498
-VTWYK len=5 num pairs=4
+VTWYK len=5 num pairs=6
  Seq 1:
  9790
  32647
+ 33675
  Seq 2:
  17036
  16758
@@ -74006,13 +75153,14 @@ VLPEEE len=6 num pairs=4
  11059
  Seq 2:
  6360
-LIEG len=4 num pairs=6
+LIEG len=4 num pairs=7
  Seq 1:
  20378
  18442
  19286
  15793
  31815
+ 17311
  18795
  Seq 2:
  265
@@ -74024,8 +75172,9 @@ TSH len=3 num pairs=4
  3132
  8270
  16941
-DSSK len=4 num pairs=1
+DSSK len=4 num pairs=2
  Seq 1:
+ 13607
  19183
  Seq 2:
  13539
@@ -74395,12 +75544,13 @@ EKGQK len=5 num pairs=1
  27341
  Seq 2:
  2083
-FDI len=3 num pairs=7
+FDI len=3 num pairs=8
  Seq 1:
  27112
  32296
  12456
  14716
+ 19925
  9081
  7199
  33263
@@ -74613,9 +75763,10 @@ IAG len=3 num pairs=33
  4953
  3599
  547
-VMT len=3 num pairs=2
+VMT len=3 num pairs=3
  Seq 1:
  21772
+ 31518
  1062
  Seq 2:
  15504
@@ -74734,8 +75885,9 @@ SVDV len=4 num pairs=4
  Seq 2:
  12740
  16089
-NLY len=3 num pairs=1
+NLY len=3 num pairs=2
  Seq 1:
+ 17916
  6314
  Seq 2:
  4032
@@ -74811,10 +75963,11 @@ ELQS len=4 num pairs=1
  3795
  Seq 2:
  9175
-DEVD len=4 num pairs=2
+DEVD len=4 num pairs=3
  Seq 1:
  23462
  Seq 2:
+ 4079
  16331
  5643
 PER len=3 num pairs=32
@@ -75010,20 +76163,22 @@ PEPVL len=5 num pairs=1
  18130
  Seq 2:
  5619
-DNI len=3 num pairs=5
+DNI len=3 num pairs=6
  Seq 1:
  5456
+ 7530
  12881
  22007
  8463
  21739
  Seq 2:
  9093
-PPSFV len=5 num pairs=3
+PPSFV len=5 num pairs=4
  Seq 1:
  8700
  6818
  4662
+ 5131
  Seq 2:
  4495
 WCK len=3 num pairs=1
@@ -75162,8 +76317,9 @@ TNY len=3 num pairs=19
  20347
  Seq 2:
  8886
-LEF len=3 num pairs=2
+LEF len=3 num pairs=3
  Seq 1:
+ 21138
  14470
  28457
  Seq 2:
@@ -75224,11 +76380,13 @@ TIQK len=4 num pairs=4
  Seq 2:
  15858
  14695
-TPVQ len=4 num pairs=1
+TPVQ len=4 num pairs=3
  Seq 1:
  10147
  Seq 2:
  5360
+ 15885
+ 14445
 IDF len=3 num pairs=1
  Seq 1:
  986
@@ -75246,9 +76404,10 @@ AYEF len=4 num pairs=2
  22254
  Seq 2:
  1341
-LEMK len=4 num pairs=3
+LEMK len=4 num pairs=4
  Seq 1:
  27632
+ 1572
  12556
  17279
  Seq 2:
@@ -75428,7 +76587,7 @@ AVT len=3 num pairs=130
  3969
  17945
  2439
-SFV len=3 num pairs=11
+SFV len=3 num pairs=12
  Seq 1:
  2336
  4664
@@ -75437,6 +76596,7 @@ SFV len=3 num pairs=11
  19210
  7150
  8702
+ 5133
  8281
  6023
  5275
@@ -75579,11 +76739,13 @@ KLEA len=4 num pairs=8
  Seq 2:
  5152
  4923
-PKKLK len=5 num pairs=1
+PKKLK len=5 num pairs=3
  Seq 1:
  10755
  Seq 2:
  12433
+ 14827
+ 13187
 ILDVT len=5 num pairs=1
  Seq 1:
  18539
@@ -75609,9 +76771,10 @@ KPLP len=4 num pairs=6
  Seq 2:
  3850
  2262
-DLS len=3 num pairs=9
+DLS len=3 num pairs=10
  Seq 1:
  7164
+ 28490
  28394
  28354
  14322
@@ -75688,10 +76851,11 @@ KYISS len=5 num pairs=1
  4434
  Seq 2:
  14956
-ELSI len=4 num pairs=1
+ELSI len=4 num pairs=2
  Seq 1:
  16387
  Seq 2:
+ 8942
  16174
 KQE len=3 num pairs=238
  Seq 1:
@@ -75844,9 +77008,10 @@ EEG len=3 num pairs=270
  4615
  16455
  763
-IFL len=3 num pairs=1
+IFL len=3 num pairs=2
  Seq 1:
  14616
+ 14530
  Seq 2:
  2089
 IRKK len=4 num pairs=1
@@ -75933,13 +77098,14 @@ TVEP len=4 num pairs=1
  3880
  Seq 2:
  9304
-QYTC len=4 num pairs=5
+QYTC len=4 num pairs=6
  Seq 1:
  13012
  9148
  7266
  6325
  8207
+ 9739
  Seq 2:
  17075
 AEK len=3 num pairs=28
@@ -75961,11 +77127,12 @@ YEDG len=4 num pairs=1
  32545
  Seq 2:
  12787
-KPII len=4 num pairs=1
+KPII len=4 num pairs=2
  Seq 1:
  20466
  Seq 2:
  12442
+ 13217
 DGT len=3 num pairs=24
  Seq 1:
  12816
@@ -76126,8 +77293,9 @@ LVTE len=4 num pairs=2
  Seq 2:
  3665
  9179
-EWFK len=4 num pairs=2
+EWFK len=4 num pairs=4
  Seq 1:
+ 34092
  13958
  Seq 2:
  2656
@@ -76162,8 +77330,9 @@ VTAD len=4 num pairs=2
  23179
  Seq 2:
  848
-KEYT len=4 num pairs=1
+KEYT len=4 num pairs=2
  Seq 1:
+ 20701
  20875
  Seq 2:
  11761
@@ -76224,8 +77393,9 @@ KAGEAF len=6 num pairs=1
  22400
  Seq 2:
  2971
-KKG len=3 num pairs=7
+KKG len=3 num pairs=8
  Seq 1:
+ 13340
  22026
  13986
  9494
@@ -76384,11 +77554,13 @@ VNLTS len=5 num pairs=1
  14222
  Seq 2:
  9273
-VKWFK len=5 num pairs=4
+VKWFK len=5 num pairs=6
  Seq 1:
  12618
  13330
  12974
+ 12885
+ 13241
  7791
  Seq 2:
  17126
@@ -76500,9 +77672,12 @@ ELVP len=4 num pairs=2
  7799
  Seq 2:
  13421
-LIIK len=4 num pairs=1
+LIIK len=4 num pairs=4
  Seq 1:
+ 19882
  28894
+ 13805
+ 16087
  Seq 2:
  16879
 KSTK len=4 num pairs=2
@@ -76691,8 +77866,9 @@ DDK len=3 num pairs=64
  10267
  10835
  9699
-GTYI len=4 num pairs=1
+GTYI len=4 num pairs=2
  Seq 1:
+ 5762
  14685
  Seq 2:
  2159
@@ -76841,9 +78017,10 @@ RRS len=3 num pairs=24
  16606
  230
  2183
-VDI len=3 num pairs=2
+VDI len=3 num pairs=3
  Seq 1:
  1280
+ 27422
  8949
  Seq 2:
  16225
@@ -76980,9 +78157,10 @@ ALV len=3 num pairs=45
  15211
  7499
  13731
-YLN len=3 num pairs=2
+YLN len=3 num pairs=3
  Seq 1:
  23252
+ 1874
  2478
  Seq 2:
  653
@@ -76991,7 +78169,7 @@ KPPT len=4 num pairs=1
  11380
  Seq 2:
  4245
-HDG len=3 num pairs=13
+HDG len=3 num pairs=15
  Seq 1:
  29792
  18064
@@ -77002,9 +78180,11 @@ HDG len=3 num pairs=13
  17962
  24082
  27326
+ 5478
  20141
  29497
  14935
+ 1739
  1491
  Seq 2:
  1170
@@ -77015,8 +78195,9 @@ LKPT len=4 num pairs=3
  6132
  5428
  7849
-HVM len=3 num pairs=1
+HVM len=3 num pairs=2
  Seq 1:
+ 29152
  31575
  Seq 2:
  3716
@@ -77031,11 +78212,12 @@ TGLT len=4 num pairs=7
  24807
  Seq 2:
  7044
-LNIT len=4 num pairs=1
+LNIT len=4 num pairs=2
  Seq 1:
  22292
  Seq 2:
  8524
+ 16396
 KVVT len=4 num pairs=4
  Seq 1:
  22794
@@ -77140,16 +78322,18 @@ RAL len=3 num pairs=2
  4083
  Seq 2:
  13743
-LRVK len=4 num pairs=2
+LRVK len=4 num pairs=3
  Seq 1:
+ 9640
  26966
  13115
  Seq 2:
  311
-ESY len=3 num pairs=4
+ESY len=3 num pairs=5
  Seq 1:
  2024
  724
+ 14942
  30423
  2279
  Seq 2:
@@ -77207,9 +78391,10 @@ SEEEE len=5 num pairs=1
  10424
  Seq 2:
  6282
-TSSK len=4 num pairs=1
+TSSK len=4 num pairs=2
  Seq 1:
  31542
+ 32197
  Seq 2:
  7403
 TAR len=3 num pairs=56
@@ -77382,8 +78567,9 @@ KTEI len=4 num pairs=2
  Seq 2:
  7316
  5878
-AEVE len=4 num pairs=1
+AEVE len=4 num pairs=2
  Seq 1:
+ 11298
  12482
  Seq 2:
  14753
@@ -77655,8 +78841,9 @@ SIE len=3 num pairs=105
  15429
  2785
  713
-ETSA len=4 num pairs=1
+ETSA len=4 num pairs=2
  Seq 1:
+ 9748
  1163
  Seq 2:
  7664
@@ -77665,9 +78852,10 @@ SSIR len=4 num pairs=1
  30853
  Seq 2:
  838
-IKDI len=4 num pairs=2
+IKDI len=4 num pairs=3
  Seq 1:
  9585
+ 3063
  12047
  Seq 2:
  17665
@@ -77681,10 +78869,16 @@ VPEEI len=5 num pairs=1
  15647
  Seq 2:
  15252
-GQYT len=4 num pairs=2
+GQYT len=4 num pairs=8
  Seq 1:
+ 6324
+ 9738
+ 8206
+ 7265
  6135
+ 9147
  5011
+ 13011
  Seq 2:
  17074
 RSTF len=4 num pairs=1
@@ -77859,7 +79053,7 @@ ECKV len=4 num pairs=10
  Seq 2:
  16520
  6555
-KPEE len=4 num pairs=34
+KPEE len=4 num pairs=37
  Seq 1:
  10910
  Seq 2:
@@ -77868,11 +79062,13 @@ KPEE len=4 num pairs=34
  15248
  9576
  10712
+ 12468
  9860
  10428
  12108
  9434
  10570
+ 14978
  11138
  10002
  5934
@@ -77884,6 +79080,7 @@ KPEE len=4 num pairs=34
  6141
  10925
  10357
+ 14005
  10641
  9505
  15585
@@ -78077,13 +79274,15 @@ VVAV len=4 num pairs=1
  24129
  Seq 2:
  6353
-FPED len=4 num pairs=1
+FPED len=4 num pairs=2
  Seq 1:
  3301
  Seq 2:
+ 16564
  4666
-PSFV len=4 num pairs=3
+PSFV len=4 num pairs=4
  Seq 1:
+ 5132
  8701
  4663
  6819
@@ -78124,10 +79323,11 @@ VPEVV len=5 num pairs=1
  3329
  Seq 2:
  15868
-HQV len=3 num pairs=2
+HQV len=3 num pairs=3
  Seq 1:
  33533
  32279
+ 1551
  Seq 2:
  15276
 FTI len=3 num pairs=4
@@ -78146,9 +79346,10 @@ DAGTYT len=6 num pairs=6
  958
  1625
  819
-QKTA len=4 num pairs=1
+QKTA len=4 num pairs=2
  Seq 1:
  24236
+ 16825
  Seq 2:
  9201
 SVKE len=4 num pairs=4
@@ -78220,9 +79421,10 @@ MRD len=3 num pairs=1
  21158
  Seq 2:
  7194
-APVP len=4 num pairs=2
+APVP len=4 num pairs=3
  Seq 1:
  10521
+ 11111
  10227
  Seq 2:
  15866
@@ -78246,12 +79448,13 @@ RPI len=3 num pairs=28
  1997
  4693
  1473
-DRE len=3 num pairs=2
+DRE len=3 num pairs=4
  Seq 1:
  13030
  5263
  Seq 2:
  7357
+ 379
 AVD len=3 num pairs=48
  Seq 1:
  15600
@@ -78346,11 +79549,12 @@ ISED len=4 num pairs=1
  13056
  Seq 2:
  12988
-TPLS len=4 num pairs=2
+TPLS len=4 num pairs=3
  Seq 1:
  12770
  Seq 2:
  2092
+ 1161
  6743
 LLK len=3 num pairs=60
  Seq 1:
@@ -78434,9 +79638,11 @@ TWT len=3 num pairs=8
  32067
  Seq 2:
  118
-EYK len=3 num pairs=6
+EYK len=3 num pairs=8
  Seq 1:
+ 22752
  17384
+ 24916
  16190
  26550
  29249
@@ -78534,13 +79740,17 @@ ITGY len=4 num pairs=19
  18367
  Seq 2:
  17890
-DGGS len=4 num pairs=58
+DGGS len=4 num pairs=78
  Seq 1:
  18656
  24672
+ 14736
  29104
  14440
  24872
+ 26248
+ 27720
+ 22904
  20440
  22708
  21524
@@ -78552,20 +79762,28 @@ DGGS len=4 num pairs=58
  31676
  15036
  21820
+ 15532
  20044
  14540
  18362
  29498
  23194
+ 14042
+ 32074
  15754
  31282
+ 23986
  28018
+ 17170
+ 20142
  28318
  18262
  23590
  20541
  18557
  23293
+ 17373
+ 21917
  25165
  19053
  21029
@@ -78576,23 +79794,31 @@ DGGS len=4 num pairs=58
  16149
  21425
  16657
+ 18065
  17569
+ 29793
  24473
  23001
  19945
  23689
+ 17865
  26935
  28119
+ 28807
+ 23391
  27327
  28415
  22607
  26539
  30587
+ 24083
+ 25555
  14835
  20739
  27523
  22211
  24771
+ 29891
  19651
  Seq 2:
  17784
@@ -78641,8 +79867,12 @@ LVI len=3 num pairs=154
  17365
  17063
  1055
-GIY len=3 num pairs=2
+GIY len=3 num pairs=6
  Seq 1:
+ 14389
+ 15381
+ 7735
+ 1359
  21995
  18211
  Seq 2:
@@ -78668,13 +79898,15 @@ FGTV len=4 num pairs=1
  31634
  Seq 2:
  3083
-FRVSAEN len=7 num pairs=6
+FRVSAEN len=7 num pairs=8
  Seq 1:
  31226
+ 18010
  21570
  21074
  24817
  23735
+ 20879
  23339
  Seq 2:
  17931
@@ -78772,10 +80004,11 @@ PRPE len=4 num pairs=1
  1944
  Seq 2:
  6766
-EVQE len=4 num pairs=2
+EVQE len=4 num pairs=3
  Seq 1:
  15665
  Seq 2:
+ 15990
  15925
  13891
 QQIV len=4 num pairs=1
@@ -78854,9 +80087,10 @@ WMKV len=4 num pairs=1
  30607
  Seq 2:
  17703
-EAEV len=4 num pairs=2
+EAEV len=4 num pairs=3
  Seq 1:
  11952
+ 10445
  11297
  Seq 2:
  15764
@@ -78875,10 +80109,11 @@ VEEKR len=5 num pairs=4
  Seq 2:
  5660
  5710
-LVED len=4 num pairs=2
+LVED len=4 num pairs=3
  Seq 1:
  23429
  25593
+ 2247
  Seq 2:
  13694
 VSVD len=4 num pairs=1
@@ -78886,10 +80121,11 @@ VSVD len=4 num pairs=1
  8145
  Seq 2:
  12137
-ENIE len=4 num pairs=3
+ENIE len=4 num pairs=4
  Seq 1:
  2292
  Seq 2:
+ 9260
  7757
  3407
  16875
@@ -78940,13 +80176,15 @@ SKREP len=5 num pairs=1
  4041
  Seq 2:
  14022
-PPVI len=4 num pairs=1
+PPVI len=4 num pairs=2
  Seq 1:
+ 30401
  20419
  Seq 2:
  17276
-AQS len=3 num pairs=2
+AQS len=3 num pairs=3
  Seq 1:
+ 29034
  3939
  34211
  Seq 2:
@@ -79012,10 +80250,12 @@ DVPE len=4 num pairs=3
  32899
  Seq 2:
  3686
-TKKLK len=5 num pairs=1
+TKKLK len=5 num pairs=3
  Seq 1:
  5604
  Seq 2:
+ 16920
+ 13386
  12461
 AIK len=3 num pairs=24
  Seq 1:
@@ -79041,9 +80281,10 @@ EVEA len=4 num pairs=1
  4108
  Seq 2:
  15777
-YIS len=3 num pairs=1
+YIS len=3 num pairs=2
  Seq 1:
  6021
+ 4435
  Seq 2:
  14957
 DKL len=3 num pairs=12
@@ -79164,8 +80405,9 @@ EGKV len=4 num pairs=3
  18871
  Seq 2:
  14029
-RDQ len=3 num pairs=4
+RDQ len=3 num pairs=6
  Seq 1:
+ 13902
  32933
  12239
  Seq 2:
@@ -79197,8 +80439,9 @@ VQL len=3 num pairs=56
  14881
  6249
  17207
-KWFKN len=5 num pairs=1
+KWFKN len=5 num pairs=2
  Seq 1:
+ 13242
  12886
  Seq 2:
  17127
@@ -79241,11 +80484,12 @@ PEVKW len=5 num pairs=6
  Seq 2:
  6768
  6665
-EPVP len=4 num pairs=3
+EPVP len=4 num pairs=4
  Seq 1:
  33513
  10727
  26603
+ 11019
  Seq 2:
  5366
 TQITS len=5 num pairs=1
@@ -79282,7 +80526,7 @@ DYV len=3 num pairs=6
  14570
  13810
  1345
-PPG len=3 num pairs=46
+PPG len=3 num pairs=47
  Seq 1:
  14912
  26512
@@ -79295,6 +80539,7 @@ PPG len=3 num pairs=46
  14808
  22684
  28092
+ 16012
  27994
  20514
  21202
@@ -79380,11 +80625,12 @@ LKD len=3 num pairs=192
  8521
  8979
  4707
-AKLE len=4 num pairs=3
+AKLE len=4 num pairs=4
  Seq 1:
  22432
  9436
  13918
+ 30565
  Seq 2:
  7083
 KPD len=3 num pairs=160
@@ -79492,16 +80738,18 @@ GTT len=3 num pairs=28
  4762
  1031
  17643
-LGP len=3 num pairs=3
+LGP len=3 num pairs=4
  Seq 1:
  28580
  16218
  32763
+ 14307
  Seq 2:
  1026
-KEM len=3 num pairs=3
+KEM len=3 num pairs=4
  Seq 1:
  13314
+ 17133
  9927
  31463
  Seq 2:
@@ -79604,10 +80852,11 @@ DPS len=3 num pairs=42
  1318
  1585
  779
-EKVK len=4 num pairs=1
+EKVK len=4 num pairs=2
  Seq 1:
  11896
  Seq 2:
+ 15076
  15371
 VITT len=4 num pairs=1
  Seq 1:
@@ -79677,13 +80926,15 @@ YLR len=3 num pairs=1
  6153
  Seq 2:
  594
-VSAEN len=5 num pairs=8
+VSAEN len=5 num pairs=10
  Seq 1:
  14292
  21076
  21572
+ 18012
  31228
  23341
+ 20881
  25505
  23737
  24819
@@ -79897,10 +81148,11 @@ IRDL len=4 num pairs=1
  28392
  Seq 2:
  18041
-ART len=3 num pairs=9
+ART len=3 num pairs=10
  Seq 1:
  13376
  24304
+ 26760
  26468
  25386
  20194
@@ -79928,8 +81180,10 @@ YRL len=3 num pairs=4
  4803
  Seq 2:
  216
-SSAV len=4 num pairs=2
+SSAV len=4 num pairs=4
  Seq 1:
+ 29486
+ 8029
  26501
  20959
  Seq 2:
@@ -80035,18 +81289,20 @@ VDIP len=4 num pairs=1
  27422
  Seq 2:
  16225
-HTK len=3 num pairs=3
+HTK len=3 num pairs=4
  Seq 1:
  30716
+ 10162
  7983
  29523
  Seq 2:
  1649
-AENQ len=4 num pairs=3
+AENQ len=4 num pairs=4
  Seq 1:
  31230
  30445
  18311
+ 27375
  Seq 2:
  1702
 PTMVVEW len=7 num pairs=1
@@ -80248,8 +81504,9 @@ VTE len=3 num pairs=1680
  16083
  10019
  16675
-HLS len=3 num pairs=2
+HLS len=3 num pairs=3
  Seq 1:
+ 33140
  594
  16955
  Seq 2:
@@ -80322,9 +81579,10 @@ PKKK len=4 num pairs=105
  9883
  15635
  10451
-APN len=3 num pairs=1
+APN len=3 num pairs=2
  Seq 1:
  4408
+ 25630
  Seq 2:
  7805
 QHV len=3 num pairs=3
@@ -80334,12 +81592,13 @@ QHV len=3 num pairs=3
  44
  2637
  6153
-KEPE len=4 num pairs=2
+KEPE len=4 num pairs=4
  Seq 1:
  11790
  6823
  Seq 2:
  15494
+ 16043
 TEVQA len=5 num pairs=1
  Seq 1:
  25780
@@ -80353,10 +81612,12 @@ EEEVP len=5 num pairs=6
  Seq 2:
  5516
  5694
-AHF len=3 num pairs=24
+AHF len=3 num pairs=48
  Seq 1:
  226
  2094
+ 12694
+ 1719
  Seq 2:
  3280
  3418
@@ -80370,7 +81631,7 @@ AHF len=3 num pairs=24
  3147
  907
  3555
-YGED len=4 num pairs=8
+YGED len=4 num pairs=10
  Seq 1:
  32573
  32697
@@ -80379,6 +81640,7 @@ YGED len=4 num pairs=8
  2154
  3890
  3343
+ 3875
 YHN len=3 num pairs=12
  Seq 1:
  33334
@@ -80409,10 +81671,11 @@ EIG len=3 num pairs=28
  11561
  13375
  18059
-EIVI len=4 num pairs=1
+EIVI len=4 num pairs=2
  Seq 1:
  4750
  Seq 2:
+ 15612
  7549
 AKQ len=3 num pairs=2
  Seq 1:
@@ -80607,9 +81870,10 @@ LTIKQ len=5 num pairs=1
  34020
  Seq 2:
  949
-KGG len=3 num pairs=3
+KGG len=3 num pairs=4
  Seq 1:
  33830
+ 16037
  14081
  31907
  Seq 2:
@@ -80838,10 +82102,12 @@ IDIS len=4 num pairs=1
  6881
  Seq 2:
  11735
-PNQ len=3 num pairs=1
+PNQ len=3 num pairs=3
  Seq 1:
  18969
  Seq 2:
+ 8314
+ 17227
  12307
 YFFR len=4 num pairs=12
  Seq 1:
@@ -80966,13 +82232,15 @@ QSI len=3 num pairs=8
  4062
  8751
  14539
-PVY len=3 num pairs=5
+PVY len=3 num pairs=7
  Seq 1:
  28116
+ 3340
  28706
  26962
  24470
  19446
+ 3487
  Seq 2:
  3464
 KLVEG len=5 num pairs=1
@@ -80980,9 +82248,11 @@ KLVEG len=5 num pairs=1
  1091
  Seq 2:
  3273
-VTET len=4 num pairs=2
+VTET len=4 num pairs=4
  Seq 1:
  14024
+ 27748
+ 2717
  925
  Seq 2:
  1256
@@ -81080,9 +82350,10 @@ LSVKE len=5 num pairs=2
  5499
  Seq 2:
  8415
-DIF len=3 num pairs=1
+DIF len=3 num pairs=2
  Seq 1:
  33264
+ 32257
  Seq 2:
  9015
 TER len=3 num pairs=14
@@ -81132,8 +82403,9 @@ PKPT len=4 num pairs=2
  22019
  Seq 2:
  5520
-TWH len=3 num pairs=2
+TWH len=3 num pairs=3
  Seq 1:
+ 23106
  25377
  26459
  Seq 2:
@@ -81186,13 +82458,15 @@ EVTL len=4 num pairs=4
  12936
  16072
  15314
-STSS len=4 num pairs=1
+STSS len=4 num pairs=2
  Seq 1:
+ 5420
  22835
  Seq 2:
  2707
-VKN len=3 num pairs=12
+VKN len=3 num pairs=14
  Seq 1:
+ 30048
  31812
  33852
  9642
@@ -81268,9 +82542,10 @@ RFK len=3 num pairs=2
  Seq 2:
  2004
  2939
-PDIV len=4 num pairs=1
+PDIV len=4 num pairs=2
  Seq 1:
  1840
+ 1584
  Seq 2:
  16653
 LSEQ len=4 num pairs=1
@@ -81404,14 +82679,16 @@ LVIRDVT len=7 num pairs=1
  2135
  Seq 2:
  17063
-EMS len=3 num pairs=2
+EMS len=3 num pairs=3
  Seq 1:
  7634
  2921
+ 34223
  Seq 2:
  18089
-SDGG len=4 num pairs=15
+SDGG len=4 num pairs=16
  Seq 1:
+ 31776
  23688
  23292
  22210
@@ -81481,8 +82758,9 @@ TKL len=3 num pairs=92
  17266
  12199
  1827
-VNW len=3 num pairs=5
+VNW len=3 num pairs=6
  Seq 1:
+ 26352
  20458
  6850
  4317
@@ -82007,15 +83285,17 @@ LNM len=3 num pairs=2
  2591
  Seq 2:
  1749
-YIC len=3 num pairs=4
+YIC len=3 num pairs=6
  Seq 1:
  5764
  7548
+ 8957
  7361
  6607
+ 3691
  Seq 2:
  2161
-TGH len=3 num pairs=4
+TGH len=3 num pairs=5
  Seq 1:
  31878
  Seq 2:
@@ -82023,6 +83303,7 @@ TGH len=3 num pairs=4
  1334
  2133
  2001
+ 4115
 VKEK len=4 num pairs=2
  Seq 1:
  11819
@@ -82148,7 +83429,7 @@ VPKV len=4 num pairs=3
  521
  Seq 2:
  17464
-RDA len=3 num pairs=10
+RDA len=3 num pairs=11
  Seq 1:
  20752
  4156
@@ -82158,6 +83439,7 @@ RDA len=3 num pairs=10
  6977
  20801
  13625
+ 18183
  16463
  28331
  Seq 2:
@@ -82575,13 +83857,18 @@ GQTA len=4 num pairs=1
  1470
  Seq 2:
  2236
-YGE len=3 num pairs=4
+YGE len=3 num pairs=14
  Seq 1:
  32573
  32697
  Seq 2:
+ 3210
+ 2154
+ 3890
  166
  3481
+ 3343
+ 3875
 KPT len=3 num pairs=210
  Seq 1:
  17248
@@ -82688,13 +83975,17 @@ DDG len=3 num pairs=72
  17396
  17682
  16297
-RNS len=3 num pairs=9
+RNS len=3 num pairs=13
  Seq 1:
  30160
  17256
  28724
+ 22988
  23308
+ 23378
  24390
+ 24070
+ 21213
  27637
  7425
  21143
@@ -82707,13 +83998,15 @@ GTYE len=4 num pairs=2
  26389
  Seq 2:
  16698
-LKDD len=4 num pairs=1
+LKDD len=4 num pairs=2
  Seq 1:
+ 6008
  8082
  Seq 2:
  8780
-APTV len=4 num pairs=1
+APTV len=4 num pairs=2
  Seq 1:
+ 3648
  860
  Seq 2:
  6739
@@ -82888,18 +84181,23 @@ IVP len=3 num pairs=44
  8706
  13229
  12251
-GGSEIT len=6 num pairs=4
+GGSEIT len=6 num pairs=7
  Seq 1:
+ 16150
  20342
  21030
+ 22709
+ 21525
  18955
  16451
  Seq 2:
  17886
-QTVEE len=5 num pairs=1
+QTVEE len=5 num pairs=3
  Seq 1:
  13220
  Seq 2:
+ 4100
+ 4612
  11486
 KGKP len=4 num pairs=4
  Seq 1:
@@ -83009,8 +84307,9 @@ GQEL len=4 num pairs=1
  5542
  Seq 2:
  7941
-VESS len=4 num pairs=1
+VESS len=4 num pairs=2
  Seq 1:
+ 20957
  33665
  Seq 2:
  4783
@@ -83061,10 +84360,11 @@ HNI len=3 num pairs=2
  Seq 2:
  1297
  3771
-PKEPE len=5 num pairs=1
+PKEPE len=5 num pairs=2
  Seq 1:
  11789
  Seq 2:
+ 16042
  15493
 RTQ len=3 num pairs=4
  Seq 1:
@@ -83132,14 +84432,16 @@ SQPI len=4 num pairs=2
  Seq 2:
  14758
  14615
-LIN len=3 num pairs=4
+LIN len=3 num pairs=6
  Seq 1:
  29042
  Seq 2:
  12408
  146
  7262
+ 4125
  12493
+ 405
 PVKN len=4 num pairs=1
  Seq 1:
  27234
@@ -83189,11 +84491,12 @@ AIKD len=4 num pairs=1
  33869
  Seq 2:
  14911
-PFY len=3 num pairs=1
+PFY len=3 num pairs=2
  Seq 1:
  22671
  Seq 2:
  12365
+ 12203
 ILR len=3 num pairs=7
  Seq 1:
  15610
@@ -83298,9 +84601,10 @@ NPY len=3 num pairs=6
  Seq 2:
  6
  397
-KYKV len=4 num pairs=1
+KYKV len=4 num pairs=2
  Seq 1:
  31625
+ 18099
  Seq 2:
  17633
 DAN len=3 num pairs=4
@@ -83458,7 +84762,7 @@ IVHL len=4 num pairs=1
  4304
  Seq 2:
  1485
-KKPK len=4 num pairs=34
+KKPK len=4 num pairs=35
  Seq 1:
  2798
  Seq 2:
@@ -83490,6 +84794,7 @@ KKPK len=4 num pairs=34
  11911
  15303
  6311
+ 15039
  12431
  14203
  5915
@@ -83566,9 +84871,11 @@ YKI len=3 num pairs=27
  12164
  15260
  15686
-YTCQ len=4 num pairs=1
+YTCQ len=4 num pairs=3
  Seq 1:
+ 6044
  8489
+ 7267
  Seq 2:
  1362
 AKA len=3 num pairs=28
@@ -83652,16 +84959,23 @@ SII len=3 num pairs=10
  14728
  13801
  3497
-GGSEI len=5 num pairs=8
+GGSEI len=5 num pairs=15
  Seq 1:
  22608
  26936
  24772
  23690
+ 16150
+ 20342
+ 21030
  17670
+ 22709
+ 21525
  29105
  24873
  15755
+ 18955
+ 16451
  Seq 2:
  17886
 KDKS len=4 num pairs=1
@@ -83669,9 +84983,10 @@ KDKS len=4 num pairs=1
  18739
  Seq 2:
  15089
-LQF len=3 num pairs=5
+LQF len=3 num pairs=6
  Seq 1:
  17000
+ 1956
  8476
  6594
  33730
@@ -83738,9 +85053,10 @@ SQA len=3 num pairs=8
  5938
  1687
  4299
-NVG len=3 num pairs=4
+NVG len=3 num pairs=6
  Seq 1:
  16080
+ 25711
  6707
  Seq 2:
  6916
@@ -83839,11 +85155,12 @@ EIEEK len=5 num pairs=1
  32884
  Seq 2:
  7379
-ECE len=3 num pairs=12
+ECE len=3 num pairs=13
  Seq 1:
  13320
  9780
  12786
+ 2194
  5901
  3077
  2901
@@ -83906,9 +85223,10 @@ FTE len=3 num pairs=3
  11676
  3677
  1605
-RLY len=3 num pairs=1
+RLY len=3 num pairs=2
  Seq 1:
  1452
+ 20638
  Seq 2:
  556
 DSGTYTCKV len=9 num pairs=1
@@ -83926,10 +85244,12 @@ IQKT len=4 num pairs=1
  25687
  Seq 2:
  14696
-VYT len=3 num pairs=12
+VYT len=3 num pairs=20
  Seq 1:
+ 31528
  28954
  12479
+ 3307
  13619
  Seq 2:
  2824
@@ -84152,11 +85472,12 @@ GGS len=3 num pairs=376
  17886
  6918
  17785
-IVKK len=4 num pairs=1
+IVKK len=4 num pairs=2
  Seq 1:
  9935
  Seq 2:
  15997
+ 13663
 VEP len=3 num pairs=195
  Seq 1:
  10208
@@ -84297,7 +85618,7 @@ TVVK len=4 num pairs=3
  4375
  Seq 2:
  5651
-NKAG len=4 num pairs=14
+NKAG len=4 num pairs=16
  Seq 1:
  20096
  14296
@@ -84305,6 +85626,7 @@ NKAG len=4 num pairs=14
  5677
  16821
  1633
+ 14987
  23843
  Seq 2:
  448
@@ -84486,9 +85808,10 @@ SAQ len=3 num pairs=18
  Seq 2:
  14681
  4687
-EGQT len=4 num pairs=1
+EGQT len=4 num pairs=2
  Seq 1:
  9684
+ 1469
  Seq 2:
  2235
 NKF len=3 num pairs=4
@@ -84517,7 +85840,7 @@ PGT len=3 num pairs=36
  17374
  9270
  2349
-IEEV len=4 num pairs=4
+IEEV len=4 num pairs=5
  Seq 1:
  11184
  Seq 2:
@@ -84525,6 +85848,7 @@ IEEV len=4 num pairs=4
  16929
  6127
  11795
+ 5075
 KAKN len=4 num pairs=3
  Seq 1:
  34133
@@ -84539,9 +85863,11 @@ GTNV len=4 num pairs=3
  8715
  Seq 2:
  1304
-AEDS len=4 num pairs=3
+AEDS len=4 num pairs=9
  Seq 1:
+ 1006
  2142
+ 7355
  Seq 2:
  4560
  1890
@@ -84924,9 +86250,10 @@ TTYR len=4 num pairs=1
  14866
  Seq 2:
  17802
-WFF len=3 num pairs=2
+WFF len=3 num pairs=4
  Seq 1:
  30698
+ 3535
  Seq 2:
  16949
  3989
@@ -84976,9 +86303,10 @@ PSPT len=4 num pairs=3
  969
  Seq 2:
  7712
-EITK len=4 num pairs=4
+EITK len=4 num pairs=6
  Seq 1:
  23970
+ 33950
  541
  Seq 2:
  7409
@@ -85037,17 +86365,20 @@ TQV len=3 num pairs=12
  Seq 2:
  9078
  1509
-VKWY len=4 num pairs=6
+VKWY len=4 num pairs=10
  Seq 1:
  2204
+ 31885
  2475
+ 13779
  33331
  Seq 2:
  4424
  6667
-LQDV len=4 num pairs=1
+LQDV len=4 num pairs=2
  Seq 1:
  9677
+ 2179
  Seq 2:
  17478
 TPK len=3 num pairs=104
@@ -85289,10 +86620,11 @@ NIT len=3 num pairs=39
  8438
  16397
  8525
-ELF len=3 num pairs=10
+ELF len=3 num pairs=12
  Seq 1:
  20280
  5752
+ 7818
  6877
  32581
  8759
@@ -85493,7 +86825,7 @@ FVG len=3 num pairs=6
  Seq 2:
  6906
  517
-NKYG len=4 num pairs=24
+NKYG len=4 num pairs=26
  Seq 1:
  30144
  20392
@@ -85503,6 +86835,7 @@ NKYG len=4 num pairs=24
  25806
  17221
  23641
+ 32695
  16503
  26887
  22559
@@ -85606,17 +86939,21 @@ CKATN len=5 num pairs=8
  3612
  2827
  2163
-QQK len=3 num pairs=1
+QQK len=3 num pairs=3
  Seq 1:
  1699
  Seq 2:
  7860
-GLD len=3 num pairs=4
+ 6262
+ 17559
+GLD len=3 num pairs=6
  Seq 1:
  26576
  28750
  25494
  32773
+ 20665
+ 32255
  Seq 2:
  17685
 DEGE len=4 num pairs=9
@@ -85637,7 +86974,7 @@ VYAE len=4 num pairs=5
  26587
  Seq 2:
  1888
-TSL len=3 num pairs=38
+TSL len=3 num pairs=40
  Seq 1:
  26376
  34168
@@ -85646,6 +86983,7 @@ TSL len=3 num pairs=38
  1066
  23922
  27166
+ 8317
  15613
  1709
  23525
@@ -85833,8 +87171,9 @@ PAGE len=4 num pairs=1
  19609
  Seq 2:
  14328
-IVH len=3 num pairs=3
+IVH len=3 num pairs=4
  Seq 1:
+ 4304
  27332
  33946
  32190
@@ -85845,11 +87184,12 @@ AGGN len=4 num pairs=1
  3130
  Seq 2:
  16815
-KHT len=3 num pairs=1
+KHT len=3 num pairs=2
  Seq 1:
  12842
  Seq 2:
  14252
+ 14143
 LRI len=3 num pairs=36
  Seq 1:
  16048
@@ -86003,9 +87343,10 @@ VKKE len=4 num pairs=2
  897
  Seq 2:
  12619
-KNR len=3 num pairs=1
+KNR len=3 num pairs=2
  Seq 1:
  21744
+ 32030
  Seq 2:
  3999
 EILS len=4 num pairs=6
@@ -86049,10 +87390,11 @@ ESTA len=4 num pairs=1
  5278
  Seq 2:
  2336
-RTI len=3 num pairs=3
+RTI len=3 num pairs=4
  Seq 1:
  16877
  Seq 2:
+ 4802
  3078
  12831
  17323
@@ -86305,8 +87647,9 @@ VTM len=3 num pairs=2
  20635
  Seq 2:
  2949
-VEEIP len=5 num pairs=1
+VEEIP len=5 num pairs=2
  Seq 1:
+ 11300
  13833
  Seq 2:
  6073
@@ -86396,12 +87739,14 @@ ILELS len=5 num pairs=1
  4533
  Seq 2:
  13277
-SCS len=3 num pairs=11
+SCS len=3 num pairs=13
  Seq 1:
  6432
+ 20372
  7172
  8220
  8876
+ 7468
  4652
  4746
  5870
@@ -86641,10 +87986,11 @@ SILTI len=5 num pairs=1
  2231
  Seq 2:
  17579
-SRN len=3 num pairs=1
+SRN len=3 num pairs=2
  Seq 1:
  34111
  Seq 2:
+ 11985
  14919
 LFVK len=4 num pairs=6
  Seq 1:
@@ -86824,11 +88170,12 @@ IKA len=3 num pairs=50
  Seq 2:
  7968
  1220
-LDEN len=4 num pairs=1
+LDEN len=4 num pairs=2
  Seq 1:
  19493
  Seq 2:
  11680
+ 8288
 AILDVE len=6 num pairs=1
  Seq 1:
  31639
@@ -86878,8 +88225,9 @@ SKAV len=4 num pairs=1
  25419
  Seq 2:
  7936
-GKPKP len=5 num pairs=1
+GKPKP len=5 num pairs=2
  Seq 1:
+ 17770
  28515
  Seq 2:
  7091
@@ -86941,10 +88289,11 @@ VYL len=3 num pairs=2
  Seq 2:
  4989
  1095
-ESQLP len=5 num pairs=1
+ESQLP len=5 num pairs=2
  Seq 1:
  1802
  Seq 2:
+ 3776
  3501
 QSA len=3 num pairs=28
  Seq 1:
@@ -86978,10 +88327,11 @@ PVQ len=3 num pairs=56
  5361
  5567
  14491
-SEPE len=4 num pairs=1
+SEPE len=4 num pairs=2
  Seq 1:
  17231
  Seq 2:
+ 15094
  13515
 TATN len=4 num pairs=7
  Seq 1:
@@ -87168,8 +88518,9 @@ KVGE len=4 num pairs=1
  1200
  Seq 2:
  6816
-TCEA len=4 num pairs=1
+TCEA len=4 num pairs=2
  Seq 1:
+ 3309
  8303
  Seq 2:
  6606
@@ -87250,12 +88601,13 @@ EVTD len=4 num pairs=2
  17434
  Seq 2:
  13840
-VKF len=3 num pairs=5
+VKF len=3 num pairs=6
  Seq 1:
  24256
  5526
  134
  22391
+ 26719
  7471
  Seq 2:
  15119
@@ -87389,12 +88741,13 @@ SAI len=3 num pairs=22
  Seq 2:
  7853
  2691
-TLKP len=4 num pairs=2
+TLKP len=4 num pairs=3
  Seq 1:
  30612
  Seq 2:
  16074
  15981
+ 5427
 EEIV len=4 num pairs=9
  Seq 1:
  11037
@@ -87445,14 +88798,15 @@ PGL len=3 num pairs=3
  14971
  Seq 2:
  8232
-TPKT len=4 num pairs=3
+TPKT len=4 num pairs=4
  Seq 1:
  31247
  Seq 2:
+ 14632
  14392
  13522
  14635
-GPP len=3 num pairs=68
+GPP len=3 num pairs=72
  Seq 1:
  23168
  29376
@@ -87477,6 +88831,7 @@ GPP len=3 num pairs=68
  14810
  25930
  20714
+ 24746
  22186
  22482
  26514
@@ -87498,14 +88853,17 @@ GPP len=3 num pairs=68
  27205
  27893
  18613
+ 23189
  23765
  15729
  25729
+ 18337
  27993
  19305
  27497
  14711
  15111
+ 16839
  30759
  22879
  17839
@@ -87656,11 +89014,12 @@ LYV len=3 num pairs=18
  3872
  557
  2151
-KAA len=3 num pairs=10
+KAA len=3 num pairs=11
  Seq 1:
  28384
  20504
  11484
+ 4492
  25134
  31198
  18806
@@ -87735,8 +89094,9 @@ RPTA len=4 num pairs=2
  14349
  Seq 2:
  13635
-SSAVL len=5 num pairs=1
+SSAVL len=5 num pairs=2
  Seq 1:
+ 29486
  8029
  Seq 2:
  337
@@ -87901,8 +89261,9 @@ PTGP len=4 num pairs=7
  27499
  Seq 2:
  17982
-TQF len=3 num pairs=5
+TQF len=3 num pairs=6
  Seq 1:
+ 3392
  24504
  24406
  21657
@@ -87993,9 +89354,10 @@ AVGG len=4 num pairs=1
  29996
  Seq 2:
  7938
-IEKP len=4 num pairs=2
+IEKP len=4 num pairs=3
  Seq 1:
  7574
+ 11798
  16365
  Seq 2:
  15219
@@ -88105,7 +89467,7 @@ PLST len=4 num pairs=1
  13965
  Seq 2:
  1865
-PIR len=3 num pairs=12
+PIR len=3 num pairs=13
  Seq 1:
  28984
  9300
@@ -88113,6 +89475,7 @@ PIR len=3 num pairs=12
  316
  3628
  9874
+ 19549
  12237
  28589
  1413
@@ -88198,11 +89561,12 @@ APLV len=4 num pairs=1
  15656
  Seq 2:
  3255
-EPKA len=4 num pairs=1
+EPKA len=4 num pairs=2
  Seq 1:
  33767
  Seq 2:
  6302
+ 15825
 WTPP len=4 num pairs=2
  Seq 1:
  16545
@@ -88332,13 +89696,14 @@ LIES len=4 num pairs=2
  Seq 2:
  8500
  14159
-PPSP len=4 num pairs=4
+PPSP len=4 num pairs=8
  Seq 1:
  15210
  25138
  18629
  15009
  Seq 2:
+ 17858
  17453
 FKF len=3 num pairs=1
  Seq 1:
@@ -88455,11 +89820,12 @@ PDVE len=4 num pairs=1
  21689
  Seq 2:
  17212
-LRY len=3 num pairs=3
+LRY len=3 num pairs=4
  Seq 1:
  33066
  22638
  32814
+ 1681
  Seq 2:
  7470
 EIRE len=4 num pairs=2
@@ -88685,8 +90051,9 @@ VRS len=3 num pairs=6
  303
  Seq 2:
  4860
-AFP len=3 num pairs=1
+AFP len=3 num pairs=2
  Seq 1:
+ 3300
  20519
  Seq 2:
  4665
@@ -88727,7 +90094,7 @@ PKII len=4 num pairs=1
  30003
  Seq 2:
  7065
-LTW len=3 num pairs=19
+LTW len=3 num pairs=21
  Seq 1:
  21120
  15424
@@ -88740,9 +90107,11 @@ LTW len=3 num pairs=19
  30876
  16442
  32066
+ 17074
  18254
  17661
  28701
+ 17561
  21417
  18057
  27319
@@ -88778,8 +90147,9 @@ KEVS len=4 num pairs=2
  30473
  Seq 2:
  15959
-CGG len=3 num pairs=1
+CGG len=3 num pairs=2
  Seq 1:
+ 34290
  32471
  Seq 2:
  3221
@@ -89046,8 +90416,9 @@ ATTSA len=5 num pairs=1
  3319
  Seq 2:
  3759
-MTV len=3 num pairs=9
+MTV len=3 num pairs=11
  Seq 1:
+ 112
  28008
  33496
  7580
@@ -89055,6 +90426,7 @@ MTV len=3 num pairs=9
  19338
  20430
  24761
+ 14167
  6639
  17259
  Seq 2:
@@ -89355,10 +90727,11 @@ GAE len=3 num pairs=9
  8443
  Seq 2:
  2998
-RDSV len=4 num pairs=2
+RDSV len=4 num pairs=3
  Seq 1:
  21042
  32061
+ 30477
  Seq 2:
  16366
 TRQ len=3 num pairs=10
@@ -89817,12 +91190,14 @@ FEEE len=4 num pairs=2
  11035
  Seq 2:
  6060
-PVA len=3 num pairs=5
+PVA len=3 num pairs=7
  Seq 1:
  11024
  8058
  10286
+ 14566
  4045
+ 11751
  10371
  Seq 2:
  15547
@@ -89866,10 +91241,11 @@ NSVD len=4 num pairs=1
  18053
  Seq 2:
  8696
-KPVF len=4 num pairs=4
+KPVF len=4 num pairs=6
  Seq 1:
  18028
  29202
+ 1455
  Seq 2:
  1156
  4090
@@ -89887,10 +91263,12 @@ GRPV len=4 num pairs=5
  30679
  Seq 2:
  1197
-LVVK len=4 num pairs=3
+LVVK len=4 num pairs=5
  Seq 1:
+ 25692
  27196
  18446
+ 13534
  31213
  Seq 2:
  7353
@@ -89905,8 +91283,9 @@ GLYE len=4 num pairs=1
  18692
  Seq 2:
  1129
-EVTT len=4 num pairs=2
+EVTT len=4 num pairs=4
  Seq 1:
+ 22588
  23670
  Seq 2:
  11632
@@ -89984,10 +91363,11 @@ TSEA len=4 num pairs=1
  17630
  Seq 2:
  17840
-TWKK len=4 num pairs=3
+TWKK len=4 num pairs=4
  Seq 1:
  6944
  22024
+ 8826
  18177
  Seq 2:
  17504
@@ -90045,8 +91425,9 @@ VKMK len=4 num pairs=1
  14367
  Seq 2:
  13948
-IIKD len=4 num pairs=2
+IIKD len=4 num pairs=3
  Seq 1:
+ 16088
  13806
  19883
  Seq 2:
@@ -90056,8 +91437,9 @@ KETI len=4 num pairs=1
  28043
  Seq 2:
  17599
-YELK len=4 num pairs=1
+YELK len=4 num pairs=2
  Seq 1:
+ 33700
  27869
  Seq 2:
  9194
@@ -90078,13 +91460,14 @@ KQQ len=3 num pairs=2
  Seq 2:
  4346
  7642
-EMK len=3 num pairs=8
+EMK len=3 num pairs=9
  Seq 1:
  17280
  17440
  31464
  3450
  12557
+ 1573
  33461
  27633
  34203
