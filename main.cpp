@@ -1,5 +1,4 @@
 #include <iostream>
-#include <unordered_map>
 #include <memory>
 #include "MatchLocations.h"
 #include "FileManipulation.h"
@@ -30,26 +29,9 @@ int main(int argc, const char *argv[]) {
     }
 
     if (*seq1String != *seq2String){
-//       std::cout << "Determining Matches..." << std::endl;
-//       std::shared_ptr<std::unordered_map<std::string,std::shared_ptr<MatchLocations>>> matchesMap =
-//               Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
-//
-//       std::cout << "Writing..." << std::endl;
-//       if (!Write_Matches(matchesMap, "Matches.txt")){
-//           return EXIT_FAILURE;
-//       }
+        std::cout << "Determining Matches Concurrently..." << std::endl;
 
-        std::cout << "Determining Matches tbb..." << std::endl;
-
-        //Todo initialize concurrent hash map with 1000 buckets.
-        std::shared_ptr<tbb::concurrent_hash_map<std::string,std::shared_ptr<MatchLocations>>> matchestbbMap =
-                Determine_Matches_Concurrent(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
-
-
-       std::cout << "Writing tbb Matches..." << std::endl;
-       if (!Write_tbb_Matches(matchestbbMap, "tbb_Matches_SingleThread.txt")){
-           return EXIT_FAILURE;
-       }
+        Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
 
 
 //        float seq1Metric,seq2Metric, combinedMetric;
