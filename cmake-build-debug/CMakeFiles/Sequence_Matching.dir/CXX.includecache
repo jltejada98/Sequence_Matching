@@ -17,22 +17,10 @@ MatchLocations.h
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
 
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
-mutex
--
 tbb/concurrent_unordered_set.h
 -
 
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.cpp
-SequenceMatching.h
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
-FileManipulation.h
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h
-iostream
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/iostream
-
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
-unordered_map
--
 vector
 -
 regex

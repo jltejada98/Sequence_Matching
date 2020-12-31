@@ -5,7 +5,6 @@
 #ifndef SEQUENCE_MATCHING_MATCHLOCATIONS_H
 #define SEQUENCE_MATCHING_MATCHLOCATIONS_H
 
-#include <mutex>
 #include <tbb/concurrent_unordered_set.h>
 
 class MatchLocations {

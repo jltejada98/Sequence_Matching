@@ -4,7 +4,6 @@
 
 #ifndef SEQUENCE_MATCHING_SEQUENCEMATCHING_H
 #define SEQUENCE_MATCHING_SEQUENCEMATCHING_H
-#include <unordered_map>
 #include <vector>
 #include <regex>
 #include <thread>
