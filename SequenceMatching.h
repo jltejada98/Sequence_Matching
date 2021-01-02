@@ -23,15 +23,6 @@ void Determine_Matches_Thread(tbb::concurrent_unordered_map<std::string, MatchLo
                               const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size, const size_t &minLength,
                               const size_t &threadStart, const size_t &threadEnd);
 
-void Determine_Similarity(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
-                          const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
-                          float &seq2Metric, float &combinedMetric);
-
-
-void Similarity_Thread(const size_t &matchKeyLength, MatchLocations &matchLocationsSet,
-                       tbb::concurrent_unordered_set<size_t> &seq1Set,
-                       tbb::concurrent_unordered_set<size_t> &seq2Set);
-
 void Determine_Submatching(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
                            const size_t &minLength);
 

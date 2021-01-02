@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h
-fstream
--
-iostream
--
-tbb/concurrent_unordered_map.h
--
-MatchLocations.h
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
-
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
 tbb/concurrent_unordered_set.h
 -
+
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.cpp
+SequenceMatching.h
+/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
 
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
 vector
@@ -35,18 +29,6 @@ tbb/concurrent_unordered_set.h
 -
 MatchLocations.h
 /Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
-
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/main.cpp
-iostream
--
-memory
--
-MatchLocations.h
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/MatchLocations.h
-FileManipulation.h
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/FileManipulation.h
-SequenceMatching.h
-/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h
 
 /usr/local/Cellar/tbb/2020_U3_1/include/tbb/aligned_space.h
 internal/_deprecated_header_message_guard.h

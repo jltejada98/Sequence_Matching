@@ -4,12 +4,14 @@
 
 #include "SequenceMatching.h"
 
+//Todo use emplace when inserting objects into map.
+
 std::shared_ptr<tbb::concurrent_unordered_map<std::string, MatchLocations>>
 Determine_Matches(const std::shared_ptr<std::string> &seq1String, const size_t &seq1Size,
                   const std::shared_ptr<std::string> &seq2String, const size_t &seq2Size,
                   const size_t &minLength){
     size_t numSplits = std::thread::hardware_concurrency();
-    size_t splitSize = seq1Size / numSplits; //Todo Always split larger sequence. (For now assume it is sequence 1)
+    size_t splitSize = seq1Size / numSplits;
     size_t splitRemainder = seq1Size % numSplits; //Determine remainder, and add to first task.
     size_t startIndex = 0;
     size_t endIndex = startIndex+splitSize + splitRemainder;
@@ -83,50 +85,6 @@ void Determine_Matches_Thread(tbb::concurrent_unordered_map<std::string, MatchLo
 }
 
 
-void Determine_Similarity(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
-                         const size_t &minLength,const size_t &seq1Size, const size_t &seq2Size,float &seq1Metric,
-                         float &seq2Metric, float &combinedMetric){
-    //Reserve Set space for every index in each of the sequences
-    tbb::concurrent_unordered_set<size_t> seq1Set;
-    tbb::concurrent_unordered_set<size_t> seq2Set;
-    auto seq1SetRef = std::ref(seq1Set);
-    auto seq2SetRef = std::ref(seq2Set);
-
-    tbb::task_group similarityTaskGroup;
-
-    for (auto &x: matchesMap){ //For each Key, add all indecies of matching threads to determine overall covereage of matches in sequences.
-        //Thread pool to manage adding match indecies to unordered sets
-        similarityTaskGroup.run([&]{Similarity_Thread(x.first.length(),x.second,seq1SetRef, seq2SetRef);});
-//        Similarity_Thread(x.first.length(),x.second,seq1SetRef, seq2SetRef); //Single Thread Version
-    }
-
-    similarityTaskGroup.wait(); //Wait for all tasks to complete
-
-    seq1Metric = ((float)seq1Set.size()) / ((float)seq1Size);
-    seq2Metric = ((float)seq2Set.size()) / ((float)seq2Size);
-    combinedMetric = ((float)seq1Set.size() + (float)seq2Set.size()) / ((float)seq1Size + (float)seq2Size);
-
-}
-
-void Similarity_Thread(const size_t &matchKeyLength, MatchLocations &matchLocationsSet,
-                       tbb::concurrent_unordered_set<size_t> &seq1Set,
-                       tbb::concurrent_unordered_set<size_t> &seq2Set){
-    auto matchIndexSet1 = matchLocationsSet.getIndex1Set();
-    auto matchIndexSet2 = matchLocationsSet.getIndex2Set();
-    size_t i;
-    for (auto &index1: matchIndexSet1){
-        for (i = index1; i < (index1+matchKeyLength); ++i) {
-            seq1Set.insert(i);
-        }
-    }
-    for (auto &index2: matchIndexSet2){
-        for (i = index2; i < (index2+matchKeyLength); ++i) {
-            seq2Set.insert(i);
-        }
-    }
-}
-
-
 void Determine_Submatching(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
                            const size_t &minLength){
 
@@ -142,6 +100,7 @@ void Determine_Submatching(tbb::concurrent_unordered_map<std::string, MatchLocat
     submatchesTaskGroup.wait(); //Wait for all tasks to complete.
 
 }
+
 
 void Submatches_Thread(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap,
                        const std::string &keyToCheck, const size_t &minLength) {

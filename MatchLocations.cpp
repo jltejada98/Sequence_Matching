@@ -25,10 +25,10 @@ size_t MatchLocations::getPairwiseNumberMatches() const {
     return index1Set.size()*index2Set.size();
 }
 
-tbb::concurrent_unordered_set<size_t> MatchLocations::getIndex1Set() const {
-    return index1Set;
+tbb::concurrent_unordered_set<size_t> & MatchLocations::getIndex1Set() const {
+    return (tbb::concurrent_unordered_set<size_t> &) index1Set;
 }
 
-tbb::concurrent_unordered_set<size_t> MatchLocations::getIndex2Set() const {
-    return index2Set;
+tbb::concurrent_unordered_set<size_t> & MatchLocations::getIndex2Set() const {
+    return (tbb::concurrent_unordered_set<size_t> &) index2Set;
 }
