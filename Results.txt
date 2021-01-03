@@ -3,6 +3,8 @@ Titin_FruitFly.txt : 0.977895
 Titin_Human.txt : 0.950364
 Titin_Caenorhabditis.txt : 0.979797
 Overall : 0.965082
+Matching Sequences:
+
 VVEA
 15388 7802 
 27336 11295 

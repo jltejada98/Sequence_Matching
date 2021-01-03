@@ -44,7 +44,8 @@ bool Write_Matches(tbb::concurrent_unordered_map<std::string, tbb::concurrent_ve
             File << (char *) argv[i+1] << " : " << similarityMetricVector[i] << std::endl;
         }
         File << "Overall : " << similarityMetricVector[numSequences] << std::endl;
-
+        File << "Matching Sequences:" << std::endl;
+        File << std::endl;
         //Write Matches
         for (auto &key : matchesMap){
             File << key.first << std::endl;
