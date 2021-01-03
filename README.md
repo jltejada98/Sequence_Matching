@@ -5,7 +5,7 @@ Detecting similarities and patterns between arbitrary sequences of data is a pro
 
 This project aims to compare two or more sequences encoded in text files and determine any matching portions above a provided minimum length in a fully concurrent and scalable manner.  In addition to providing the matching strings and their locations in all sequences, the program also determines a matching metric depicting the overall coverage of the found matches in each of the sequenecs.
 
-### Sequence Detection
+## Sequence Detection
 
 The program determines matches in sequences by the following rules:
 
@@ -48,7 +48,7 @@ Ex: Number of Sequences = 3, Minimum Length = 4 <br />
 
     ->Matches: CAE, CAEG, AEG <br />
 
-### Matching Metric
+## Matching Metric
 
 A matching metric is computed for each of sequences individually and a combined metric for all of them. The matching metric is simply the percentage of the sequence covered by non-overlapping matches. (That is, any matches found inside other matches are not counted.) The metric for each measure is the ratio of number of characters in non-overlapping matches and the total length of the particular string. <br />
 
