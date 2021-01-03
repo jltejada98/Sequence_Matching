@@ -3,7 +3,7 @@
 ## Background
 Detecting similarities and patterns between arbitrary sequences of data is a problem faced in numerous fields. From Bioinformatics to Finance, being able to efficiently identify similarities in a data streams is of huge significance.
 
-This project aims to compare two or more sequences encoded in text files and determine any matching portions above a provided minimum length in a fully concurrent and scalable manner.  In addition to providing the matching strings and their locations in all sequences, the program also determines a similarity metric, indicating the overall presence of the matching strings in a sequence.
+This project aims to compare two or more sequences encoded in text files and determine any matching portions above a provided minimum length in a fully concurrent and scalable manner.  In addition to providing the matching strings and their locations in all sequences, the program also determines a matching metric depicting the overall coverage of the found matches in each of the sequenecs.
 
 ### Sequence Detection
 
