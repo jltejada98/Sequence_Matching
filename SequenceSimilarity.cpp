@@ -3,6 +3,7 @@
 //
 
 #include "SequenceSimilarity.h"
+#include "iostream"
 
 std::shared_ptr<tbb::concurrent_vector<float>> Determine_Similarity(
         tbb::concurrent_unordered_map<std::string,tbb::concurrent_vector<tbb::concurrent_unordered_set<size_t>>> &combinedMatchesMap,
@@ -14,7 +15,6 @@ std::shared_ptr<tbb::concurrent_vector<float>> Determine_Similarity(
         seqVectorSet.push_back(tbb::concurrent_unordered_set<size_t>());
     }
     auto seqVectorSetRef = std::ref(seqVectorSet);
-    auto combinedMatchesMapRef = std::ref(combinedMatchesMap);
 
     tbb::task_group similarityTaskGroup;
 
@@ -30,6 +30,7 @@ std::shared_ptr<tbb::concurrent_vector<float>> Determine_Similarity(
     tbb::concurrent_vector<float> similarityMetricVector;
     size_t overallMatchesSize = 0;
     size_t overallSequenceSize = 0;
+
     for (size_t i = 0; i < numSequences; ++i) {
         overallMatchesSize += seqVectorSet[i].size();
         overallSequenceSize += seqSizeArray[i];

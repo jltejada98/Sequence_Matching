@@ -1,10 +1,10 @@
-OBJS = FileManipulation.o MatchLocations.o SequenceMatching.o main.o
+OBJS = FileManipulation.o MatchLocations.o SequenceMatching.o SequenceSimilarity.o main.o
 CC = g++
 INCLUDE = -I/usr/local/Cellar/tbb/2020_U3_1/include/
 LIBS = -L/usr/local/Cellar/tbb/2020_U3_1/lib -ltbb
 CXXFLAGS =-std=c++11 -Wall -O3
 EXECUTABLE = Sequence_Matching
-COMMANDLINE = Sequence_1L.txt Sequence_2L.txt 3
+COMMANDLINE = Titin_FruitFly.txt Titin_Human.txt Titin_Caenorhabditis.txt 3
 VALGRIND = valgrind --leak-check=full --verbose --log-file
 
 .PHONY : run

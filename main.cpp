@@ -15,6 +15,8 @@ int main(int argc, const char *argv[]) {
         return EXIT_FAILURE;
     }
 
+    //Todo Reserve spaces on all dynamic data structures
+
     //Read all sequences provided.
     size_t index;
     size_t minimumMatchSize = (std::stoi(argv[argc-1]));
@@ -33,19 +35,16 @@ int main(int argc, const char *argv[]) {
     size_t matchesMapArraySize = numSeqPairs + remainderSeqPairs;
     //Array holding all matches of all pairs of sequences
     std::shared_ptr<tbb::concurrent_unordered_map<std::string, MatchLocations>> matchesMapArray [matchesMapArraySize];
-    size_t smallestMapSize= std::numeric_limits<size_t>::max();
+    size_t smallestMapSize = std::numeric_limits<size_t>::max();
     size_t smallestMapIndex;
-    //Todo Consider Concurrently determine matches for all sequence pairs. Create a thread to handle each pair.
+
+    //Todo Consider creating threads to check each sequence pair (Being aware of threads spawned and task groups)
+
     for (index = 0; index <= numSeqPairs; index+=2) {
         if (*seqStringArray[index] != *seqStringArray[index + 1]) { //If strings are not identical.
            //Determine longest sequence, pass it as the first sequence
            std::cout << "Determining Matches between " << (char *) argv[index + 1] << " and " << (char *) argv[index + 2] << "..." << std::endl;
-           if(seqSizeArray[index] > seqSizeArray[index + 1]){
-               matchesMapArray[index/2] = Determine_Matches(seqStringArray[index], seqSizeArray[index], seqStringArray[index + 1], seqSizeArray[index + 1], minimumMatchSize);
-           }
-           else{
-               matchesMapArray[index/2] = Determine_Matches(seqStringArray[index + 1], seqSizeArray[index + 1], seqStringArray[index], seqSizeArray[index], minimumMatchSize);
-           }
+           matchesMapArray[index/2] = Determine_Matches(seqStringArray[index], seqSizeArray[index], seqStringArray[index + 1], seqSizeArray[index + 1], minimumMatchSize);
            //Determine similarity metrics for each pair, for more than two sequences is not meaningful, it will only be
            // determined on the combined map of all sequences
            Determine_Submatching(*matchesMapArray[index/2], minimumMatchSize);
@@ -66,12 +65,7 @@ int main(int argc, const char *argv[]) {
         if (*seqStringArray[numSequences-2] != *seqStringArray[numSequences-1]) { //If strings are not identical.
             //Determine longest sequence, pass it as the first sequence
             std::cout << "Determining Matches between " << (char *) argv[numSequences-1] << " and " << (char *) argv[numSequences] << " ..." << std::endl;
-            if(seqSizeArray[numSequences-2] > seqSizeArray[numSequences-1]){
-                matchesMapArray[matchesMapArraySize-1] = Determine_Matches(seqStringArray[numSequences-2], seqSizeArray[numSequences-2], seqStringArray[numSequences-1], seqSizeArray[numSequences-1], minimumMatchSize);
-            }
-            else{
-                matchesMapArray[matchesMapArraySize-1] = Determine_Matches(seqStringArray[numSequences-1], seqSizeArray[numSequences-1], seqStringArray[numSequences-2], seqSizeArray[numSequences-2], minimumMatchSize);
-            }
+            matchesMapArray[matchesMapArraySize-1] = Determine_Matches(seqStringArray[numSequences-2], seqSizeArray[numSequences-2], seqStringArray[numSequences-1], seqSizeArray[numSequences-1], minimumMatchSize);
             //Determine similarity metrics for each pair, for more than two sequences is not meaningful, it will only be
             // determined on the combined map of all sequences
             Determine_Submatching(*matchesMapArray[matchesMapArraySize-1], minimumMatchSize);
@@ -116,24 +110,8 @@ int main(int argc, const char *argv[]) {
         }
     }
 
-
-    for (auto &k: combinedMatchesMap){
-        std::cout << k.first << std::endl;
-        for (auto &y: k.second){
-            for (auto &u :y){
-                std::cout << u << " ";
-            }
-            std::cout << std::endl;
-        }
-        std::cout << std::endl;
-    }
-
     //Compute similarity metrics on all sequences.
     std::shared_ptr<tbb::concurrent_vector<float>> similarityMetricVector = Determine_Similarity(combinedMatchesMap, seqSizeArray, numSequences);
-
-    for (auto &m: *similarityMetricVector){
-        std::cout << m << std::endl;
-    }
 
     std::cout << "Writing Results..." << std::endl;
     if(!Write_Matches(combinedMatchesMap, *similarityMetricVector, numSequences, argv, "Results.txt")){

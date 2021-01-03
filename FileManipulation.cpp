@@ -46,17 +46,13 @@ bool Write_Matches(tbb::concurrent_unordered_map<std::string, tbb::concurrent_ve
         File << "Overall : " << similarityMetricVector[numSequences] << std::endl;
 
         //Write Matches
-        size_t seqIndex = 0;
         for (auto &key : matchesMap){
             File << key.first << std::endl;
-            seqIndex = 0;
             for (auto &set : key.second){
-                File << (char *) argv[seqIndex+1] << ":";
                 for(auto &index : set){
-                    File << index << ",";
+                    File << index << " ";
                 }
                 File << std::endl;
-                ++seqIndex;
             }
             File << std::endl;
         }
