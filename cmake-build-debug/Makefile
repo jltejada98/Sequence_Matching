@@ -224,6 +224,33 @@ SequenceMatching.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.s
 .PHONY : SequenceMatching.cpp.s
 
+SequenceSimilarity.o: SequenceSimilarity.cpp.o
+
+.PHONY : SequenceSimilarity.o
+
+# target to build an object file
+SequenceSimilarity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/SequenceSimilarity.cpp.o
+.PHONY : SequenceSimilarity.cpp.o
+
+SequenceSimilarity.i: SequenceSimilarity.cpp.i
+
+.PHONY : SequenceSimilarity.i
+
+# target to preprocess a source file
+SequenceSimilarity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/SequenceSimilarity.cpp.i
+.PHONY : SequenceSimilarity.cpp.i
+
+SequenceSimilarity.s: SequenceSimilarity.cpp.s
+
+.PHONY : SequenceSimilarity.s
+
+# target to generate assembly for a file
+SequenceSimilarity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sequence_Matching.dir/build.make CMakeFiles/Sequence_Matching.dir/SequenceSimilarity.cpp.s
+.PHONY : SequenceSimilarity.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -269,6 +296,9 @@ help:
 	@echo "... SequenceMatching.o"
 	@echo "... SequenceMatching.i"
 	@echo "... SequenceMatching.s"
+	@echo "... SequenceSimilarity.o"
+	@echo "... SequenceSimilarity.i"
+	@echo "... SequenceSimilarity.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

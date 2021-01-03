@@ -16,4 +16,4 @@ add_executable(Sequence_Matching
         SequenceMatching.cpp
         SequenceMatching.h
         MatchLocations.cpp
-        MatchLocations.h)
+        MatchLocations.h SequenceSimilarity.cpp SequenceSimilarity.h)

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Sequence_Matching.dir/FileManipulation.cpp.o"
   "CMakeFiles/Sequence_Matching.dir/MatchLocations.cpp.o"
   "CMakeFiles/Sequence_Matching.dir/SequenceMatching.cpp.o"
+  "CMakeFiles/Sequence_Matching.dir/SequenceSimilarity.cpp.o"
   "CMakeFiles/Sequence_Matching.dir/main.cpp.o"
   "Sequence_Matching"
   "Sequence_Matching.pdb"

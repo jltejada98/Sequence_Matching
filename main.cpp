@@ -2,10 +2,11 @@
 #include <iostream>
 #include <tbb/concurrent_unordered_map.h>
 #include <tbb/concurrent_unordered_set.h>
-#include <unordered_set>
+#include <tbb/concurrent_vector.h>
 #include "MatchLocations.h"
 #include "FileManipulation.h"
 #include "SequenceMatching.h"
+#include "SequenceSimilarity.h"
 
 int main(int argc, const char *argv[]) {
     if (argc < 4){
@@ -34,7 +35,7 @@ int main(int argc, const char *argv[]) {
     std::shared_ptr<tbb::concurrent_unordered_map<std::string, MatchLocations>> matchesMapArray [matchesMapArraySize];
     size_t smallestMapSize= std::numeric_limits<size_t>::max();
     size_t smallestMapIndex;
-    //Todo Concurrently determine matches for all sequence pairs. Create a thread to handle each pair.
+    //Todo Consider Concurrently determine matches for all sequence pairs. Create a thread to handle each pair.
     for (index = 0; index <= numSeqPairs; index+=2) {
         if (*seqStringArray[index] != *seqStringArray[index + 1]) { //If strings are not identical.
            //Determine longest sequence, pass it as the first sequence
@@ -87,36 +88,32 @@ int main(int argc, const char *argv[]) {
 
     //Compare all maps and determine which keys exist in all of them, iterate on shortest map.
     //Map holding vector of all indices combined from the matches found previously.
-    tbb::concurrent_unordered_map<std::string, std::vector<tbb::concurrent_unordered_set<size_t>>> combinedMatchesMap;
-    std::shared_ptr<std::vector<tbb::concurrent_unordered_set<size_t>>> combinedMatchIndices;
+    tbb::concurrent_unordered_map<std::string, tbb::concurrent_vector<tbb::concurrent_unordered_set<size_t>>> combinedMatchesMap;
+    std::shared_ptr<tbb::concurrent_vector<tbb::concurrent_unordered_set<size_t>>> combinedMatchIndices;
     std::shared_ptr<std::string> matchString;
-    std::pair<std::string, std::vector<tbb::concurrent_unordered_set<size_t>>> newPair;
+    std::pair<std::string, tbb::concurrent_vector<tbb::concurrent_unordered_set<size_t>>> newPair;
 
-    if (numSequences > 2){ // Todo check cases of number of sequences
-        for (auto &key : *matchesMapArray[smallestMapIndex]){
-            //Check if key exists in all other maps.
-            for (index = 0; index < matchesMapArraySize; ++index) {
-                if ((index != smallestMapIndex) && (!matchesMapArray[index]->count(key.first))){ //count returns 1 if exists, 0 otherwise
-                    break;
-                }
-            }
-            if (index >= matchesMapArraySize){ //Checked all maps key exists in all, add to combined map.
-                matchString = std::make_shared<std::string>(key.first);
-                combinedMatchIndices = std::make_shared<std::vector<tbb::concurrent_unordered_set<size_t>>>();
-                for (index = 0; index < numSeqPairs; ++index) { //Add sets to vector of sequence
-                    combinedMatchIndices->push_back(matchesMapArray[index / 2]->at(key.first).getIndex1Set());
-                    combinedMatchIndices->push_back(matchesMapArray[index / 2]->at(key.first).getIndex2Set());
-                }
-                if (remainderSeqPairs == 1){ //Add remaining pair
-                    combinedMatchIndices->push_back(matchesMapArray[matchesMapArraySize-1]->at(key.first).getIndex2Set());
-                }
-                newPair = std::make_pair(*matchString, *combinedMatchIndices);
-                combinedMatchesMap.insert(newPair);
+    //Todo check if it works on two sequences
+    for (auto &key : *matchesMapArray[smallestMapIndex]){
+        //Check if key exists in all other maps.
+        for (index = 0; index < matchesMapArraySize; ++index) {
+            if ((index != smallestMapIndex) && (!matchesMapArray[index]->count(key.first))){ //count returns 1 if exists, 0 otherwise
+                break;
             }
         }
-    }
-    else{ //Run similarity on single map from only pair.
-
+        if (index >= matchesMapArraySize){ //Checked all maps key exists in all, add to combined map.
+            matchString = std::make_shared<std::string>(key.first);
+            combinedMatchIndices = std::make_shared<tbb::concurrent_vector<tbb::concurrent_unordered_set<size_t>>>();
+            for (index = 0; index < numSeqPairs; ++index) { //Add sets to vector of sequence
+                combinedMatchIndices->push_back(matchesMapArray[index / 2]->at(key.first).getIndex1Set());
+                combinedMatchIndices->push_back(matchesMapArray[index / 2]->at(key.first).getIndex2Set());
+            }
+            if (remainderSeqPairs == 1){ //Add remaining pair
+                combinedMatchIndices->push_back(matchesMapArray[matchesMapArraySize-1]->at(key.first).getIndex2Set());
+            }
+            newPair = std::make_pair(*matchString, *combinedMatchIndices);
+            combinedMatchesMap.insert(newPair);
+        }
     }
 
 
@@ -132,52 +129,16 @@ int main(int argc, const char *argv[]) {
     }
 
     //Compute similarity metrics on all sequences.
+    std::shared_ptr<tbb::concurrent_vector<float>> similarityMetricVector = Determine_Similarity(combinedMatchesMap, seqSizeArray, numSequences);
 
+    for (auto &m: *similarityMetricVector){
+        std::cout << m << std::endl;
+    }
 
-
-
-
-
-
-
-
-//    if (*seq1String != *seq2String){
-//        std::cout << "Determining Matches..." << std::endl;
-//
-//        std::shared_ptr<tbb::concurrent_unordered_map<std::string, MatchLocations>> matchesMapPtr;
-//
-//        if (seq1Size >= seq2Size){
-//             matchesMapPtr=Determine_Matches(seq1String, seq1Size, seq2String, seq2Size, minimumMatchSize);
-//        }
-//        else{
-//            matchesMapPtr=Determine_Matches(seq2String, seq2Size, seq1String, seq1Size, minimumMatchSize);
-//        }
-//
-//        // Todo Consider doing matching between a set of sequences, do matches map for non-overlapping pairs
-//        // Then iterate on shortest map and determine if keys exist on all other ones, adding to new map if
-//        // they exist on all other ones.
-//
-//        std::cout << "Determining Metrics..." << std::endl;
-//        float seq1Metric,seq2Metric, combinedMetric;
-//        Determine_Similarity(*matchesMapPtr, minimumMatchSize,seq1Size, seq2Size, seq1Metric, seq2Metric, combinedMetric);
-//        std::cout << "Similarity Metrics: " << std::endl;
-//        std::cout << "Combined:" << combinedMetric << std::endl;
-//        std::cout << "Seq 1:" << seq1Metric << std::endl;
-//        std::cout << "Seq 2:" << seq2Metric << std::endl;
-//
-//
-//        std::cout << "Determining Submatches..." << std::endl;
-//        Determine_Submatching(*matchesMapPtr, minimumMatchSize);
-//
-//        std::cout << "Writing Complete Matches..." << std::endl;
-//        if (!Write_Matches(*matchesMapPtr, "All_Matches.txt")){
-//            return EXIT_FAILURE;
-//        }
-//
-//    }
-//    else{
-//        std::cout << "Identical strings" << std::endl;
-//    }
+    std::cout << "Writing Results..." << std::endl;
+    if(!Write_Matches(combinedMatchesMap, *similarityMetricVector, numSequences, argv, "Results.txt")){
+        return EXIT_FAILURE;
+    }
 
 
     return EXIT_SUCCESS;

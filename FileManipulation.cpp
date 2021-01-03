@@ -30,24 +30,37 @@ std::shared_ptr<std::string> Load_Sequence(const char *filename, size_t &seq_siz
     return std::make_shared<std::string>(sequenceString);
 }
 
-bool Write_Matches(tbb::concurrent_unordered_map<std::string, MatchLocations> &matchesMap, const std::string& outFilename){
+bool Write_Matches(tbb::concurrent_unordered_map<std::string, tbb::concurrent_vector<tbb::concurrent_unordered_set<size_t>>> &matchesMap,
+                   tbb::concurrent_vector<float> &similarityMetricVector,size_t &numSequences, const char *argv[],
+                   const std::string& outFilename){
     std::ofstream File;
     File.exceptions(~::std::ios_base::goodbit);
     try{
         File.open(outFilename); //Open for writing
-        for (auto &x: matchesMap){
-            File << x.first << " len=" << x.first.length() << " num pairs=" << x.second.getPairwiseNumberMatches() << std::endl;
-            File << " Seq 1:" << std::endl;
-            auto index1Set = x.second.getIndex1Set();
-            for (auto &elem: index1Set){
-                File << " " << elem << std::endl;
-            }
-            File << " Seq 2:" << std::endl;
-            auto index2Set = x.second.getIndex2Set();
-            for (auto &elem: index2Set){
-                File << " " << elem << std::endl;
-            }
+
+        //Write Similarity Metrics
+        File << "Similarity Metrics:" << std::endl;
+        for (size_t i = 0; i < numSequences; ++i) {
+            File << (char *) argv[i+1] << " : " << similarityMetricVector[i] << std::endl;
         }
+        File << "Overall : " << similarityMetricVector[numSequences] << std::endl;
+
+        //Write Matches
+        size_t seqIndex = 0;
+        for (auto &key : matchesMap){
+            File << key.first << std::endl;
+            seqIndex = 0;
+            for (auto &set : key.second){
+                File << (char *) argv[seqIndex+1] << ":";
+                for(auto &index : set){
+                    File << index << ",";
+                }
+                File << std::endl;
+                ++seqIndex;
+            }
+            File << std::endl;
+        }
+
         File.close();
     }
     catch (const std::ifstream::failure &e){

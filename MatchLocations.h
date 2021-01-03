@@ -16,7 +16,6 @@ public:
     void addMatchLocation(size_t &start1, size_t &start2);
     void addSubMatchIndex1(unsigned long start1);
     void addSubMatchIndex2(unsigned long start2);
-    [[nodiscard]] size_t getPairwiseNumberMatches() const;
     tbb::concurrent_unordered_set<size_t> & getIndex1Set() const;
     tbb::concurrent_unordered_set<size_t> & getIndex2Set() const;
 };

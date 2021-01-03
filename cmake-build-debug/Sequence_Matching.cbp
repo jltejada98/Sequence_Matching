@@ -98,6 +98,12 @@
 		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceMatching.h">
 			<Option target="Sequence_Matching"/>
 		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceSimilarity.cpp">
+			<Option target="Sequence_Matching"/>
+		</Unit>
+		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/SequenceSimilarity.h">
+			<Option target="Sequence_Matching"/>
+		</Unit>
 		<Unit filename="/Users/joseluistejada/Documents/Other/Development/C++/Sequence_Matching/main.cpp">
 			<Option target="Sequence_Matching"/>
 		</Unit>
