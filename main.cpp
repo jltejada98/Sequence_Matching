@@ -95,9 +95,9 @@ int main(int argc, const char *argv[]) {
         if (index >= matchesMapArraySize){ //Checked all maps key exists in all, add to combined map.
             matchString = std::make_shared<std::string>(key.first);
             combinedMatchIndices = std::make_shared<tbb::concurrent_vector<tbb::concurrent_unordered_set<size_t>>>();
-            for (index = 0; index < numSeqPairs; ++index) { //Add sets to vector of sequence
-                combinedMatchIndices->push_back(matchesMapArray[index / 2]->at(key.first).getIndex1Set());
-                combinedMatchIndices->push_back(matchesMapArray[index / 2]->at(key.first).getIndex2Set());
+            for (index = 0; index < (matchesMapArraySize-remainderSeqPairs) ; ++index) { //Add sets to vector of sequence
+                combinedMatchIndices->push_back(matchesMapArray[index]->at(key.first).getIndex1Set());
+                combinedMatchIndices->push_back(matchesMapArray[index]->at(key.first).getIndex2Set());
             }
             if (remainderSeqPairs == 1){ //Add remaining pair
                 combinedMatchIndices->push_back(matchesMapArray[matchesMapArraySize-1]->at(key.first).getIndex2Set());

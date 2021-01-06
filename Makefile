@@ -4,7 +4,7 @@ INCLUDE = -I/usr/local/Cellar/tbb/2020_U3_1/include/
 LIBS = -L/usr/local/Cellar/tbb/2020_U3_1/lib -ltbb
 CXXFLAGS =-std=c++11 -Wall -O3
 EXECUTABLE = Sequence_Matching
-COMMANDLINE = Titin_FruitFly.txt Titin_Human.txt Titin_Caenorhabditis.txt Titin_Mouse.txt 3
+COMMANDLINE = Q9I7U4.txt Q8WZ42.txt A2ASS6.txt G4SLH0.txt 3
 VALGRIND = valgrind --leak-check=full --verbose --log-file
 
 .PHONY : run
@@ -25,4 +25,4 @@ testmemory:
 	$(VALGRIND)=./valgrind1.log ./$(EXECUTABLE)
 
 clean :
-	rm -rf $(EXECUTABLE) ${OBJS} valgrind?.log
+	rm -rf $(EXECUTABLE) ${OBJS} valgrind?.log Results.txt

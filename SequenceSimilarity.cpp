@@ -20,8 +20,8 @@ std::shared_ptr<tbb::concurrent_vector<float>> Determine_Similarity(
 
     for (auto &x: combinedMatchesMap){
         //For each key add corresponding indices to sets for each sequence, determining overall coverage.
-//        Similarity_Thread(x.second, x.first.length(), seqVectorSet, numSequences); //Single Threaded Version
-        similarityTaskGroup.run([&]{Similarity_Thread(x.second, x.first.length(), seqVectorSetRef, numSequences);});
+        // Similarity_Thread(x.second, x.first.length(), seqVectorSet, numSequences); //Single Threaded Version
+       similarityTaskGroup.run([&]{Similarity_Thread(x.second, x.first.length(), seqVectorSetRef, numSequences);});
     }
 
     similarityTaskGroup.wait();
